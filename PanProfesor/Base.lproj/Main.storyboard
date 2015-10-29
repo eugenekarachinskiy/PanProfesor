@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="b4x-Rd-8St">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="z1d-el-Qhp">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Words Maker View Controller-->
+        <!--Собери слово-->
         <scene sceneID="z9S-fq-y4q">
             <objects>
                 <viewController id="eBg-a7-10h" customClass="WordsMakerViewController" customModule="PanProfesor" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,7 +30,7 @@
                                 <rect key="frame" x="62" y="245" width="196" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sj4-XV-hnZ">
@@ -80,7 +81,7 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                                     <animations/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -122,7 +123,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ewL-yD-aYt"/>
+                    <navigationItem key="navigationItem" title="Собери слово" id="ewL-yD-aYt"/>
                     <connections>
                         <outlet property="collectionView" destination="h2t-pn-mOh" id="ceh-p5-SuM"/>
                         <outlet property="wordTextField" destination="tT7-kf-lgi" id="VW5-jA-ucd"/>
@@ -131,6 +132,83 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2wD-Wq-9Oh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="50" y="237"/>
+        </scene>
+        <!--Мемория-->
+        <scene sceneID="roM-e2-5s2">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="iCY-ns-W2b" customClass="MemoryWordsViewController" customModule="PanProfesor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="heq-hE-UnW"/>
+                        <viewControllerLayoutGuide type="bottom" id="10E-ST-2EK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6vY-WE-bta">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="czc-Q1-suW">
+                                <rect key="frame" x="-4" y="64" width="328" height="504"/>
+                                <animations/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Noa-pA-jsl">
+                                    <size key="itemSize" width="132" height="91"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="memoryWordIdentifier" id="wRD-qY-Iow" customClass="MemoryCollectionViewCell" customModule="PanProfesor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="132" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="132" height="91"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roJ-dO-G0u">
+                                                    <rect key="frame" x="0.0" y="0.0" width="132" height="91"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="roJ-dO-G0u" secondAttribute="trailing" id="3RN-se-nNW"/>
+                                            <constraint firstItem="roJ-dO-G0u" firstAttribute="top" secondItem="wRD-qY-Iow" secondAttribute="top" id="5tH-kt-9FI"/>
+                                            <constraint firstAttribute="bottom" secondItem="roJ-dO-G0u" secondAttribute="bottom" id="DPi-Zz-70I"/>
+                                            <constraint firstItem="roJ-dO-G0u" firstAttribute="leading" secondItem="wRD-qY-Iow" secondAttribute="leading" id="dnb-2V-dlS"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="textLabel" destination="roJ-dO-G0u" id="PEL-Y2-mpH"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="iCY-ns-W2b" id="Xzn-Z3-RIc"/>
+                                    <outlet property="delegate" destination="iCY-ns-W2b" id="AUM-n5-giZ"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="czc-Q1-suW" firstAttribute="leading" secondItem="6vY-WE-bta" secondAttribute="leadingMargin" constant="-20" id="3Cs-Iz-U9N"/>
+                            <constraint firstItem="10E-ST-2EK" firstAttribute="top" secondItem="czc-Q1-suW" secondAttribute="bottom" id="Ug6-CZ-OOr"/>
+                            <constraint firstItem="czc-Q1-suW" firstAttribute="top" secondItem="heq-hE-UnW" secondAttribute="bottom" id="VdN-m9-4MK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="czc-Q1-suW" secondAttribute="trailing" constant="-20" id="gAH-aw-Nnc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Мемория" id="Klc-4t-d4y"/>
+                    <connections>
+                        <outlet property="collectionView" destination="czc-Q1-suW" id="8JS-AN-hfo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VFM-2Y-3h8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="537" y="1235"/>
         </scene>
         <!--Верно-Неверно-->
         <scene sceneID="tne-QT-ifu">
@@ -213,14 +291,14 @@
                                                                     <rect key="frame" x="131" y="0.0" width="60" height="136"/>
                                                                     <animations/>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kark" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAz-dR-6FK">
                                                                     <rect key="frame" x="133" y="102.5" width="56" height="135.5"/>
                                                                     <animations/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -329,6 +407,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jG1-3f-7Sx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-482" y="237"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IeN-5N-N8q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z1d-el-Qhp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MuE-tL-Ja7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iCY-ns-W2b" kind="relationship" relationship="rootViewController" id="fNa-xC-uR4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aqS-dq-HKv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5" y="1235"/>
         </scene>
     </scenes>
     <resources>
