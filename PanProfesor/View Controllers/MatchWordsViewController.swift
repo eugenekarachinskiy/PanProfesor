@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class MatchWordsViewController: BaseViewController {
 
@@ -14,10 +15,31 @@ class MatchWordsViewController: BaseViewController {
     let records: [Record] = [Record(text: "Волосы", translateText: "włosy"), Record(text: "Кожа", translateText: "skóra"), Record(text: "лоб", translateText: "czoło"), Record(text: "висок", translateText: "skroń"), Record(text: "бровь", translateText: "brew")]
     
     let itemsCount = 5;
-    
+    let loopsLimit = 2
+
+    var loops = 0
     var elements: [RecordStruct] = [];
     var selectedIndexPaths: [NSIndexPath] = [];
     var correctedIndexPaths: [NSIndexPath] = [];
+    
+    lazy var fetchedResultsController: NSFetchedResultsController? = {
+        guard let context = DataBaseManager.defaultManager.manangedObjectContext,
+            let currentSection = self.section else {
+                return nil
+        }
+        
+        let sortDescriptor = NSSortDescriptor(key: "used", ascending: false)
+        
+        let fetchedRequest = NSFetchRequest(entityName: "Word")
+        fetchedRequest.predicate = NSPredicate(format: "section == %@", currentSection)
+        fetchedRequest.sortDescriptors = [sortDescriptor]
+        fetchedRequest.fetchLimit = 10
+        
+        let fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchedRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        fetchedResultsController.delegate = self
+        return fetchedResultsController
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +53,16 @@ class MatchWordsViewController: BaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func setupFetchedResultsController() {
+        do {
+            try fetchedResultsController?.performFetch()
+        } catch let error {
+            print("error setup fetch \(error)")
+        }
+    }
+    
     func fetchData() {
-        
+        setupFetchedResultsController()
     }
     
     func setupData() {
@@ -51,8 +81,35 @@ class MatchWordsViewController: BaseViewController {
     }
     
     func finishedCurrent() {
-        setupData()
+        increaseUsedNumber()
+        loops++
+        
+        if loops == loopsLimit {
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: { (action) -> Void in
+                self.dismissViewControllerAnimated(true, completion: nil)
+            })
+            
+            let alertController = UIAlertController(title: "Finish", message: "Finish", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(okAction)
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        } else {
+            setupData()
+        }
     }
+    
+    func increaseUsedNumber() {
+        let wordsArray:[Word] = self.fetchedResultsController?.fetchedObjects as! Array<Word>
+        for word in wordsArray {
+            if let usedCount = word.used?.integerValue {
+                word.used = NSNumber(integer: usedCount + 1)
+                
+            } else {
+                word.used = NSNumber(int: 1)
+            }
+        }
+    }
+
     
     func checkPair() {
         if selectedIndexPaths.count == 2 {
@@ -143,4 +200,8 @@ extension MatchWordsViewController: UICollectionViewDelegateFlowLayout {
         
         return CGSizeMake(collectionView.frame.size.width / 2 - 10, collectionView.frame.size.height / 5 - 10)
     }
+}
+
+extension MatchWordsViewController: NSFetchedResultsControllerDelegate {
+    
 }
