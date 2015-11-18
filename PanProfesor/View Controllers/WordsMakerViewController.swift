@@ -22,7 +22,7 @@ class WordsMakerViewController: BaseViewController {
     var currentWord: Word?
     var correctFirstAttempt: Bool = true
     var currentIndex: Int = 0
-    let wordsLimit: Int = 10
+    static let wordsLimit: Int = 10
     
     lazy var fetchedResultsController: NSFetchedResultsController? = {
         guard let context = DataBaseManager.defaultManager.manangedObjectContext,
@@ -35,7 +35,7 @@ class WordsMakerViewController: BaseViewController {
         let fetchedRequest = NSFetchRequest(entityName: "Word")
         fetchedRequest.predicate = NSPredicate(format: "section == %@", currentSection)
         fetchedRequest.sortDescriptors = [sortDescriptor]
-        fetchedRequest.fetchLimit = 10
+        fetchedRequest.fetchLimit = wordsLimit
         
         let fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchedRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         fetchedResultsController.delegate = self
@@ -96,8 +96,9 @@ class WordsMakerViewController: BaseViewController {
         originalWordLabel.text = currentWord?.russian
         wordTextField.text = nil
         
-        if let translatedWord = currentWord?.polish {
-            imageView.image = UIImage(named: translatedWord)
+        if let originalWord = currentWord?.russian,
+            let translatedWord = currentWord?.polish {
+            imageView.image = UIImage(named: originalWord)
             letters = Array(translatedWord.characters)
         }
         
@@ -131,11 +132,13 @@ class WordsMakerViewController: BaseViewController {
             }
         }
         
-        currentIndex++
-        if currentIndex == wordsLimit {
-            didFinishLevel()
-        } else {
-            updateData()
+        if let itemsCount = fetchedResultsController?.fetchedObjects?.count {
+            currentIndex++
+            if currentIndex == itemsCount {
+                didFinishLevel()
+            } else {
+                updateData()
+            }
         }
     }
     

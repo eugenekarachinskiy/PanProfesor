@@ -16,6 +16,7 @@ class TrueOrFalseViewController: BaseViewController {
     
     var suggestedWords: [String] = [String]()
     var currentIndex = 0
+    static let wordsLimit = 10
     
     lazy var fetchedResultsController: NSFetchedResultsController? = {
         guard let context = DataBaseManager.defaultManager.manangedObjectContext,
@@ -28,7 +29,7 @@ class TrueOrFalseViewController: BaseViewController {
         let fetchedRequest = NSFetchRequest(entityName: "Word")
         fetchedRequest.predicate = NSPredicate(format: "section == %@", currentSection)
         fetchedRequest.sortDescriptors = [sortDescriptor]
-        fetchedRequest.fetchLimit = 10
+        fetchedRequest.fetchLimit = wordsLimit
         
         let fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchedRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         fetchedResultsController.delegate = self

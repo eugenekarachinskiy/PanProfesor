@@ -90,13 +90,15 @@ class TraningCardsViewController: BaseViewController {
     }
     
     func showNextCard() {
-        if currentIndex == fetchedResultsController?.fetchedObjects?.count {
-            currentIndex = 0;
-        } else {
-            currentIndex++
+        if let itemsCount = fetchedResultsController?.fetchedObjects?.count {
+            if currentIndex == itemsCount - 1 {
+                currentIndex = 0;
+            } else {
+                currentIndex++
+            }
+            
+            showCurrentCard()
         }
-        
-        showCurrentCard()
     }
     
     func showCurrentCard() {

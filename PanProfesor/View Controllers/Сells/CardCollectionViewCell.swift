@@ -15,17 +15,13 @@ class CardCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var translateTextLabel: UILabel!
     
     func updateWithWord(word: Word?, suggestedText: String) {
-        if let translatedText = word?.polish {
-            imageView.image = UIImage(named: translatedText)
-        }
-        
+        imageView.image = UIImage(named: suggestedText)
         originalTextLabel.text = suggestedText
         translateTextLabel.text = word?.polish
     }
     
-    
     func updateWithWord(word: Word) {
-        if let translatedText = word.polish {
+        if let translatedText = word.russian {
             imageView.image = UIImage(named: translatedText)
         }
         
@@ -34,7 +30,7 @@ class CardCollectionViewCell: UICollectionViewCell {
     }
     
     func updateWithWord(word: Word, showOriginal: Bool) {
-        if let translatedText = word.polish {
+        if let translatedText = word.russian {
             imageView.image = UIImage(named: translatedText)
         }
         
