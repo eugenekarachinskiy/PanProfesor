@@ -11,6 +11,8 @@ import CoreData
 
 class BaseViewController: UIViewController {
 
+    var section: Section?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

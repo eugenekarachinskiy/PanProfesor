@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class TrueOrFalseViewController: BaseViewController {
 
@@ -15,11 +16,38 @@ class TrueOrFalseViewController: BaseViewController {
    
     var currentIndex = 0
     
+    lazy var fetchedResultsController: NSFetchedResultsController? = {
+        guard let context = DataBaseManager.defaultManager.manangedObjectContext,
+            let currentSection = self.section else {
+                return nil
+        }
+        
+        let sortDescriptor = NSSortDescriptor(key: "used", ascending: false)
+        
+        let fetchedRequest = NSFetchRequest(entityName: "Word")
+        fetchedRequest.predicate = NSPredicate(format: "section == %@", currentSection)
+        fetchedRequest.sortDescriptors = [sortDescriptor]
+        fetchedRequest.fetchLimit = 10
+        
+        let fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchedRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        fetchedResultsController.delegate = self
+        return fetchedResultsController
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setupFetchedResultsController()
         setupView()
+    }
+    
+    func setupFetchedResultsController() {
+        do {
+            try fetchedResultsController?.performFetch()
+        } catch let error {
+            print("error setup fetch \(error)")
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -86,6 +114,10 @@ class TrueOrFalseViewController: BaseViewController {
 
 }
 
+extension TrueOrFalseViewController: NSFetchedResultsControllerDelegate {
+    
+}
+
 
 extension TrueOrFalseViewController: UICollectionViewDataSource {
     
@@ -94,12 +126,20 @@ extension TrueOrFalseViewController: UICollectionViewDataSource {
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        if let wordsCount = fetchedResultsController?.fetchedObjects?.count {
+            return wordsCount
+        } else {
+            return 0
+        }
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cellIdentifier = "cardIdentifier"
-        let collectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath)
+        let collectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath) as! CardCollectionViewCell
+        
+        let word = fetchedResultsController?.fetchedObjects?[indexPath.row] as? Word
+        collectionViewCell.updateWithWord(word)
+        
         return collectionViewCell
     }
 }

@@ -1,0 +1,105 @@
+{
+    "title": "ciało",
+    "words": [
+            {
+                "polish" : "szyja",
+                "russian": "шея"
+            },
+            {
+                "polish" : "głowa",
+                "russian": "голова"
+            },
+            {
+                "polish" : "klatka piersiowa",
+                "russian": "грудная клетка"
+            },
+            {
+                "polish" : "brodawka sutkowa",
+                "russian": "сосок"
+            },
+            {
+                "polish" : "brzuch",
+                "russian": "живот"
+            },
+            {
+                "polish" : "biodro",
+                "russian": "бедро"
+            },
+            {
+                "polish" : "przedramię",
+                "russian": "предплечье"
+            },
+            {
+                "polish" : "pachwina",
+                "russian": "пах"
+            },
+            {
+                "polish" : "genitalia",
+                "russian": "половые органы"
+            },
+            {
+                "polish" : "udo",
+                "russian": "бедро (часть ноги)"
+            },
+            {
+                "polish" : "goleń",
+                "russian": "голень"
+            },
+            {
+                "polish" : "stopa",
+                "russian": "стопа"
+            },
+            {
+                "polish" : "kostka",
+                "russian": "лодыжка"
+            },
+            {
+                "polish" : "kolano",
+                "russian": "колено"
+            },
+            {
+                "polish" : "bark",
+                "russian": "плечо"
+            },
+            {
+                "polish" : "plecy",
+                "russian": "спина"
+            },
+            {
+                "polish" : "pacha",
+                "russian": "подмышка"
+            },
+            {
+                "polish" : "ramię",
+                "russian": "рука (верхняя часть)"
+            },
+            {
+                "polish" : "łokiec",
+                "russian": "локоть"
+            },
+            {
+                "polish" : "nadgarstek",
+                "russian": "запястье"
+            },
+            {
+                "polish" : "ręka",
+                "russian": "рука"
+            },
+            {
+                "polish" : "pośladek",
+                "russian": "ягодица"
+            },
+            {
+                "polish" : "kciuk",
+                "russian": "большой палец"
+            },
+            {
+                "polish" : "łydka",
+                "russian": "икра"
+            },
+            {
+                "polish" : "pięta",
+                "russian": "пятка"
+            }
+    ]
+}

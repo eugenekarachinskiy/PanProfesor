@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class Record {
     let text: String
@@ -31,9 +32,11 @@ struct RecordStruct {
 class MemoryWordsViewController: BaseViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    let records: [Record] = [Record(text: "Волосы", translateText: "włosy"), Record(text: "Кожа", translateText: "skóra"), Record(text: "лоб", translateText: "czoło"), Record(text: "висок", translateText: "skroń"), Record(text: "бровь", translateText: "brew")]
+    
     let timeInterval = 5.0
-    let itemsCount = 5;
+    let itemsCount = 5
+    var loops = 0
+    let loopsLimit = 2
     
     var elements: [RecordStruct] = [];
     var selectedIndexPaths: [NSIndexPath] = [];
@@ -42,7 +45,24 @@ class MemoryWordsViewController: BaseViewController {
     var timer: NSTimer?
     var wordsHidden = false;
     
-    
+    lazy var fetchedResultsController: NSFetchedResultsController? = {
+        guard let context = DataBaseManager.defaultManager.manangedObjectContext,
+            let currentSection = self.section else {
+                return nil
+        }
+        
+        let sortDescriptor = NSSortDescriptor(key: "used", ascending: false)
+        
+        let fetchedRequest = NSFetchRequest(entityName: "Word")
+        fetchedRequest.predicate = NSPredicate(format: "section == %@", currentSection)
+        fetchedRequest.sortDescriptors = [sortDescriptor]
+        fetchedRequest.fetchLimit = 5
+        
+        let fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchedRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        fetchedResultsController.delegate = self
+        return fetchedResultsController
+    }()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,17 +75,31 @@ class MemoryWordsViewController: BaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func setupFetchedResultsController() {
+        do {
+            try fetchedResultsController?.performFetch()
+        } catch let error {
+            print("error setup fetch \(error)")
+        }
+    }
+    
     func fetchData() {
-        
+       setupFetchedResultsController()
     }
     
     func setupData() {
         fetchData()
         elements.removeAll()
         
-        for record in records {
-            elements.append(RecordStruct(text: record.text, isOriginal: true))
-            elements.append(RecordStruct(text: record.translateText, isOriginal: false))
+        let wordsArray:[Word] = self.fetchedResultsController?.fetchedObjects as! Array<Word>
+        
+        for word in wordsArray {
+            if let originalText = word.russian,
+                let translatedText = word.polish {
+                elements.append(RecordStruct(text: originalText, isOriginal: true))
+                elements.append(RecordStruct(text: translatedText, isOriginal: false))
+
+            }
         }
         
         elements.shuffleInPlace()
@@ -87,7 +121,33 @@ class MemoryWordsViewController: BaseViewController {
     }
 
     func finishedCurrent() {
-        setupData()
+        increaseUsedNumber()
+        loops++
+        
+        if loops == loopsLimit {
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: { (action) -> Void in
+                self.dismissViewControllerAnimated(true, completion: nil)
+            })
+            
+            let alertController = UIAlertController(title: "Finish", message: "Finish", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(okAction)
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        } else {
+            setupData()
+        }
+    }
+    
+    func increaseUsedNumber() {
+        let wordsArray:[Word] = self.fetchedResultsController?.fetchedObjects as! Array<Word>
+        for word in wordsArray {
+            if let usedCount = word.used?.integerValue {
+                word.used = NSNumber(integer: usedCount + 1)
+                
+            } else {
+                word.used = NSNumber(int: 1)
+            }
+        }
     }
     
     func checkPair() {
@@ -124,8 +184,12 @@ class MemoryWordsViewController: BaseViewController {
             let originalText = firstRecord.isOriginal ? firstRecord.text : secondRecord.text
             let translatedText = !secondRecord.isOriginal ? secondRecord.text : firstRecord.text
             
-            let filteredArray = records.filter() { $0.text.lowercaseString == originalText.lowercaseString && $0.translateText.lowercaseString == translatedText.lowercaseString }
-            return (filteredArray.count > 0)
+            if let recordsArray: [Word] = fetchedResultsController?.fetchedObjects as? Array<Word> {
+                let filteredArray = recordsArray.filter() { $0.russian?.lowercaseString == originalText.lowercaseString && $0.polish?.lowercaseString == translatedText.lowercaseString }
+                return (filteredArray.count > 0)
+            } else {
+                return false
+            }
         } else {
             return false
         }
@@ -186,4 +250,8 @@ extension MemoryWordsViewController: UICollectionViewDelegateFlowLayout {
         
         return CGSizeMake(collectionView.frame.size.width / 2 - 10, collectionView.frame.size.height / 5 - 10)
     }
+}
+
+extension MemoryWordsViewController: NSFetchedResultsControllerDelegate {
+    
 }
