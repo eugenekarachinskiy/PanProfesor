@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44115CF41BFD23BC00371CEE /* AlphabetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44115CF31BFD23BC00371CEE /* AlphabetViewController.swift */; };
+		44115CF61BFD25C200371CEE /* AlphabetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44115CF51BFD25C200371CEE /* AlphabetCollectionViewCell.swift */; };
 		441474A31BE7884A005A4F54 /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441474A21BE7884A005A4F54 /* ContentManager.swift */; };
 		441642B11BDA7B16000D011D /* MemoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441642B01BDA7B16000D011D /* MemoryCollectionViewCell.swift */; };
 		449B7A241BFB9FC3004B645E /* ChooseSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B7A231BFB9FC3004B645E /* ChooseSectionViewController.swift */; };
@@ -32,6 +34,7 @@
 		44C9317D1BFD066A000AB742 /* TraningCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C9317C1BFD066A000AB742 /* TraningCardsViewController.swift */; };
 		44C9317F1BFD0BBD000AB742 /* ChooseTranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C9317E1BFD0BBD000AB742 /* ChooseTranslateViewController.swift */; };
 		44C931811BFD15B6000AB742 /* TranslateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C931801BFD15B6000AB742 /* TranslateCollectionViewCell.swift */; };
+		44C931831BFD1E53000AB742 /* ChooseAudioTranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C931821BFD1E53000AB742 /* ChooseAudioTranslateViewController.swift */; };
 		44D05BF91BFB3D1100F72723 /* Ciało.json in Resources */ = {isa = PBXBuildFile; fileRef = 44D05BF81BFB3D1100F72723 /* Ciało.json */; };
 		44D2058E1BFB89FF00B8BCAA /* Section+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D2058A1BFB89FF00B8BCAA /* Section+CoreDataProperties.swift */; };
 		44D2058F1BFB89FF00B8BCAA /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D2058B1BFB89FF00B8BCAA /* Section.swift */; };
@@ -43,6 +46,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44115CF31BFD23BC00371CEE /* AlphabetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetViewController.swift; sourceTree = "<group>"; };
+		44115CF51BFD25C200371CEE /* AlphabetCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetCollectionViewCell.swift; sourceTree = "<group>"; };
 		441474A21BE7884A005A4F54 /* ContentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentManager.swift; sourceTree = "<group>"; };
 		441642B01BDA7B16000D011D /* MemoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		449B7A231BFB9FC3004B645E /* ChooseSectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseSectionViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +75,7 @@
 		44C9317C1BFD066A000AB742 /* TraningCardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraningCardsViewController.swift; sourceTree = "<group>"; };
 		44C9317E1BFD0BBD000AB742 /* ChooseTranslateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseTranslateViewController.swift; sourceTree = "<group>"; };
 		44C931801BFD15B6000AB742 /* TranslateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslateCollectionViewCell.swift; sourceTree = "<group>"; };
+		44C931821BFD1E53000AB742 /* ChooseAudioTranslateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseAudioTranslateViewController.swift; sourceTree = "<group>"; };
 		44D05BF81BFB3D1100F72723 /* Ciało.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Ciało.json"; sourceTree = "<group>"; };
 		44D2058A1BFB89FF00B8BCAA /* Section+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Section+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		44D2058B1BFB89FF00B8BCAA /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
@@ -160,6 +166,8 @@
 				44C931761BFCF8CB000AB742 /* CardsViewController.swift */,
 				44C9317C1BFD066A000AB742 /* TraningCardsViewController.swift */,
 				44C9317E1BFD0BBD000AB742 /* ChooseTranslateViewController.swift */,
+				44C931821BFD1E53000AB742 /* ChooseAudioTranslateViewController.swift */,
+				44115CF31BFD23BC00371CEE /* AlphabetViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -194,6 +202,7 @@
 				449B7A251BFBA3AD004B645E /* SectionCollectionViewCell.swift */,
 				449B7A291BFBAAA8004B645E /* ExamCollectionViewCell.swift */,
 				44C931801BFD15B6000AB742 /* TranslateCollectionViewCell.swift */,
+				44115CF51BFD25C200371CEE /* AlphabetCollectionViewCell.swift */,
 			);
 			path = "Сells";
 			sourceTree = "<group>";
@@ -278,12 +287,15 @@
 				441474A31BE7884A005A4F54 /* ContentManager.swift in Sources */,
 				449B7A241BFB9FC3004B645E /* ChooseSectionViewController.swift in Sources */,
 				44A0C4F01BB6B29F0039490E /* DataBaseManager.swift in Sources */,
+				44115CF41BFD23BC00371CEE /* AlphabetViewController.swift in Sources */,
 				44A0C4EB1BB6B08C0039490E /* MatchWordsViewController.swift in Sources */,
 				44C931771BFCF8CB000AB742 /* CardsViewController.swift in Sources */,
+				44115CF61BFD25C200371CEE /* AlphabetCollectionViewCell.swift in Sources */,
 				44C931811BFD15B6000AB742 /* TranslateCollectionViewCell.swift in Sources */,
 				44A0C4E91BB6B07C0039490E /* WordsMakerViewController.swift in Sources */,
 				44A0C4ED1BB6B0A90039490E /* MemoryWordsViewController.swift in Sources */,
 				44D2058E1BFB89FF00B8BCAA /* Section+CoreDataProperties.swift in Sources */,
+				44C931831BFD1E53000AB742 /* ChooseAudioTranslateViewController.swift in Sources */,
 				44A0C4D21BB6ACB10039490E /* ViewController.swift in Sources */,
 				44D205911BFB89FF00B8BCAA /* Word.swift in Sources */,
 				44A0C4E71BB6B0680039490E /* TrueOrFalseViewController.swift in Sources */,
