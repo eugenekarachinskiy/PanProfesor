@@ -13,7 +13,8 @@ class TrueOrFalseViewController: BaseViewController {
 
     @IBOutlet weak var collectionView: UICollectionView?
     @IBOutlet weak var pageControl: UIPageControl?
-   
+    
+    var suggestedWords: [String] = [String]()
     var currentIndex = 0
     
     lazy var fetchedResultsController: NSFetchedResultsController? = {
@@ -38,8 +39,13 @@ class TrueOrFalseViewController: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        setupFetchedResultsController()
+        setupData()
         setupView()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
     func setupFetchedResultsController() {
@@ -49,14 +55,17 @@ class TrueOrFalseViewController: BaseViewController {
             print("error setup fetch \(error)")
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func showCorrectOrNo() -> Bool {
+        return (rand()%2 == 0)
     }
     
     @IBAction func truePressed(sender: AnyObject) {
-        if true {
+        let wordsArray:[Word] = self.fetchedResultsController?.fetchedObjects as! Array<Word>
+        let currentWord = wordsArray[currentIndex]
+        let currentSuggestion = suggestedWords[currentIndex]
+        
+        if currentWord.russian == currentSuggestion {
             answeredTruthly()
         } else {
             answeredFalsely()
@@ -64,7 +73,11 @@ class TrueOrFalseViewController: BaseViewController {
     }
     
     @IBAction func falsePressed(sender: AnyObject) {
-        if false {
+        let wordsArray:[Word] = self.fetchedResultsController?.fetchedObjects as! Array<Word>
+        let currentWord = wordsArray[currentIndex]
+        let currentSuggestion = suggestedWords[currentIndex]
+        
+        if currentWord.russian != currentSuggestion {
             answeredTruthly()
         } else {
             answeredFalsely()
@@ -72,18 +85,56 @@ class TrueOrFalseViewController: BaseViewController {
     }
     
     func answeredTruthly() {
+        let wordsArray:[Word] = self.fetchedResultsController?.fetchedObjects as! Array<Word>
+        let currentWord = wordsArray[currentIndex]
+        if let usedCount = currentWord.used?.integerValue {
+            currentWord.used = NSNumber(integer: usedCount + 1)
+            
+        } else {
+            currentWord.used = NSNumber(int: 1)
+        }
+        
         currentIndex++
         showCurrentCard(animated: true)
     }
     
     func answeredFalsely() {
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel) { (action) -> Void in
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+        let alert = UIAlertController(title: "Ответ неверный", message: "Ответ неверный", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(okAction)
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    func setupData() {
+        suggestedWords.removeAll()
+        setupFetchedResultsController()
+        
+        let wordsArray:[Word] = self.fetchedResultsController?.fetchedObjects as! Array<Word>
+        for word in wordsArray {
+            if showCorrectOrNo() {
+                if let originalWord = word.russian {
+                    suggestedWords.append(originalWord)
+                }
+            } else {
+                let randomIndex = Int(arc4random_uniform(UInt32(wordsArray.count)))
+                let randomWord = wordsArray[randomIndex]
+                if let randomOriginal = randomWord.russian {
+                    suggestedWords.append(randomOriginal)
+                }
+            }
+        }
         
     }
     
     func setupView() {
-        self.pageControl?.numberOfPages = 10;
+        if let wordsCount = fetchedResultsController?.fetchedObjects?.count {
+            pageControl?.numberOfPages = wordsCount
+        } else {
+            pageControl?.numberOfPages = 0
+        }
     }
-    
     
     //MARK: Show Card Methods
     
@@ -98,8 +149,21 @@ class TrueOrFalseViewController: BaseViewController {
             collectionView?.scrollToItemAtIndexPath(indexPath, atScrollPosition: UICollectionViewScrollPosition.CenteredHorizontally, animated: animated)
             pageControl?.currentPage = index
         } else {
-            print("index out of range")
+            didFinish()
         }
+    }
+    
+    func didFinish() {
+        DataBaseManager.defaultManager.saveContext()
+        
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: { (action) -> Void in
+            self.dismissViewControllerAnimated(true, completion: nil)
+        })
+        
+        let alertController = UIAlertController(title: "Finish", message: "Finish", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(okAction)
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
 
     /*
@@ -138,7 +202,8 @@ extension TrueOrFalseViewController: UICollectionViewDataSource {
         let collectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath) as! CardCollectionViewCell
         
         let word = fetchedResultsController?.fetchedObjects?[indexPath.row] as? Word
-        collectionViewCell.updateWithWord(word)
+        let suggestedWord = suggestedWords[indexPath.row]
+        collectionViewCell.updateWithWord(word, suggestedText: suggestedWord)
         
         return collectionViewCell
     }

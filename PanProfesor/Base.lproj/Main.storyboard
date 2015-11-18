@@ -274,7 +274,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="falsePressed:" destination="BYZ-38-t0r" eventType="touchDragInside" id="yuG-nI-4Iy"/>
+                                            <action selector="falsePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fq7-x1-h6j"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogg-Hy-tvw">
