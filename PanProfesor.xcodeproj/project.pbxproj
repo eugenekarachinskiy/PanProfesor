@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		441474A31BE7884A005A4F54 /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441474A21BE7884A005A4F54 /* ContentManager.swift */; };
 		441642B11BDA7B16000D011D /* MemoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441642B01BDA7B16000D011D /* MemoryCollectionViewCell.swift */; };
-		441E35A41BE36E7900A596D1 /* ChooseTranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441E35A31BE36E7900A596D1 /* ChooseTranslateViewController.swift */; };
 		449B7A241BFB9FC3004B645E /* ChooseSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B7A231BFB9FC3004B645E /* ChooseSectionViewController.swift */; };
 		449B7A261BFBA3AD004B645E /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B7A251BFBA3AD004B645E /* SectionCollectionViewCell.swift */; };
 		449B7A281BFBA73C004B645E /* ChooseExamCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B7A271BFBA73C004B645E /* ChooseExamCollectionViewController.swift */; };
@@ -31,6 +30,8 @@
 		44C931791BFD02C1000AB742 /* SpeechHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C931781BFD02C1000AB742 /* SpeechHelper.swift */; };
 		44C9317B1BFD0332000AB742 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C9317A1BFD0332000AB742 /* AVFoundation.framework */; };
 		44C9317D1BFD066A000AB742 /* TraningCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C9317C1BFD066A000AB742 /* TraningCardsViewController.swift */; };
+		44C9317F1BFD0BBD000AB742 /* ChooseTranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C9317E1BFD0BBD000AB742 /* ChooseTranslateViewController.swift */; };
+		44C931811BFD15B6000AB742 /* TranslateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C931801BFD15B6000AB742 /* TranslateCollectionViewCell.swift */; };
 		44D05BF91BFB3D1100F72723 /* Ciało.json in Resources */ = {isa = PBXBuildFile; fileRef = 44D05BF81BFB3D1100F72723 /* Ciało.json */; };
 		44D2058E1BFB89FF00B8BCAA /* Section+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D2058A1BFB89FF00B8BCAA /* Section+CoreDataProperties.swift */; };
 		44D2058F1BFB89FF00B8BCAA /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D2058B1BFB89FF00B8BCAA /* Section.swift */; };
@@ -44,7 +45,6 @@
 /* Begin PBXFileReference section */
 		441474A21BE7884A005A4F54 /* ContentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentManager.swift; sourceTree = "<group>"; };
 		441642B01BDA7B16000D011D /* MemoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryCollectionViewCell.swift; sourceTree = "<group>"; };
-		441E35A31BE36E7900A596D1 /* ChooseTranslateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseTranslateViewController.swift; sourceTree = "<group>"; };
 		449B7A231BFB9FC3004B645E /* ChooseSectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseSectionViewController.swift; sourceTree = "<group>"; };
 		449B7A251BFBA3AD004B645E /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		449B7A271BFBA73C004B645E /* ChooseExamCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseExamCollectionViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +68,8 @@
 		44C931781BFD02C1000AB742 /* SpeechHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechHelper.swift; sourceTree = "<group>"; };
 		44C9317A1BFD0332000AB742 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		44C9317C1BFD066A000AB742 /* TraningCardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraningCardsViewController.swift; sourceTree = "<group>"; };
+		44C9317E1BFD0BBD000AB742 /* ChooseTranslateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseTranslateViewController.swift; sourceTree = "<group>"; };
+		44C931801BFD15B6000AB742 /* TranslateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslateCollectionViewCell.swift; sourceTree = "<group>"; };
 		44D05BF81BFB3D1100F72723 /* Ciało.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Ciało.json"; sourceTree = "<group>"; };
 		44D2058A1BFB89FF00B8BCAA /* Section+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Section+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		44D2058B1BFB89FF00B8BCAA /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
@@ -153,11 +155,11 @@
 				44A0C4E81BB6B07C0039490E /* WordsMakerViewController.swift */,
 				44A0C4EA1BB6B08C0039490E /* MatchWordsViewController.swift */,
 				44A0C4EC1BB6B0A90039490E /* MemoryWordsViewController.swift */,
-				441E35A31BE36E7900A596D1 /* ChooseTranslateViewController.swift */,
 				449B7A231BFB9FC3004B645E /* ChooseSectionViewController.swift */,
 				449B7A271BFBA73C004B645E /* ChooseExamCollectionViewController.swift */,
 				44C931761BFCF8CB000AB742 /* CardsViewController.swift */,
 				44C9317C1BFD066A000AB742 /* TraningCardsViewController.swift */,
+				44C9317E1BFD0BBD000AB742 /* ChooseTranslateViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -191,6 +193,7 @@
 				441642B01BDA7B16000D011D /* MemoryCollectionViewCell.swift */,
 				449B7A251BFBA3AD004B645E /* SectionCollectionViewCell.swift */,
 				449B7A291BFBAAA8004B645E /* ExamCollectionViewCell.swift */,
+				44C931801BFD15B6000AB742 /* TranslateCollectionViewCell.swift */,
 			);
 			path = "Сells";
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				449B7A281BFBA73C004B645E /* ChooseExamCollectionViewController.swift in Sources */,
 				44D2058F1BFB89FF00B8BCAA /* Section.swift in Sources */,
+				44C9317F1BFD0BBD000AB742 /* ChooseTranslateViewController.swift in Sources */,
 				449B7A261BFBA3AD004B645E /* SectionCollectionViewCell.swift in Sources */,
 				441642B11BDA7B16000D011D /* MemoryCollectionViewCell.swift in Sources */,
 				44C9317D1BFD066A000AB742 /* TraningCardsViewController.swift in Sources */,
@@ -276,6 +280,7 @@
 				44A0C4F01BB6B29F0039490E /* DataBaseManager.swift in Sources */,
 				44A0C4EB1BB6B08C0039490E /* MatchWordsViewController.swift in Sources */,
 				44C931771BFCF8CB000AB742 /* CardsViewController.swift in Sources */,
+				44C931811BFD15B6000AB742 /* TranslateCollectionViewCell.swift in Sources */,
 				44A0C4E91BB6B07C0039490E /* WordsMakerViewController.swift in Sources */,
 				44A0C4ED1BB6B0A90039490E /* MemoryWordsViewController.swift in Sources */,
 				44D2058E1BFB89FF00B8BCAA /* Section+CoreDataProperties.swift in Sources */,
@@ -284,7 +289,6 @@
 				44A0C4E71BB6B0680039490E /* TrueOrFalseViewController.swift in Sources */,
 				44A0C4D01BB6ACB10039490E /* AppDelegate.swift in Sources */,
 				44D205901BFB89FF00B8BCAA /* Word+CoreDataProperties.swift in Sources */,
-				441E35A41BE36E7900A596D1 /* ChooseTranslateViewController.swift in Sources */,
 				44A0C4F51BB6B34C0039490E /* PanProfesor.xcdatamodeld in Sources */,
 				44EE3E8A1BD7D6B000F0E640 /* LetterCollectionViewCell.swift in Sources */,
 				44EE3E861BD7BCDF00F0E640 /* CardCollectionViewCell.swift in Sources */,

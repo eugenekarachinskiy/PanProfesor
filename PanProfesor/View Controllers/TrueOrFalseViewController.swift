@@ -23,7 +23,7 @@ class TrueOrFalseViewController: BaseViewController {
                 return nil
         }
         
-        let sortDescriptor = NSSortDescriptor(key: "used", ascending: false)
+        let sortDescriptor = NSSortDescriptor(key: "used", ascending: true)
         
         let fetchedRequest = NSFetchRequest(entityName: "Word")
         fetchedRequest.predicate = NSPredicate(format: "section == %@", currentSection)

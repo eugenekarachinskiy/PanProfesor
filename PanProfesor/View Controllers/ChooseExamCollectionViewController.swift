@@ -10,8 +10,8 @@ import UIKit
 
 class ChooseExamCollectionViewController: UICollectionViewController {
 
-    let tasks = ["Карточки", "Тренировачные карточки","Собери слово", "Мемория", "Верно-Неверно", "Собери пару"]//, // "Собери слово аудио", "Выбери перевод аудио", "Тренировочные карточки"]
-    let segues = ["cardsSegueIdentifier", "traningCardsSegueIdentifier","makeWordSegueIdentifier", "memorySegueIdentifier", "trueOrFalseSegueIdentifier", "makePairSegueIdentifier"]//, "", "", "", "", "", "", "", "", "", "", "",]
+    let tasks = ["Карточки", "Тренировачные карточки","Собери слово", "Мемория", "Верно-Неверно", "Собери пару", "Выберите перевод"]//, // "Собери слово аудио", "Выбери перевод аудио", "Тренировочные карточки"]
+    let segues = ["cardsSegueIdentifier", "traningCardsSegueIdentifier","makeWordSegueIdentifier", "memorySegueIdentifier", "trueOrFalseSegueIdentifier", "makePairSegueIdentifier", "translateSegueIdentifier"]//, "", "", "", "", "", "", "", "", "", "", "",]
     
     var section: Section?
 
