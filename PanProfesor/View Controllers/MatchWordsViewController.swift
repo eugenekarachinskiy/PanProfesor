@@ -12,7 +12,6 @@ import CoreData
 class MatchWordsViewController: BaseViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    let records: [Record] = [Record(text: "Волосы", translateText: "włosy"), Record(text: "Кожа", translateText: "skóra"), Record(text: "лоб", translateText: "czoło"), Record(text: "висок", translateText: "skroń"), Record(text: "бровь", translateText: "brew")]
     
     let itemsCount = 5;
     let loopsLimit = 2
@@ -33,7 +32,7 @@ class MatchWordsViewController: BaseViewController {
         let fetchedRequest = NSFetchRequest(entityName: "Word")
         fetchedRequest.predicate = NSPredicate(format: "section == %@", currentSection)
         fetchedRequest.sortDescriptors = [sortDescriptor]
-        fetchedRequest.fetchLimit = 10
+        fetchedRequest.fetchLimit = 5
         
         let fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchedRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         fetchedResultsController.delegate = self
@@ -69,11 +68,18 @@ class MatchWordsViewController: BaseViewController {
         elements.removeAll()
         selectedIndexPaths.removeAll()
         correctedIndexPaths.removeAll()
+    
         fetchData()
     
-        for record in records {
-            elements.append(RecordStruct(text: record.text, isOriginal: true))
-            elements.append(RecordStruct(text: record.translateText, isOriginal: false))
+        let wordsArray:[Word] = self.fetchedResultsController?.fetchedObjects as! Array<Word>
+        
+        for word in wordsArray {
+            if let originalText = word.russian,
+                let translatedText = word.polish {
+                    elements.append(RecordStruct(text: originalText, isOriginal: true))
+                    elements.append(RecordStruct(text: translatedText, isOriginal: false))
+                    
+            }
         }
         
         elements.shuffleInPlace()
@@ -139,8 +145,12 @@ class MatchWordsViewController: BaseViewController {
             let originalText = firstRecord.isOriginal ? firstRecord.text : secondRecord.text
             let translatedText = !secondRecord.isOriginal ? secondRecord.text : firstRecord.text
             
-            let filteredArray = records.filter() { $0.text.lowercaseString == originalText.lowercaseString && $0.translateText.lowercaseString == translatedText.lowercaseString }
-            return (filteredArray.count > 0)
+            if let recordsArray: [Word] = fetchedResultsController?.fetchedObjects as? Array<Word> {
+                let filteredArray = recordsArray.filter() { $0.russian?.lowercaseString == originalText.lowercaseString && $0.polish?.lowercaseString == translatedText.lowercaseString }
+                return (filteredArray.count > 0)
+            } else {
+                return false
+            }
         } else {
             return false
         }

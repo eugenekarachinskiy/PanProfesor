@@ -35,9 +35,9 @@ class MemoryWordsViewController: BaseViewController {
     
     let timeInterval = 5.0
     let itemsCount = 5
-    var loops = 0
     let loopsLimit = 2
     
+    var loops = 0
     var elements: [RecordStruct] = [];
     var selectedIndexPaths: [NSIndexPath] = [];
     var correctedIndexPaths: [NSIndexPath] = [];
