@@ -546,6 +546,7 @@
                         <segue destination="BYZ-38-t0r" kind="push" identifier="trueOrFalseSegueIdentifier" id="qfB-pG-3PK"/>
                         <segue destination="h5o-ih-LqR" kind="push" identifier="makePairSegueIdentifier" id="4bN-7p-Liy"/>
                         <segue destination="jGg-9B-V6C" kind="push" identifier="cardsSegueIdentifier" id="9AS-hA-u7I"/>
+                        <segue destination="aSw-gE-ifv" kind="push" identifier="traningCardsSegueIdentifier" id="4Hg-ul-Go8"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kFx-ym-bXN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -832,6 +833,115 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zoh-RD-p0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1572" y="1216"/>
+        </scene>
+        <!--Тренировачные карточки-->
+        <scene sceneID="pwa-q6-UFh">
+            <objects>
+                <viewController id="aSw-gE-ifv" customClass="TraningCardsViewController" customModule="PanProfesor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bV3-oc-UE3"/>
+                        <viewControllerLayoutGuide type="bottom" id="QNC-fE-ZD0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IUv-RF-TNg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="MQx-Gu-SPR">
+                                <rect key="frame" x="141" y="64" width="39" height="37"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.49019607840000001" green="0.30980392159999998" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="p7Q-mh-U14">
+                                <rect key="frame" x="0.0" y="109" width="320" height="459"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.36055715459999998" green="1" blue="0.19860197369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qEF-0U-txY">
+                                    <size key="itemSize" width="310" height="413"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cardIdentifier" id="cRd-uk-n6u" customClass="CardCollectionViewCell" customModule="PanProfesor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="23" width="310" height="413"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="310" height="413"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WjD-25-27O">
+                                                    <rect key="frame" x="35" y="15" width="240" height="146"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="146" id="Sr0-Xh-JND"/>
+                                                        <constraint firstAttribute="width" constant="240" id="edN-cn-tjO"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkz-er-nER">
+                                                    <rect key="frame" x="8" y="287" width="294" height="126"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgg-cX-ozg">
+                                                    <rect key="frame" x="8" y="161" width="294" height="126"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="lkz-er-nER" firstAttribute="trailing" secondItem="cRd-uk-n6u" secondAttribute="trailingMargin" id="1Z1-qM-KRs"/>
+                                            <constraint firstItem="Jgg-cX-ozg" firstAttribute="top" secondItem="WjD-25-27O" secondAttribute="bottom" id="Pth-3S-Pf9"/>
+                                            <constraint firstItem="WjD-25-27O" firstAttribute="top" secondItem="cRd-uk-n6u" secondAttribute="topMargin" constant="7" id="U12-MY-TgY"/>
+                                            <constraint firstAttribute="bottom" secondItem="lkz-er-nER" secondAttribute="bottom" id="Z78-mz-tqZ"/>
+                                            <constraint firstItem="WjD-25-27O" firstAttribute="centerX" secondItem="cRd-uk-n6u" secondAttribute="centerX" id="aYP-s4-Wn2"/>
+                                            <constraint firstItem="Jgg-cX-ozg" firstAttribute="leading" secondItem="cRd-uk-n6u" secondAttribute="leadingMargin" id="f3L-U2-0t6"/>
+                                            <constraint firstItem="lkz-er-nER" firstAttribute="top" secondItem="Jgg-cX-ozg" secondAttribute="bottom" id="o6q-0Y-TyN"/>
+                                            <constraint firstItem="lkz-er-nER" firstAttribute="leading" secondItem="cRd-uk-n6u" secondAttribute="leadingMargin" id="xIJ-B7-E20"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Jgg-cX-ozg" secondAttribute="trailing" id="yrO-bR-Z75"/>
+                                            <constraint firstItem="Jgg-cX-ozg" firstAttribute="height" secondItem="lkz-er-nER" secondAttribute="height" id="zbD-pr-S2t"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="WjD-25-27O" id="2MH-8e-eUU"/>
+                                            <outlet property="originalTextLabel" destination="lkz-er-nER" id="2Ue-Wa-frE"/>
+                                            <outlet property="translateTextLabel" destination="Jgg-cX-ozg" id="sgg-pC-7Qi"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="aSw-gE-ifv" id="qBx-Uk-p5c"/>
+                                    <outlet property="delegate" destination="aSw-gE-ifv" id="ySD-XX-C1p"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p7Q-mh-U14" firstAttribute="leading" secondItem="IUv-RF-TNg" secondAttribute="leading" id="6JJ-TQ-LJg"/>
+                            <constraint firstAttribute="trailing" secondItem="p7Q-mh-U14" secondAttribute="trailing" id="832-8l-xee"/>
+                            <constraint firstItem="QNC-fE-ZD0" firstAttribute="top" secondItem="p7Q-mh-U14" secondAttribute="bottom" id="HIE-ay-LCL"/>
+                            <constraint firstItem="p7Q-mh-U14" firstAttribute="top" secondItem="MQx-Gu-SPR" secondAttribute="bottom" constant="8" id="QMq-SM-3aG"/>
+                            <constraint firstItem="MQx-Gu-SPR" firstAttribute="centerX" secondItem="IUv-RF-TNg" secondAttribute="centerX" id="QwE-bx-Coi"/>
+                            <constraint firstItem="MQx-Gu-SPR" firstAttribute="top" secondItem="bV3-oc-UE3" secondAttribute="bottom" id="yQZ-oc-Zlk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Тренировачные карточки" id="tlz-eT-Idv"/>
+                    <connections>
+                        <outlet property="collectionView" destination="p7Q-mh-U14" id="zh4-9A-nO2"/>
+                        <outlet property="pageControl" destination="MQx-Gu-SPR" id="OAI-Fg-ndd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mGr-t8-qtB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="3875"/>
         </scene>
     </scenes>
     <resources>

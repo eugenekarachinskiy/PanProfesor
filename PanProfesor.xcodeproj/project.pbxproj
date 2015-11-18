@@ -30,6 +30,7 @@
 		44C931771BFCF8CB000AB742 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C931761BFCF8CB000AB742 /* CardsViewController.swift */; };
 		44C931791BFD02C1000AB742 /* SpeechHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C931781BFD02C1000AB742 /* SpeechHelper.swift */; };
 		44C9317B1BFD0332000AB742 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C9317A1BFD0332000AB742 /* AVFoundation.framework */; };
+		44C9317D1BFD066A000AB742 /* TraningCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C9317C1BFD066A000AB742 /* TraningCardsViewController.swift */; };
 		44D05BF91BFB3D1100F72723 /* Ciało.json in Resources */ = {isa = PBXBuildFile; fileRef = 44D05BF81BFB3D1100F72723 /* Ciało.json */; };
 		44D2058E1BFB89FF00B8BCAA /* Section+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D2058A1BFB89FF00B8BCAA /* Section+CoreDataProperties.swift */; };
 		44D2058F1BFB89FF00B8BCAA /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D2058B1BFB89FF00B8BCAA /* Section.swift */; };
@@ -66,6 +67,7 @@
 		44C931761BFCF8CB000AB742 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		44C931781BFD02C1000AB742 /* SpeechHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechHelper.swift; sourceTree = "<group>"; };
 		44C9317A1BFD0332000AB742 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		44C9317C1BFD066A000AB742 /* TraningCardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraningCardsViewController.swift; sourceTree = "<group>"; };
 		44D05BF81BFB3D1100F72723 /* Ciało.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Ciało.json"; sourceTree = "<group>"; };
 		44D2058A1BFB89FF00B8BCAA /* Section+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Section+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		44D2058B1BFB89FF00B8BCAA /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				449B7A231BFB9FC3004B645E /* ChooseSectionViewController.swift */,
 				449B7A271BFBA73C004B645E /* ChooseExamCollectionViewController.swift */,
 				44C931761BFCF8CB000AB742 /* CardsViewController.swift */,
+				44C9317C1BFD066A000AB742 /* TraningCardsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				44D2058F1BFB89FF00B8BCAA /* Section.swift in Sources */,
 				449B7A261BFBA3AD004B645E /* SectionCollectionViewCell.swift in Sources */,
 				441642B11BDA7B16000D011D /* MemoryCollectionViewCell.swift in Sources */,
+				44C9317D1BFD066A000AB742 /* TraningCardsViewController.swift in Sources */,
 				441474A31BE7884A005A4F54 /* ContentManager.swift in Sources */,
 				449B7A241BFB9FC3004B645E /* ChooseSectionViewController.swift in Sources */,
 				44A0C4F01BB6B29F0039490E /* DataBaseManager.swift in Sources */,
