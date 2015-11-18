@@ -23,4 +23,14 @@ class CardCollectionViewCell: UICollectionViewCell {
         translateTextLabel.text = word?.polish
     }
     
+    
+    func updateWithWord(word: Word) {
+        if let translatedText = word.polish {
+            imageView.image = UIImage(named: translatedText)
+        }
+        
+        originalTextLabel.text = word.russian
+        translateTextLabel.text = word.polish
+    }
+    
 }
