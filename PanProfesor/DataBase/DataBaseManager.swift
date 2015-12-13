@@ -62,13 +62,13 @@ class DataBaseManager {
             return
         }
         
-        context.persistentStoreCoordinator?.performBlockAndWait({ () -> Void in
+//        context.persistentStoreCoordinator?.performBlockAndWait({ () -> Void in
             do {
                 try context.save()
             } catch let error {
                 print("save context error \(error)")
             }
-        })
+//        })
     }
     
     func rollBack() {

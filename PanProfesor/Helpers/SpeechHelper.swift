@@ -12,7 +12,7 @@ import AVFoundation
 class SpeechHelper {
 
     let synthesizer = AVSpeechSynthesizer()
-    var rate: Float = 0.4
+    var rate: Float = 0.17
     
     class var defaultHelper: SpeechHelper {
         struct Static {

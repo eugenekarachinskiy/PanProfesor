@@ -102,14 +102,8 @@ class ChooseAudioTranslateViewController: BaseViewController {
     }
     
     func didFinish() {
-        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: { (action) -> Void in
-            self.dismissViewControllerAnimated(true, completion: nil)
-        })
-        
-        let alertController = UIAlertController(title: "Finish", message: "Finish", preferredStyle: UIAlertControllerStyle.Alert)
-        alertController.addAction(okAction)
-        
-        self.presentViewController(alertController, animated: true, completion: nil)
+        let alertView = UIAlertView(title: "Finish", message: "Finish", delegate: nil, cancelButtonTitle: "OK")
+        alertView.show()
     }
     
     func checkTranslateWord(indexPath: NSIndexPath) {

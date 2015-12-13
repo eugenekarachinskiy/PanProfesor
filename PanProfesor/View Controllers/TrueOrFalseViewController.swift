@@ -100,12 +100,8 @@ class TrueOrFalseViewController: BaseViewController {
     }
     
     func answeredFalsely() {
-        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel) { (action) -> Void in
-            self.dismissViewControllerAnimated(true, completion: nil)
-        }
-        let alert = UIAlertController(title: "Ответ неверный", message: "Ответ неверный", preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(okAction)
-        self.presentViewController(alert, animated: true, completion: nil)
+        let alertView = UIAlertView(title: "Ответ неверный", message: "Ответ неверный", delegate: nil, cancelButtonTitle: "OK")
+        alertView.show()
     }
     
     func setupData() {
@@ -157,14 +153,8 @@ class TrueOrFalseViewController: BaseViewController {
     func didFinish() {
         DataBaseManager.defaultManager.saveContext()
         
-        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: { (action) -> Void in
-            self.dismissViewControllerAnimated(true, completion: nil)
-        })
-        
-        let alertController = UIAlertController(title: "Finish", message: "Finish", preferredStyle: UIAlertControllerStyle.Alert)
-        alertController.addAction(okAction)
-        
-        self.presentViewController(alertController, animated: true, completion: nil)
+        let alertView = UIAlertView(title: "Finish", message: "Finish", delegate: nil, cancelButtonTitle: "OK")
+        alertView.show()
     }
 
     /*
