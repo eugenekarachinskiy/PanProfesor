@@ -1,0 +1,73 @@
+{
+    "title": "Twarz",
+    "words": [
+            {
+                "polish" : "włosy",
+                "russian": "волосы"
+            },
+            {
+                "polish" : "skóra",
+                "russian": "кожа"
+            },
+            {
+                "polish" : "czoło",
+                "russian": "лоб"
+            },
+            {
+                "polish" : "skroń",
+                "russian": "висок"
+            },
+            {
+                "polish" : "brew",
+                "russian": "бровь"
+            },
+            {
+                "polish" : "oko",
+                "russian": "глаз"
+            },
+            {
+                "polish" : "ucho",
+                "russian": "ухо"
+            },
+            {
+                "polish" : "nos",
+                "russian": "нос"
+            },
+            {
+                "polish" : "rzęsa",
+                "russian": "ресницы"
+            },
+            {
+                "polish" : "policzek",
+                "russian": "щека"
+            },
+            {
+                "polish" : "warga",
+                "russian": "губа"
+            },
+            {
+                "polish" : "nozdze",
+                "russian": "ноздря"
+            },
+            {
+                "polish" : "broda",
+                "russian": "подбородок"
+            },
+            {
+                "polish" : "usta",
+                "russian": "рот"
+            },
+            {
+                "polish" : "zmarszczka",
+                "russian": "морщина"
+            },
+            {
+                "polish" : "pieg",
+                "russian": "веснушка"
+            },
+            {
+                "polish" : "dołek",
+                "russian": "ямочка"
+            }
+    ]
+}

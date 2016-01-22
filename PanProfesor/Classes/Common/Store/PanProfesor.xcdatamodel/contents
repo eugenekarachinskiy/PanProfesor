@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Xcode 7.0">
+    <entity name="Section" representedClassName=".Section" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="words" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Word" inverseName="section" inverseEntity="Word" syncable="YES"/>
+    </entity>
+    <entity name="Word" representedClassName=".Word" syncable="YES">
+        <attribute name="polish" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="russian" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="used" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="section" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Section" inverseName="words" inverseEntity="Section" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Section" positionX="-1305" positionY="234" width="128" height="73"/>
+        <element name="Word" positionX="-1080" positionY="218" width="128" height="105"/>
+    </elements>
+</model>

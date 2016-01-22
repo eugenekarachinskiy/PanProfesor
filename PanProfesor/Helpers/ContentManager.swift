@@ -13,7 +13,7 @@ class ContentManager {
     let contentVersionKey = "contentVersionKey"
     let contentSubDirectoryTitle = "ContentData"
     let contentFilesExtension = "txt"
-    let dataBaseManager = DataBaseManager.defaultManager
+    let coreDataStore = CoreDataStorage()
     
     class var defaultManager: ContentManager {
         struct Static {
@@ -26,8 +26,7 @@ class ContentManager {
     func checkContent() {
         let contentLoaded = checkIsAlreadyLoaded()
         if contentLoaded == false {
-            let dbManager = DataBaseManager.defaultManager
-            dbManager.cleanDataBase()
+//            coreDataStore.cleanDataBase()
             loadContent()
         }
     }
@@ -54,7 +53,7 @@ class ContentManager {
             if let data = NSData(contentsOfURL: url) {
                 do {
                     if let json = try NSJSONSerialization .JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary {
-                        dataBaseManager.addNewSectionWithWords(json)
+                        coreDataStore.addNewSectionWithWords(json)
                     }
                 } catch let error {
                     print("error loadContent \(error)")
