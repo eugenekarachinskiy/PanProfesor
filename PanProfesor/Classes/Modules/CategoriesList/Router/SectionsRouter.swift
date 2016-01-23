@@ -9,12 +9,16 @@
 import Foundation
 
 class SectionsRouter {
+    let alphabetSegueIdentifier = "alphabetSegueIdentifier"
     
+    weak var transitionHandler: ViperModuleTransitionHandler?
 }
 
 extension SectionsRouter: SectionsRouterInput {
     func presentAlphabetController() {
-        
+        self.transitionHandler?.openModule(alphabetSegueIdentifier, configurationBlock: { (input) -> (ViperBaseModuleOutput?) in
+            return nil
+        })
     }
     
     func presentSectionContollerForSection(section: SectionDto) {

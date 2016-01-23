@@ -8,13 +8,12 @@
 
 import UIKit
 
-class SectionsViewController: UIViewController {
+class SectionsViewController: ViperBaseTransitionViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    
+
     var output: SectionsViewOutput?
     var data: [SectionDto]?
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,14 +30,12 @@ class SectionsViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         super.prepareForSegue(segue, sender: sender)
         
-        guard let configurationHolder = segue.destinationViewController as? UIViewController,
+        guard let configurationHolder = segue.destinationViewController as? ViperBaseTransitionViewController,
               let segueInfo = sender as? SegueInfo  else {
             return
         }
-        
-//        segueInfo.configurationBlock(configurationHolder)
-        
-        
+
+        segueInfo.configurationBlock?(input: configurationHolder.moduleInput)
     }
     
     
@@ -49,3 +46,41 @@ extension SectionsViewController: SectionsViewInput {
         data = sections
     }
 }
+
+extension SectionsViewController: UICollectionViewDataSource {
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if let count = data?.count {
+            return count
+        } else {
+            return 0
+        }
+    }
+    
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cellIdentifier = "sectionCellIdentifier"
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath) as! SectionCollectionViewCell
+        
+        if let fetchedObjects = data {
+            let section = fetchedObjects[indexPath.row]
+            cell.textLabel.text = section.title
+        }
+        
+        cell.backgroundColor = UIColor.redColor()
+        return cell
+    }
+    
+}
+
+extension SectionsViewController: UICollectionViewDelegate {
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+       
+    }
+}
+
+
+
+

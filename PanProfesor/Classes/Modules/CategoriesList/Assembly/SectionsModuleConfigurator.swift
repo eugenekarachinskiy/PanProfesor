@@ -19,6 +19,7 @@ class SectionsModuleConfigurator: BaseModuleConfiguratorProtocol {
     
     private func configure(viewController: SectionsViewController) {
         let router = SectionsRouter()
+        router.transitionHandler = viewController
         
         let presenter = SectionsPresenter()
         presenter.view = viewController
@@ -30,5 +31,4 @@ class SectionsModuleConfigurator: BaseModuleConfiguratorProtocol {
         presenter.interactor = interactor
         viewController.output = presenter
     }
-    
 }

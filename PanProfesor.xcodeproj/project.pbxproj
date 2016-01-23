@@ -10,6 +10,25 @@
 		44115CF61BFD25C200371CEE /* AlphabetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44115CF51BFD25C200371CEE /* AlphabetCollectionViewCell.swift */; };
 		441642B11BDA7B16000D011D /* MemoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441642B01BDA7B16000D011D /* MemoryCollectionViewCell.swift */; };
 		44173BD01BFE487E00D2B02D /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44173BCF1BFE487E00D2B02D /* logo.jpg */; };
+		4451592F1C53AA5E0075722B /* ViperBaseTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451592E1C53AA5E0075722B /* ViperBaseTransitionViewController.swift */; };
+		445159371C53ACDE0075722B /* AlphabetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445159361C53ACDE0075722B /* AlphabetViewController.swift */; };
+		445159391C53AD500075722B /* AlphabetViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445159381C53AD500075722B /* AlphabetViewInput.swift */; };
+		4451593B1C53AD700075722B /* AlphabetViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451593A1C53AD700075722B /* AlphabetViewOutput.swift */; };
+		4451593D1C53AD9D0075722B /* AlphabetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451593C1C53AD9D0075722B /* AlphabetRouter.swift */; };
+		4451593F1C53ADB90075722B /* AlphabetRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451593E1C53ADB90075722B /* AlphabetRouterInput.swift */; };
+		445159411C53AE170075722B /* AlphabetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445159401C53AE170075722B /* AlphabetPresenter.swift */; };
+		445159431C53AE350075722B /* AlphabetModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445159421C53AE350075722B /* AlphabetModuleInput.swift */; };
+		445159451C53AE5C0075722B /* AlphabetModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445159441C53AE5C0075722B /* AlphabetModuleOutput.swift */; };
+		445159471C53AEAF0075722B /* AlphabetInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445159461C53AEAF0075722B /* AlphabetInteractor.swift */; };
+		445159491C53AED50075722B /* AlphabetInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445159481C53AED50075722B /* AlphabetInteractorInput.swift */; };
+		4451594B1C53AEED0075722B /* AlphabetInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451594A1C53AEED0075722B /* AlphabetInteractorOutput.swift */; };
+		4451594D1C53AF110075722B /* AlphabetModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451594C1C53AF110075722B /* AlphabetModuleAssembly.swift */; };
+		4451594F1C53B8BC0075722B /* AlphabetsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451594E1C53B8BC0075722B /* AlphabetsService.swift */; };
+		445159511C53BDFE0075722B /* PolishAlphabetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445159501C53BDFE0075722B /* PolishAlphabetService.swift */; };
+		445159531C53C2F60075722B /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445159521C53C2F60075722B /* SpeechService.swift */; };
+		445CBA971C539326000453EB /* SectionsModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445CBA961C539326000453EB /* SectionsModuleOutput.swift */; };
+		445CBA991C5393D4000453EB /* ViperBaseModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445CBA981C5393D4000453EB /* ViperBaseModuleInput.swift */; };
+		445CBA9B1C5393DF000453EB /* ViperBaseModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445CBA9A1C5393DF000453EB /* ViperBaseModuleOutput.swift */; };
 		445D7E8E1C5242D200D7D4F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445D7E8C1C5242D200D7D4F3 /* AppDelegate.swift */; };
 		445D7E8F1C5242D200D7D4F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445D7E8D1C5242D200D7D4F3 /* ViewController.swift */; };
 		44639B101C52BE3B004AC539 /* SectionsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44639B041C52BE3B004AC539 /* SectionsDataManager.swift */; };
@@ -61,6 +80,25 @@
 		441474A21BE7884A005A4F54 /* ContentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentManager.swift; sourceTree = "<group>"; };
 		441642B01BDA7B16000D011D /* MemoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		44173BCF1BFE487E00D2B02D /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		4451592E1C53AA5E0075722B /* ViperBaseTransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperBaseTransitionViewController.swift; sourceTree = "<group>"; };
+		445159361C53ACDE0075722B /* AlphabetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetViewController.swift; sourceTree = "<group>"; };
+		445159381C53AD500075722B /* AlphabetViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetViewInput.swift; sourceTree = "<group>"; };
+		4451593A1C53AD700075722B /* AlphabetViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetViewOutput.swift; sourceTree = "<group>"; };
+		4451593C1C53AD9D0075722B /* AlphabetRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetRouter.swift; sourceTree = "<group>"; };
+		4451593E1C53ADB90075722B /* AlphabetRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetRouterInput.swift; sourceTree = "<group>"; };
+		445159401C53AE170075722B /* AlphabetPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetPresenter.swift; sourceTree = "<group>"; };
+		445159421C53AE350075722B /* AlphabetModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetModuleInput.swift; sourceTree = "<group>"; };
+		445159441C53AE5C0075722B /* AlphabetModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetModuleOutput.swift; sourceTree = "<group>"; };
+		445159461C53AEAF0075722B /* AlphabetInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetInteractor.swift; sourceTree = "<group>"; };
+		445159481C53AED50075722B /* AlphabetInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetInteractorInput.swift; sourceTree = "<group>"; };
+		4451594A1C53AEED0075722B /* AlphabetInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetInteractorOutput.swift; sourceTree = "<group>"; };
+		4451594C1C53AF110075722B /* AlphabetModuleAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetModuleAssembly.swift; sourceTree = "<group>"; };
+		4451594E1C53B8BC0075722B /* AlphabetsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetsService.swift; sourceTree = "<group>"; };
+		445159501C53BDFE0075722B /* PolishAlphabetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolishAlphabetService.swift; sourceTree = "<group>"; };
+		445159521C53C2F60075722B /* SpeechService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		445CBA961C539326000453EB /* SectionsModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsModuleOutput.swift; sourceTree = "<group>"; };
+		445CBA981C5393D4000453EB /* ViperBaseModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperBaseModuleInput.swift; sourceTree = "<group>"; };
+		445CBA9A1C5393DF000453EB /* ViperBaseModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperBaseModuleOutput.swift; sourceTree = "<group>"; };
 		445D7E8C1C5242D200D7D4F3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		445D7E8D1C5242D200D7D4F3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		44639B041C52BE3B004AC539 /* SectionsDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsDataManager.swift; sourceTree = "<group>"; };
@@ -131,6 +169,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		445159301C53AC690075722B /* Alphabet */ = {
+			isa = PBXGroup;
+			children = (
+				445159311C53ACAD0075722B /* Assembly */,
+				445159321C53ACAD0075722B /* Interactor */,
+				445159331C53ACAD0075722B /* Presenter */,
+				445159341C53ACAD0075722B /* Router */,
+				445159351C53ACAD0075722B /* View */,
+			);
+			path = Alphabet;
+			sourceTree = "<group>";
+		};
+		445159311C53ACAD0075722B /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				4451594C1C53AF110075722B /* AlphabetModuleAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		445159321C53ACAD0075722B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				445159461C53AEAF0075722B /* AlphabetInteractor.swift */,
+				445159481C53AED50075722B /* AlphabetInteractorInput.swift */,
+				4451594A1C53AEED0075722B /* AlphabetInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		445159331C53ACAD0075722B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				445159401C53AE170075722B /* AlphabetPresenter.swift */,
+				445159421C53AE350075722B /* AlphabetModuleInput.swift */,
+				445159441C53AE5C0075722B /* AlphabetModuleOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		445159341C53ACAD0075722B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4451593C1C53AD9D0075722B /* AlphabetRouter.swift */,
+				4451593E1C53ADB90075722B /* AlphabetRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		445159351C53ACAD0075722B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				445159361C53ACDE0075722B /* AlphabetViewController.swift */,
+				445159381C53AD500075722B /* AlphabetViewInput.swift */,
+				4451593A1C53AD700075722B /* AlphabetViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		445D7E851C52410600D7D4F3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +256,7 @@
 		445D7E871C52423800D7D4F3 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4451592E1C53AA5E0075722B /* ViperBaseTransitionViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -192,6 +290,7 @@
 		445D7E8B1C52423800D7D4F3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				445159301C53AC690075722B /* Alphabet */,
 				445D7E911C52449100D7D4F3 /* CategoriesList */,
 			);
 			path = Modules;
@@ -224,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				44639B091C52BE3B004AC539 /* SectionsModuleInput.swift */,
+				445CBA961C539326000453EB /* SectionsModuleOutput.swift */,
 				44639B0A1C52BE3B004AC539 /* SectionsPresenter.swift */,
 			);
 			path = Presenter;
@@ -252,6 +352,9 @@
 			isa = PBXGroup;
 			children = (
 				44639B1E1C52CA8A004AC539 /* SectionsService.swift */,
+				4451594E1C53B8BC0075722B /* AlphabetsService.swift */,
+				445159501C53BDFE0075722B /* PolishAlphabetService.swift */,
+				445159521C53C2F60075722B /* SpeechService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -294,8 +397,8 @@
 				44A0C4E31BB6AD7E0039490E /* View Controllers */,
 				44A0C4D31BB6ACB10039490E /* Main.storyboard */,
 				44A0C4D61BB6ACB10039490E /* Ciało.xcassets */,
-				44173BCF1BFE487E00D2B02D /* logo.jpg */,
 				44FA757B1BFDBBA600B8FF0E /* Twarz.xcassets */,
+				44173BCF1BFE487E00D2B02D /* logo.jpg */,
 				44A0C4D81BB6ACB10039490E /* LaunchScreen.storyboard */,
 				44A0C4DB1BB6ACB10039490E /* Info.plist */,
 			);
@@ -355,6 +458,8 @@
 			children = (
 				44BB36C21C52E9AC002267CB /* BaseModuleConfiguratorProtocol.swift */,
 				44BB36C41C52EC58002267CB /* ViperModuleTransitionHandler.swift */,
+				445CBA981C5393D4000453EB /* ViperBaseModuleInput.swift */,
+				445CBA9A1C5393DF000453EB /* ViperBaseModuleOutput.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -462,36 +567,55 @@
 				44BB36C31C52E9AC002267CB /* BaseModuleConfiguratorProtocol.swift in Sources */,
 				44639B3E1C52D631004AC539 /* Word+CoreDataProperties.swift in Sources */,
 				44BB36BB1C52DF6D002267CB /* ContentManager.swift in Sources */,
+				4451592F1C53AA5E0075722B /* ViperBaseTransitionViewController.swift in Sources */,
+				445159451C53AE5C0075722B /* AlphabetModuleOutput.swift in Sources */,
 				441642B11BDA7B16000D011D /* MemoryCollectionViewCell.swift in Sources */,
 				44639B211C52CA99004AC539 /* CoreDataStorage.swift in Sources */,
 				44BB36C51C52EC58002267CB /* ViperModuleTransitionHandler.swift in Sources */,
 				44639B1C1C52BE75004AC539 /* SectionsRouterInput.swift in Sources */,
+				4451594D1C53AF110075722B /* AlphabetModuleAssembly.swift in Sources */,
 				44BB36C81C52EE57002267CB /* SegueInfo.swift in Sources */,
+				445159411C53AE170075722B /* AlphabetPresenter.swift in Sources */,
 				44BB36BA1C52D6BC002267CB /* WordDto.swift in Sources */,
 				44639B341C52D0EA004AC539 /* SectionDto.swift in Sources */,
+				445159371C53ACDE0075722B /* AlphabetViewController.swift in Sources */,
 				44D29B911C52F18A002351C6 /* SectionsModuleInitializer.swift in Sources */,
 				44639B311C52D016004AC539 /* Section+CoreDataProperties.swift in Sources */,
 				44115CF61BFD25C200371CEE /* AlphabetCollectionViewCell.swift in Sources */,
+				4451594F1C53B8BC0075722B /* AlphabetsService.swift in Sources */,
 				44BB36C01C52E3AF002267CB /* SectionsModuleConfigurator.swift in Sources */,
+				4451594B1C53AEED0075722B /* AlphabetInteractorOutput.swift in Sources */,
+				4451593D1C53AD9D0075722B /* AlphabetRouter.swift in Sources */,
 				44C931811BFD15B6000AB742 /* TranslateCollectionViewCell.swift in Sources */,
 				44639B101C52BE3B004AC539 /* SectionsDataManager.swift in Sources */,
 				44639B121C52BE3B004AC539 /* SectionsInteractorInput.swift in Sources */,
 				44639B181C52BE3B004AC539 /* SectionsViewOutput.swift in Sources */,
+				445CBA9B1C5393DF000453EB /* ViperBaseModuleOutput.swift in Sources */,
 				44639B321C52D016004AC539 /* Section.swift in Sources */,
 				44639B161C52BE3B004AC539 /* SectionsViewController.swift in Sources */,
 				44639B3D1C52D62E004AC539 /* Word.swift in Sources */,
 				44639B1B1C52BE75004AC539 /* SectionsRouter.swift in Sources */,
+				445CBA971C539326000453EB /* SectionsModuleOutput.swift in Sources */,
 				44639B111C52BE3B004AC539 /* SectionsInteractor.swift in Sources */,
 				44EE3E8A1BD7D6B000F0E640 /* LetterCollectionViewCell.swift in Sources */,
 				44639B141C52BE3B004AC539 /* SectionsModuleInput.swift in Sources */,
+				445159531C53C2F60075722B /* SpeechService.swift in Sources */,
+				445CBA991C5393D4000453EB /* ViperBaseModuleInput.swift in Sources */,
 				44639B151C52BE3B004AC539 /* SectionsPresenter.swift in Sources */,
 				44EE3E861BD7BCDF00F0E640 /* CardCollectionViewCell.swift in Sources */,
 				44639B171C52BE3B004AC539 /* SectionsViewInput.swift in Sources */,
+				4451593F1C53ADB90075722B /* AlphabetRouterInput.swift in Sources */,
 				44639B231C52CEC6004AC539 /* PanProfesor.xcdatamodel in Sources */,
 				449B7A2A1BFBAAA8004B645E /* ExamCollectionViewCell.swift in Sources */,
 				44EE3E881BD7D65600F0E640 /* Extensions.swift in Sources */,
+				445159431C53AE350075722B /* AlphabetModuleInput.swift in Sources */,
+				445159511C53BDFE0075722B /* PolishAlphabetService.swift in Sources */,
+				445159491C53AED50075722B /* AlphabetInteractorInput.swift in Sources */,
+				4451593B1C53AD700075722B /* AlphabetViewOutput.swift in Sources */,
+				445159391C53AD500075722B /* AlphabetViewInput.swift in Sources */,
 				44639B131C52BE3B004AC539 /* SectionsIteractorOutput.swift in Sources */,
 				44C931791BFD02C1000AB742 /* SpeechHelper.swift in Sources */,
+				445159471C53AEAF0075722B /* AlphabetInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

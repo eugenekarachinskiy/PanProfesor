@@ -2,21 +2,34 @@
 //  AlphabetViewController.swift
 //  PanProfesor
 //
-//  Created by Eugene Karachinskiy on 11/19/15.
-//  Copyright © 2015 Eugene Karachinskiy. All rights reserved.
+//  Created by Eugene Karachinskiy on 1/23/16.
+//  Copyright © 2016 Eugene Karachinskiy. All rights reserved.
 //
 
 import UIKit
 
-class AlphabetViewController: UIViewController {
-    
+class AlphabetViewController: ViperBaseTransitionViewController {
+
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    let lowerCaseLetters: [String] = ["a", "ą", "b", "c", "ć", "d", "e", "ę", "f", "g", "h", "i", "j", "k", "l", "ł", "m", "n", "ń", "o", "ó", "p", "r", "s", "ś", "t", "u", "w", "y", "z", "ź", "ż"]
-    let upperCaseLetters: [String] = ["A", "Ą", "B", "C", "Ć", "D", "E", "Ę", "F", "G", "H", "I", "J", "K", "L", "Ł", "M", "N", "Ń", "O", "Ó", "P", "R", "S", "Ś", "T", "U", "W", "Y", "Z", "Ź", "Ż"]
-    
+   
     let rowCount = 5
+    
+    var alphabet: [AlphabetCharacter] = [AlphabetCharacter]()
+    var output: AlphabetViewOutput?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        output?.setupView()
+    }
 }
+
+extension AlphabetViewController: AlphabetViewInput {
+    func showAlphabet(alphabet: [AlphabetCharacter]) {
+        self.alphabet = alphabet
+    }
+}
+
 
 extension AlphabetViewController: UICollectionViewDataSource {
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -24,13 +37,13 @@ extension AlphabetViewController: UICollectionViewDataSource {
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return lowerCaseLetters.count
+        return alphabet.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cellIdentifier = "alphabetCellIdentifier"
         let collectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath) as! AlphabetCollectionViewCell
-        collectionViewCell.textLabel.text = "\(upperCaseLetters[indexPath.row])\(lowerCaseLetters[indexPath.row])"
+        collectionViewCell.textLabel.text = alphabet[indexPath.row].title()
         
         return collectionViewCell
     }
@@ -38,7 +51,7 @@ extension AlphabetViewController: UICollectionViewDataSource {
 
 extension AlphabetViewController: UICollectionViewDelegate {
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        SpeechHelper.defaultHelper.speake(lowerCaseLetters[indexPath.row])
+        output?.alphabetCharacterDidSelect(alphabet[indexPath.row])
     }
 }
 
@@ -49,5 +62,3 @@ extension AlphabetViewController: UICollectionViewDelegateFlowLayout {
         return CGSizeMake(width, width)
     }
 }
-
-

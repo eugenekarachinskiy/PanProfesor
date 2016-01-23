@@ -579,7 +579,7 @@
                     <connections>
                         <outlet property="collectionView" destination="DK5-SK-uPg" id="M1e-We-Bkz"/>
                         <segue destination="lub-OI-gld" kind="push" identifier="chooseExamSegue" id="beO-ss-3AC"/>
-                        <segue destination="pdL-Se-qxc" kind="push" id="Ree-2I-gcc"/>
+                        <segue destination="pdL-Se-qxc" kind="push" identifier="alphabetSegueIdentifier" id="Ree-2I-gcc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gcc-lk-JyA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -591,7 +591,7 @@
             </objects>
             <point key="canvasLocation" x="-1040" y="1216"/>
         </scene>
-        <!--Алфавит-->
+        <!--View Controller-->
         <scene sceneID="2oM-do-orx">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="pdL-Se-qxc" customClass="AlphabetViewController" customModule="PanProfesor" customModuleProvider="target" sceneMemberID="viewController">
@@ -661,6 +661,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yH6-Ix-cXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="tBZ-QX-uDv" customClass="AlphabetModuleAssembly" customModule="PanProfesor" customModuleProvider="target">
+                    <connections>
+                        <outlet property="viewController" destination="pdL-Se-qxc" id="UVU-TZ-aXK"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="-1040" y="531"/>
         </scene>

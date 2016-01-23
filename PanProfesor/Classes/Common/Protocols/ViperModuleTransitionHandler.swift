@@ -9,9 +9,12 @@
 import Foundation
 import UIKit
 
-typealias ConfigurationBlock = () -> ()
+typealias ConfigurationBlock = (input: ViperBaseModuleInput?) -> (ViperBaseModuleOutput?)
 
-protocol ViperModuleTransitionHandler {
+protocol ViperModuleTransitionHandler: class {
+    
+    weak var moduleInput: ViperBaseModuleInput? { get set }
+    
     func openModule(segueIdentifier: String, configurationBlock: ConfigurationBlock)
     func closeModule()
 }
@@ -23,6 +26,9 @@ extension ViperModuleTransitionHandler where Self: UIViewController {
         segueInfo.configurationBlock = configurationBlock
         
         performSegueWithIdentifier(segueIdentifier, sender: segueInfo)
+    }
+    
+    func closeModule() {
         
     }
     
