@@ -44,7 +44,6 @@
 		44639B1C1C52BE75004AC539 /* SectionsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44639B1A1C52BE75004AC539 /* SectionsRouterInput.swift */; };
 		44639B1F1C52CA8A004AC539 /* SectionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44639B1E1C52CA8A004AC539 /* SectionsService.swift */; };
 		44639B211C52CA99004AC539 /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44639B201C52CA99004AC539 /* CoreDataStorage.swift */; };
-		44639B231C52CEC6004AC539 /* PanProfesor.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 44639B221C52CEC6004AC539 /* PanProfesor.xcdatamodel */; };
 		44639B311C52D016004AC539 /* Section+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44639B2F1C52D016004AC539 /* Section+CoreDataProperties.swift */; };
 		44639B321C52D016004AC539 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44639B301C52D016004AC539 /* Section.swift */; };
 		44639B341C52D0EA004AC539 /* SectionDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44639B331C52D0EA004AC539 /* SectionDto.swift */; };
@@ -59,8 +58,8 @@
 		44BB36BA1C52D6BC002267CB /* WordDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB36B91C52D6BC002267CB /* WordDto.swift */; };
 		44BB36BB1C52DF6D002267CB /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441474A21BE7884A005A4F54 /* ContentManager.swift */; };
 		44BB36C01C52E3AF002267CB /* SectionsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB36BF1C52E3AF002267CB /* SectionsModuleConfigurator.swift */; };
-		44BB36C31C52E9AC002267CB /* BaseModuleConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB36C21C52E9AC002267CB /* BaseModuleConfiguratorProtocol.swift */; };
-		44BB36C51C52EC58002267CB /* ViperModuleTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB36C41C52EC58002267CB /* ViperModuleTransitionHandler.swift */; };
+		44BB36C31C52E9AC002267CB /* ViperBaseModuleConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB36C21C52E9AC002267CB /* ViperBaseModuleConfiguratorProtocol.swift */; };
+		44BB36C51C52EC58002267CB /* ViperModuleTransitionHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB36C41C52EC58002267CB /* ViperModuleTransitionHandlerProtocol.swift */; };
 		44BB36C81C52EE57002267CB /* SegueInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB36C71C52EE56002267CB /* SegueInfo.swift */; };
 		44C931791BFD02C1000AB742 /* SpeechHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C931781BFD02C1000AB742 /* SpeechHelper.swift */; };
 		44C9317B1BFD0332000AB742 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C9317A1BFD0332000AB742 /* AVFoundation.framework */; };
@@ -70,6 +69,7 @@
 		44EE3E861BD7BCDF00F0E640 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE3E851BD7BCDF00F0E640 /* CardCollectionViewCell.swift */; };
 		44EE3E881BD7D65600F0E640 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE3E871BD7D65600F0E640 /* Extensions.swift */; };
 		44EE3E8A1BD7D6B000F0E640 /* LetterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE3E891BD7D6B000F0E640 /* LetterCollectionViewCell.swift */; };
+		44F4B1521C55350D002EA954 /* PanProfesor.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 44639B221C52CEC6004AC539 /* PanProfesor.xcdatamodel */; };
 		44FA757A1BFDBA6200B8FF0E /* Twarz.json in Resources */ = {isa = PBXBuildFile; fileRef = 44FA75791BFDBA6200B8FF0E /* Twarz.json */; };
 		44FA757C1BFDBBA600B8FF0E /* Twarz.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44FA757B1BFDBBA600B8FF0E /* Twarz.xcassets */; };
 /* End PBXBuildFile section */
@@ -137,8 +137,8 @@
 		44A0C4F11BB6B2CF0039490E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		44BB36B91C52D6BC002267CB /* WordDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordDto.swift; sourceTree = "<group>"; };
 		44BB36BF1C52E3AF002267CB /* SectionsModuleConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsModuleConfigurator.swift; sourceTree = "<group>"; };
-		44BB36C21C52E9AC002267CB /* BaseModuleConfiguratorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModuleConfiguratorProtocol.swift; sourceTree = "<group>"; };
-		44BB36C41C52EC58002267CB /* ViperModuleTransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModuleTransitionHandler.swift; sourceTree = "<group>"; };
+		44BB36C21C52E9AC002267CB /* ViperBaseModuleConfiguratorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperBaseModuleConfiguratorProtocol.swift; sourceTree = "<group>"; };
+		44BB36C41C52EC58002267CB /* ViperModuleTransitionHandlerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModuleTransitionHandlerProtocol.swift; sourceTree = "<group>"; };
 		44BB36C71C52EE56002267CB /* SegueInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueInfo.swift; sourceTree = "<group>"; };
 		44C931761BFCF8CB000AB742 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		44C931781BFD02C1000AB742 /* SpeechHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechHelper.swift; sourceTree = "<group>"; };
@@ -456,8 +456,8 @@
 		44BB36C11C52E986002267CB /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				44BB36C21C52E9AC002267CB /* BaseModuleConfiguratorProtocol.swift */,
-				44BB36C41C52EC58002267CB /* ViperModuleTransitionHandler.swift */,
+				44BB36C21C52E9AC002267CB /* ViperBaseModuleConfiguratorProtocol.swift */,
+				44BB36C41C52EC58002267CB /* ViperModuleTransitionHandlerProtocol.swift */,
 				445CBA981C5393D4000453EB /* ViperBaseModuleInput.swift */,
 				445CBA9A1C5393DF000453EB /* ViperBaseModuleOutput.swift */,
 			);
@@ -562,16 +562,17 @@
 			files = (
 				445D7E8F1C5242D200D7D4F3 /* ViewController.swift in Sources */,
 				449B7A261BFBA3AD004B645E /* SectionCollectionViewCell.swift in Sources */,
+				44F4B1521C55350D002EA954 /* PanProfesor.xcdatamodel in Sources */,
 				44639B1F1C52CA8A004AC539 /* SectionsService.swift in Sources */,
 				445D7E8E1C5242D200D7D4F3 /* AppDelegate.swift in Sources */,
-				44BB36C31C52E9AC002267CB /* BaseModuleConfiguratorProtocol.swift in Sources */,
+				44BB36C31C52E9AC002267CB /* ViperBaseModuleConfiguratorProtocol.swift in Sources */,
 				44639B3E1C52D631004AC539 /* Word+CoreDataProperties.swift in Sources */,
 				44BB36BB1C52DF6D002267CB /* ContentManager.swift in Sources */,
 				4451592F1C53AA5E0075722B /* ViperBaseTransitionViewController.swift in Sources */,
 				445159451C53AE5C0075722B /* AlphabetModuleOutput.swift in Sources */,
 				441642B11BDA7B16000D011D /* MemoryCollectionViewCell.swift in Sources */,
 				44639B211C52CA99004AC539 /* CoreDataStorage.swift in Sources */,
-				44BB36C51C52EC58002267CB /* ViperModuleTransitionHandler.swift in Sources */,
+				44BB36C51C52EC58002267CB /* ViperModuleTransitionHandlerProtocol.swift in Sources */,
 				44639B1C1C52BE75004AC539 /* SectionsRouterInput.swift in Sources */,
 				4451594D1C53AF110075722B /* AlphabetModuleAssembly.swift in Sources */,
 				44BB36C81C52EE57002267CB /* SegueInfo.swift in Sources */,
@@ -605,7 +606,6 @@
 				44EE3E861BD7BCDF00F0E640 /* CardCollectionViewCell.swift in Sources */,
 				44639B171C52BE3B004AC539 /* SectionsViewInput.swift in Sources */,
 				4451593F1C53ADB90075722B /* AlphabetRouterInput.swift in Sources */,
-				44639B231C52CEC6004AC539 /* PanProfesor.xcdatamodel in Sources */,
 				449B7A2A1BFBAAA8004B645E /* ExamCollectionViewCell.swift in Sources */,
 				44EE3E881BD7D65600F0E640 /* Extensions.swift in Sources */,
 				445159431C53AE350075722B /* AlphabetModuleInput.swift in Sources */,

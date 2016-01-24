@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-protocol BaseModuleConfiguratorProtocol {
-    
+protocol ViperBaseModuleConfiguratorProtocol {
+    func configureModuleForViewInput(viewInput: UIViewController)
 }

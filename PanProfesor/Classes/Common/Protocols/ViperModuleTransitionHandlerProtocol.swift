@@ -11,15 +11,15 @@ import UIKit
 
 typealias ConfigurationBlock = (input: ViperBaseModuleInput?) -> (ViperBaseModuleOutput?)
 
-protocol ViperModuleTransitionHandler: class {
+protocol ViperModuleTransitionHandlerProtocol: class {
     
     weak var moduleInput: ViperBaseModuleInput? { get set }
     
     func openModule(segueIdentifier: String, configurationBlock: ConfigurationBlock)
-    func closeModule()
+    func closeModule(animated: Bool)
 }
 
-extension ViperModuleTransitionHandler where Self: UIViewController {
+extension ViperModuleTransitionHandlerProtocol where Self: UIViewController {
     
     func openModule(segueIdentifier: String, configurationBlock: ConfigurationBlock) {
         let segueInfo = SegueInfo()
@@ -28,8 +28,8 @@ extension ViperModuleTransitionHandler where Self: UIViewController {
         performSegueWithIdentifier(segueIdentifier, sender: segueInfo)
     }
     
-    func closeModule() {
-        
+    func closeModule(animated: Bool) {
+        navigationController?.popViewControllerAnimated(animated)
     }
     
 }

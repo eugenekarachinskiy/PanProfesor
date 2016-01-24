@@ -28,11 +28,7 @@ class CoreDataStorage {
     }()
     
     lazy var managedObjectModel: NSManagedObjectModel? = {
-        guard let modelURL = NSBundle.mainBundle().URLForResource(CoreDataStorage.managedObjectModelFileName, withExtension: CoreDataStorage.managedObjectModelExtension) else {
-            return nil
-        }
-        
-        return NSManagedObjectModel(contentsOfURL: modelURL)
+        return NSManagedObjectModel.mergedModelFromBundles(nil)
     }()
     
     lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator? = {

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ViperBaseTransitionViewController: UIViewController, ViperModuleTransitionHandler {
+class ViperBaseTransitionViewController: UIViewController, ViperModuleTransitionHandlerProtocol {
     
     weak var moduleInput: ViperBaseModuleInput? // reference to presenter
 }

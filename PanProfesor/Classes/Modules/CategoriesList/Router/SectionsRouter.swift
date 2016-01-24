@@ -11,7 +11,7 @@ import Foundation
 class SectionsRouter {
     let alphabetSegueIdentifier = "alphabetSegueIdentifier"
     
-    weak var transitionHandler: ViperModuleTransitionHandler?
+    weak var transitionHandler: ViperModuleTransitionHandlerProtocol?
 }
 
 extension SectionsRouter: SectionsRouterInput {

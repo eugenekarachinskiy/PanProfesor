@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class SectionsModuleConfigurator: BaseModuleConfiguratorProtocol {
+class SectionsModuleConfigurator: ViperBaseModuleConfiguratorProtocol {
     
     func configureModuleForViewInput(viewInput: UIViewController) {
         if let sectionsViewController = viewInput as? SectionsViewController {
@@ -17,7 +17,7 @@ class SectionsModuleConfigurator: BaseModuleConfiguratorProtocol {
         }
     }
     
-    private func configure(viewController: SectionsViewController) {
+    func configure(viewController: SectionsViewController) {
         let router = SectionsRouter()
         router.transitionHandler = viewController
         

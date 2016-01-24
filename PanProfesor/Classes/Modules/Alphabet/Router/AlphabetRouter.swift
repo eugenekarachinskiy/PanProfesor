@@ -9,7 +9,7 @@
 import Foundation
 
 class AlphabetRouter {
-    weak var transitionHandler: ViperModuleTransitionHandler?
+    weak var transitionHandler: ViperModuleTransitionHandlerProtocol?
 }
 
 extension AlphabetRouter: AlphabetRouterInput {
