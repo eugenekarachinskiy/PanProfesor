@@ -15,13 +15,13 @@ protocol ViperModuleTransitionHandlerProtocol: class {
     
     weak var moduleInput: ViperBaseModuleInput? { get set }
     
-    func openModule(segueIdentifier: String, configurationBlock: ConfigurationBlock)
+    func openModule(segueIdentifier: String, configurationBlock: ConfigurationBlock?)
     func closeModule(animated: Bool)
 }
 
 extension ViperModuleTransitionHandlerProtocol where Self: UIViewController {
     
-    func openModule(segueIdentifier: String, configurationBlock: ConfigurationBlock) {
+    func openModule(segueIdentifier: String, configurationBlock: ConfigurationBlock?) {
         let segueInfo = SegueInfo()
         segueInfo.configurationBlock = configurationBlock
         

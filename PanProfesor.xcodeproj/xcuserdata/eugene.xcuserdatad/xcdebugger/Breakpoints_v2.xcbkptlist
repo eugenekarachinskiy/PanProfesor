@@ -83,102 +83,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PanProfesor/Classes/Modules/CategoriesList/Router/SectionsRouter.swift"
-            timestampString = "475252964.826114"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "presentAlphabetController()"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PanProfesor.SectionsRouter.presentAlphabetController (PanProfesor.SectionsRouter)() -&gt; ()"
-                  moduleName = "PanProfesor"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/eugene/Developer/iOS/PanProfesor/PanProfesor/Classes/Modules/CategoriesList/Router/SectionsRouter.swift"
-                  timestampString = "475346577.829026"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PanProfesor.SectionsRouter.(presentAlphabetController (PanProfesor.SectionsRouter) -&gt; () -&gt; ()).(closure #1)"
-                  moduleName = "PanProfesor"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/eugene/Developer/iOS/PanProfesor/PanProfesor/Classes/Modules/CategoriesList/Router/SectionsRouter.swift"
-                  timestampString = "475346577.829233"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "23">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PanProfesor/Classes/Modules/CategoriesList/Router/SectionsRouter.swift"
-            timestampString = "475241850.757327"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "presentAlphabetController()"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PanProfesor.SectionsRouter.presentAlphabetController (PanProfesor.SectionsRouter)() -&gt; ()"
-                  moduleName = "PanProfesor"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/eugene/Developer/iOS/PanProfesor/PanProfesor/Classes/Modules/CategoriesList/Router/SectionsRouter.swift"
-                  timestampString = "475346577.833675"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PanProfesor.SectionsRouter.(presentAlphabetController (PanProfesor.SectionsRouter) -&gt; () -&gt; ()).(closure #1)"
-                  moduleName = "PanProfesor"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/eugene/Developer/iOS/PanProfesor/PanProfesor/Classes/Modules/CategoriesList/Router/SectionsRouter.swift"
-                  timestampString = "475346577.833796"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "23">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "PanProfesor/Classes/Modules/CategoriesList/Presenter/SectionsPresenter.swift"
             timestampString = "475252783.823087"
             startingColumnNumber = "9223372036854775807"
@@ -208,7 +112,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PanProfesor/Classes/Common/Store/CoreDataStorage.swift"
@@ -224,7 +128,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PanProfesor/Classes/Common/Store/CoreDataStorage.swift"
@@ -240,7 +144,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PanProfesor/Classes/Common/Store/CoreDataStorage.swift"

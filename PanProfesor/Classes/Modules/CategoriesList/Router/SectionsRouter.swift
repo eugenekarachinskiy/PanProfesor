@@ -10,6 +10,7 @@ import Foundation
 
 class SectionsRouter {
     let alphabetSegueIdentifier = "alphabetSegueIdentifier"
+    let examSegueIdentififier = "chooseExamSegue"
     
     weak var transitionHandler: ViperModuleTransitionHandlerProtocol?
 }
@@ -21,7 +22,8 @@ extension SectionsRouter: SectionsRouterInput {
         })
     }
     
-    func presentSectionContollerForSection(section: SectionDto) {
-        
+    func presentExamViewController(section: SectionDto) {
+        self.transitionHandler?.openModule(examSegueIdentififier, configurationBlock: nil)
     }
+    
 }

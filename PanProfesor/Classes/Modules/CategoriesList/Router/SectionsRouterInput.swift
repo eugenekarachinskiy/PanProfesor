@@ -10,5 +10,5 @@ import Foundation
 
 protocol SectionsRouterInput {
     func presentAlphabetController()
-    func presentSectionContollerForSection(section: SectionDto)
+    func presentExamViewController(section: SectionDto)
 }

@@ -31,7 +31,7 @@ extension SectionsPresenter: SectionsViewOutput {
     }
     
     func selectedSection(section: SectionDto) {
-        router?.presentSectionContollerForSection(section)
+        router?.presentExamViewController(section)
     }
 }
 
