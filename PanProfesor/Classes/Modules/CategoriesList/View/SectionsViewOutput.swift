@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol SectionsViewOutput {
+protocol SectionsViewOutput: ViperViewOutput {
     func setupView()
     func showAlphabet()
     func selectedSection(section: SectionDto)

@@ -26,6 +26,9 @@
 		4451594F1C53B8BC0075722B /* AlphabetsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451594E1C53B8BC0075722B /* AlphabetsService.swift */; };
 		445159511C53BDFE0075722B /* PolishAlphabetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445159501C53BDFE0075722B /* PolishAlphabetService.swift */; };
 		445159531C53C2F60075722B /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445159521C53C2F60075722B /* SpeechService.swift */; };
+		445C3A781C5559D600971F81 /* ViperInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445C3A771C5559D600971F81 /* ViperInteractor.swift */; };
+		445C3A7A1C555A9E00971F81 /* ViperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445C3A791C555A9E00971F81 /* ViperViewController.swift */; };
+		445C3A7C1C555BB500971F81 /* ViperRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445C3A7B1C555BB500971F81 /* ViperRouter.swift */; };
 		445CBA971C539326000453EB /* SectionsModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445CBA961C539326000453EB /* SectionsModuleOutput.swift */; };
 		445CBA991C5393D4000453EB /* ViperBaseModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445CBA981C5393D4000453EB /* ViperBaseModuleInput.swift */; };
 		445CBA9B1C5393DF000453EB /* ViperBaseModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445CBA9A1C5393DF000453EB /* ViperBaseModuleOutput.swift */; };
@@ -69,7 +72,11 @@
 		44EE3E861BD7BCDF00F0E640 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE3E851BD7BCDF00F0E640 /* CardCollectionViewCell.swift */; };
 		44EE3E881BD7D65600F0E640 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE3E871BD7D65600F0E640 /* Extensions.swift */; };
 		44EE3E8A1BD7D6B000F0E640 /* LetterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE3E891BD7D6B000F0E640 /* LetterCollectionViewCell.swift */; };
+		44F07D521C557D15005542BC /* ViperViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F07D511C557D15005542BC /* ViperViewOutput.swift */; };
+		44F07D541C557D75005542BC /* ViperViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F07D531C557D75005542BC /* ViperViewInput.swift */; };
+		44F07D561C55809D005542BC /* ViperRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F07D551C55809D005542BC /* ViperRouterInput.swift */; };
 		44F4B1521C55350D002EA954 /* PanProfesor.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 44639B221C52CEC6004AC539 /* PanProfesor.xcdatamodel */; };
+		44F4B1601C555195002EA954 /* ViperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F4B15F1C555195002EA954 /* ViperPresenter.swift */; };
 		44FA757A1BFDBA6200B8FF0E /* Twarz.json in Resources */ = {isa = PBXBuildFile; fileRef = 44FA75791BFDBA6200B8FF0E /* Twarz.json */; };
 		44FA757C1BFDBBA600B8FF0E /* Twarz.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44FA757B1BFDBBA600B8FF0E /* Twarz.xcassets */; };
 /* End PBXBuildFile section */
@@ -96,6 +103,9 @@
 		4451594E1C53B8BC0075722B /* AlphabetsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetsService.swift; sourceTree = "<group>"; };
 		445159501C53BDFE0075722B /* PolishAlphabetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolishAlphabetService.swift; sourceTree = "<group>"; };
 		445159521C53C2F60075722B /* SpeechService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		445C3A771C5559D600971F81 /* ViperInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperInteractor.swift; sourceTree = "<group>"; };
+		445C3A791C555A9E00971F81 /* ViperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperViewController.swift; sourceTree = "<group>"; };
+		445C3A7B1C555BB500971F81 /* ViperRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperRouter.swift; sourceTree = "<group>"; };
 		445CBA961C539326000453EB /* SectionsModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsModuleOutput.swift; sourceTree = "<group>"; };
 		445CBA981C5393D4000453EB /* ViperBaseModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperBaseModuleInput.swift; sourceTree = "<group>"; };
 		445CBA9A1C5393DF000453EB /* ViperBaseModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperBaseModuleOutput.swift; sourceTree = "<group>"; };
@@ -152,6 +162,10 @@
 		44EE3E851BD7BCDF00F0E640 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		44EE3E871BD7D65600F0E640 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		44EE3E891BD7D6B000F0E640 /* LetterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterCollectionViewCell.swift; sourceTree = "<group>"; };
+		44F07D511C557D15005542BC /* ViperViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperViewOutput.swift; sourceTree = "<group>"; };
+		44F07D531C557D75005542BC /* ViperViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperViewInput.swift; sourceTree = "<group>"; };
+		44F07D551C55809D005542BC /* ViperRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperRouterInput.swift; sourceTree = "<group>"; };
+		44F4B15F1C555195002EA954 /* ViperPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperPresenter.swift; sourceTree = "<group>"; };
 		44FA75791BFDBA6200B8FF0E /* Twarz.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Twarz.json; sourceTree = "<group>"; };
 		44FA757B1BFDBBA600B8FF0E /* Twarz.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Twarz.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -243,6 +257,13 @@
 		445D7E861C52423800D7D4F3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				44F07D551C55809D005542BC /* ViperRouterInput.swift */,
+				44F07D531C557D75005542BC /* ViperViewInput.swift */,
+				44F07D511C557D15005542BC /* ViperViewOutput.swift */,
+				445C3A791C555A9E00971F81 /* ViperViewController.swift */,
+				44F4B15F1C555195002EA954 /* ViperPresenter.swift */,
+				445C3A771C5559D600971F81 /* ViperInteractor.swift */,
+				445C3A7B1C555BB500971F81 /* ViperRouter.swift */,
 				44BB36C61C52EE4F002267CB /* Helpers */,
 				44BB36C11C52E986002267CB /* Protocols */,
 				445D7E871C52423800D7D4F3 /* Extension */,
@@ -572,9 +593,11 @@
 				445159451C53AE5C0075722B /* AlphabetModuleOutput.swift in Sources */,
 				441642B11BDA7B16000D011D /* MemoryCollectionViewCell.swift in Sources */,
 				44639B211C52CA99004AC539 /* CoreDataStorage.swift in Sources */,
+				44F07D541C557D75005542BC /* ViperViewInput.swift in Sources */,
 				44BB36C51C52EC58002267CB /* ViperModuleTransitionHandlerProtocol.swift in Sources */,
 				44639B1C1C52BE75004AC539 /* SectionsRouterInput.swift in Sources */,
 				4451594D1C53AF110075722B /* AlphabetModuleAssembly.swift in Sources */,
+				445C3A7C1C555BB500971F81 /* ViperRouter.swift in Sources */,
 				44BB36C81C52EE57002267CB /* SegueInfo.swift in Sources */,
 				445159411C53AE170075722B /* AlphabetPresenter.swift in Sources */,
 				44BB36BA1C52D6BC002267CB /* WordDto.swift in Sources */,
@@ -584,8 +607,10 @@
 				44639B311C52D016004AC539 /* Section+CoreDataProperties.swift in Sources */,
 				44115CF61BFD25C200371CEE /* AlphabetCollectionViewCell.swift in Sources */,
 				4451594F1C53B8BC0075722B /* AlphabetsService.swift in Sources */,
+				44F07D561C55809D005542BC /* ViperRouterInput.swift in Sources */,
 				44BB36C01C52E3AF002267CB /* SectionsModuleConfigurator.swift in Sources */,
 				4451594B1C53AEED0075722B /* AlphabetInteractorOutput.swift in Sources */,
+				44F4B1601C555195002EA954 /* ViperPresenter.swift in Sources */,
 				4451593D1C53AD9D0075722B /* AlphabetRouter.swift in Sources */,
 				44C931811BFD15B6000AB742 /* TranslateCollectionViewCell.swift in Sources */,
 				44639B101C52BE3B004AC539 /* SectionsDataManager.swift in Sources */,
@@ -604,10 +629,13 @@
 				445CBA991C5393D4000453EB /* ViperBaseModuleInput.swift in Sources */,
 				44639B151C52BE3B004AC539 /* SectionsPresenter.swift in Sources */,
 				44EE3E861BD7BCDF00F0E640 /* CardCollectionViewCell.swift in Sources */,
+				445C3A781C5559D600971F81 /* ViperInteractor.swift in Sources */,
+				44F07D521C557D15005542BC /* ViperViewOutput.swift in Sources */,
 				44639B171C52BE3B004AC539 /* SectionsViewInput.swift in Sources */,
 				4451593F1C53ADB90075722B /* AlphabetRouterInput.swift in Sources */,
 				449B7A2A1BFBAAA8004B645E /* ExamCollectionViewCell.swift in Sources */,
 				44EE3E881BD7D65600F0E640 /* Extensions.swift in Sources */,
+				445C3A7A1C555A9E00971F81 /* ViperViewController.swift in Sources */,
 				445159431C53AE350075722B /* AlphabetModuleInput.swift in Sources */,
 				445159511C53BDFE0075722B /* PolishAlphabetService.swift in Sources */,
 				445159491C53AED50075722B /* AlphabetInteractorInput.swift in Sources */,

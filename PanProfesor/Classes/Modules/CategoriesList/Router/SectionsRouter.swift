@@ -8,10 +8,8 @@
 
 import Foundation
 
-class SectionsRouter {
+class SectionsRouter: ViperRouter {
     let alphabetSegueIdentifier = "alphabetSegueIdentifier"
-    
-    weak var transitionHandler: ViperModuleTransitionHandlerProtocol?
 }
 
 extension SectionsRouter: SectionsRouterInput {

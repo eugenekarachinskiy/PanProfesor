@@ -8,8 +8,7 @@
 
 import Foundation
 
-class SectionsInteractor {
-    var output: SectionsInteractorOutput?
+class SectionsInteractor: ViperInteractor<SectionsInteractorOutput> {
     let sectionsService: SectionsService = SectionsService()
 }
 

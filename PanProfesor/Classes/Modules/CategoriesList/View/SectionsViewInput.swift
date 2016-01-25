@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol SectionsViewInput {
+protocol SectionsViewInput: ViperViewInput {
     func showSections(sections: [SectionDto])
 }

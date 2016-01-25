@@ -8,10 +8,8 @@
 
 import Foundation
 
-class SectionsPresenter {
-    var view: SectionsViewInput?
-    var router: SectionsRouterInput?
-    var interactor: SectionsInteractorInput?
+class SectionsPresenter: ViperPresenter<SectionsInteractorInput, SectionsRouterInput> {
+    override var view: SectionsViewInput!
 }
 
 

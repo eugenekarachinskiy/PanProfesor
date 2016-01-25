@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol SectionsInteractorOutput {
+protocol SectionsInteractorOutput: class {
     func foundSections(sections: [SectionDto])
 }

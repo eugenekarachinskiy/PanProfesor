@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol SectionsRouterInput {
+protocol SectionsRouterInput: ViperRouterInput {
     func presentAlphabetController()
     func presentSectionContollerForSection(section: SectionDto)
 }

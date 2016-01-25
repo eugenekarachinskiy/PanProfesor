@@ -8,10 +8,10 @@
 
 import UIKit
 
-class SectionsViewController: ViperBaseTransitionViewController {
+class SectionsViewController: ViperViewController, ViperView {
     
     @IBOutlet weak var collectionView: UICollectionView!
-
+    
     var output: SectionsViewOutput?
     var data: [SectionDto]?
     
@@ -29,13 +29,6 @@ class SectionsViewController: ViperBaseTransitionViewController {
     // MARK: Navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         super.prepareForSegue(segue, sender: sender)
-        
-        guard let configurationHolder = segue.destinationViewController as? ViperBaseTransitionViewController,
-              let segueInfo = sender as? SegueInfo  else {
-            return
-        }
-
-        segueInfo.configurationBlock?(input: configurationHolder.moduleInput)
     }
     
     
