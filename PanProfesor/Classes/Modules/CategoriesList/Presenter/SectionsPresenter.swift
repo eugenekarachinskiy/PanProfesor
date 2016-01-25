@@ -8,15 +8,13 @@
 
 import Foundation
 
-class SectionsPresenter: ViperPresenter<SectionsInteractorInput, SectionsRouterInput> {
-    override var view: SectionsViewInput!
+class SectionsPresenter: ViperPresenter<SectionsViewController, SectionsInteractorInput, SectionsRouterInput> {
 }
 
 
 extension SectionsPresenter: SectionsModuleInput {
     
 }
-
 
 extension SectionsPresenter: SectionsViewOutput {
     

@@ -9,8 +9,9 @@
 import Foundation
 import UIKit
 
-class ViperViewController: UIViewController, ViperModuleTransitionHandlerProtocol {
+class ViperViewController<ViewOutput>: UIViewController, ViperModuleTransitionHandlerProtocol {
     weak var moduleInput: ViperBaseModuleInput? // weak reference to presenter
+    var output: ViewOutput?
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         super.prepareForSegue(segue, sender: sender)
@@ -22,9 +23,4 @@ class ViperViewController: UIViewController, ViperModuleTransitionHandlerProtoco
         
         segueInfo.configurationBlock?(input: configurationHolder.moduleInput)
     }
-}
-
-protocol ViperView {
-    typealias ViperViewOutputType
-    var output: ViperViewOutputType? {get set} //strong reference to presenter
 }

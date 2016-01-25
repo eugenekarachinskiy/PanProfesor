@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SectionsViewController: ViperViewController, ViperView {
+class SectionsViewController: ViperBaseTransitionViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     

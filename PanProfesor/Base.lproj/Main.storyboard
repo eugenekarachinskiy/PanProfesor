@@ -583,9 +583,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gcc-lk-JyA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="Fbe-mH-wTU" customClass="SectionsModuleInitializer" customModule="PanProfesor" customModuleProvider="target">
+                <customObject id="Fbe-mH-wTU" customClass="SectionsModuleAssembly" customModule="PanProfesor" customModuleProvider="target">
                     <connections>
-                        <outlet property="viewController" destination="t2X-WV-bKv" id="MhF-JU-pB7"/>
+                        <outlet property="viewController" destination="t2X-WV-bKv" id="TXz-fQ-Rt3"/>
                     </connections>
                 </customObject>
             </objects>
@@ -663,7 +663,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yH6-Ix-cXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="tBZ-QX-uDv" customClass="AlphabetModuleAssembly" customModule="PanProfesor" customModuleProvider="target">
                     <connections>
-                        <outlet property="viewController" destination="pdL-Se-qxc" id="UVU-TZ-aXK"/>
+                        <outlet property="viewController" destination="pdL-Se-qxc" id="bys-nS-jxm"/>
                     </connections>
                 </customObject>
             </objects>

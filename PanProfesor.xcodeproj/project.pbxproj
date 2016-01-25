@@ -10,6 +10,9 @@
 		44115CF61BFD25C200371CEE /* AlphabetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44115CF51BFD25C200371CEE /* AlphabetCollectionViewCell.swift */; };
 		441642B11BDA7B16000D011D /* MemoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441642B01BDA7B16000D011D /* MemoryCollectionViewCell.swift */; };
 		44173BD01BFE487E00D2B02D /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44173BCF1BFE487E00D2B02D /* logo.jpg */; };
+		443FF4AA1C56295F00AB267A /* ViperInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443FF4A91C56295F00AB267A /* ViperInteractorOutput.swift */; };
+		443FF4AC1C5630B400AB267A /* ViperAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443FF4AB1C5630B400AB267A /* ViperAssembly.swift */; };
+		443FF4AE1C5633EB00AB267A /* SectionsModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443FF4AD1C5633EB00AB267A /* SectionsModuleAssembly.swift */; };
 		4451592F1C53AA5E0075722B /* ViperBaseTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451592E1C53AA5E0075722B /* ViperBaseTransitionViewController.swift */; };
 		445159371C53ACDE0075722B /* AlphabetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445159361C53ACDE0075722B /* AlphabetViewController.swift */; };
 		445159391C53AD500075722B /* AlphabetViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445159381C53AD500075722B /* AlphabetViewInput.swift */; };
@@ -60,15 +63,13 @@
 		44A0C4F21BB6B2CF0039490E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44A0C4F11BB6B2CF0039490E /* CoreData.framework */; };
 		44BB36BA1C52D6BC002267CB /* WordDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB36B91C52D6BC002267CB /* WordDto.swift */; };
 		44BB36BB1C52DF6D002267CB /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441474A21BE7884A005A4F54 /* ContentManager.swift */; };
-		44BB36C01C52E3AF002267CB /* SectionsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB36BF1C52E3AF002267CB /* SectionsModuleConfigurator.swift */; };
-		44BB36C31C52E9AC002267CB /* ViperBaseModuleConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB36C21C52E9AC002267CB /* ViperBaseModuleConfiguratorProtocol.swift */; };
+		44BB36C31C52E9AC002267CB /* ViperModuleConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB36C21C52E9AC002267CB /* ViperModuleConfiguratorProtocol.swift */; };
 		44BB36C51C52EC58002267CB /* ViperModuleTransitionHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB36C41C52EC58002267CB /* ViperModuleTransitionHandlerProtocol.swift */; };
 		44BB36C81C52EE57002267CB /* SegueInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB36C71C52EE56002267CB /* SegueInfo.swift */; };
 		44C931791BFD02C1000AB742 /* SpeechHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C931781BFD02C1000AB742 /* SpeechHelper.swift */; };
 		44C9317B1BFD0332000AB742 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C9317A1BFD0332000AB742 /* AVFoundation.framework */; };
 		44C931811BFD15B6000AB742 /* TranslateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C931801BFD15B6000AB742 /* TranslateCollectionViewCell.swift */; };
 		44D05BF91BFB3D1100F72723 /* Ciało.json in Resources */ = {isa = PBXBuildFile; fileRef = 44D05BF81BFB3D1100F72723 /* Ciało.json */; };
-		44D29B911C52F18A002351C6 /* SectionsModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D29B901C52F18A002351C6 /* SectionsModuleInitializer.swift */; };
 		44EE3E861BD7BCDF00F0E640 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE3E851BD7BCDF00F0E640 /* CardCollectionViewCell.swift */; };
 		44EE3E881BD7D65600F0E640 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE3E871BD7D65600F0E640 /* Extensions.swift */; };
 		44EE3E8A1BD7D6B000F0E640 /* LetterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE3E891BD7D6B000F0E640 /* LetterCollectionViewCell.swift */; };
@@ -87,6 +88,9 @@
 		441474A21BE7884A005A4F54 /* ContentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentManager.swift; sourceTree = "<group>"; };
 		441642B01BDA7B16000D011D /* MemoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		44173BCF1BFE487E00D2B02D /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		443FF4A91C56295F00AB267A /* ViperInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperInteractorOutput.swift; sourceTree = "<group>"; };
+		443FF4AB1C5630B400AB267A /* ViperAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperAssembly.swift; sourceTree = "<group>"; };
+		443FF4AD1C5633EB00AB267A /* SectionsModuleAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsModuleAssembly.swift; sourceTree = "<group>"; };
 		4451592E1C53AA5E0075722B /* ViperBaseTransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperBaseTransitionViewController.swift; sourceTree = "<group>"; };
 		445159361C53ACDE0075722B /* AlphabetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetViewController.swift; sourceTree = "<group>"; };
 		445159381C53AD500075722B /* AlphabetViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetViewInput.swift; sourceTree = "<group>"; };
@@ -146,8 +150,7 @@
 		44A0C4EC1BB6B0A90039490E /* MemoryWordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryWordsViewController.swift; sourceTree = "<group>"; };
 		44A0C4F11BB6B2CF0039490E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		44BB36B91C52D6BC002267CB /* WordDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordDto.swift; sourceTree = "<group>"; };
-		44BB36BF1C52E3AF002267CB /* SectionsModuleConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsModuleConfigurator.swift; sourceTree = "<group>"; };
-		44BB36C21C52E9AC002267CB /* ViperBaseModuleConfiguratorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperBaseModuleConfiguratorProtocol.swift; sourceTree = "<group>"; };
+		44BB36C21C52E9AC002267CB /* ViperModuleConfiguratorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModuleConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		44BB36C41C52EC58002267CB /* ViperModuleTransitionHandlerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModuleTransitionHandlerProtocol.swift; sourceTree = "<group>"; };
 		44BB36C71C52EE56002267CB /* SegueInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueInfo.swift; sourceTree = "<group>"; };
 		44C931761BFCF8CB000AB742 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
@@ -158,7 +161,6 @@
 		44C931801BFD15B6000AB742 /* TranslateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslateCollectionViewCell.swift; sourceTree = "<group>"; };
 		44C931821BFD1E53000AB742 /* ChooseAudioTranslateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseAudioTranslateViewController.swift; sourceTree = "<group>"; };
 		44D05BF81BFB3D1100F72723 /* Ciało.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Ciało.json"; sourceTree = "<group>"; };
-		44D29B901C52F18A002351C6 /* SectionsModuleInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsModuleInitializer.swift; sourceTree = "<group>"; };
 		44EE3E851BD7BCDF00F0E640 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		44EE3E871BD7D65600F0E640 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		44EE3E891BD7D6B000F0E640 /* LetterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetterCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -260,6 +262,8 @@
 				44F07D551C55809D005542BC /* ViperRouterInput.swift */,
 				44F07D531C557D75005542BC /* ViperViewInput.swift */,
 				44F07D511C557D15005542BC /* ViperViewOutput.swift */,
+				443FF4A91C56295F00AB267A /* ViperInteractorOutput.swift */,
+				443FF4AB1C5630B400AB267A /* ViperAssembly.swift */,
 				445C3A791C555A9E00971F81 /* ViperViewController.swift */,
 				44F4B15F1C555195002EA954 /* ViperPresenter.swift */,
 				445C3A771C5559D600971F81 /* ViperInteractor.swift */,
@@ -468,8 +472,7 @@
 		44BB36BC1C52E291002267CB /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
-				44D29B901C52F18A002351C6 /* SectionsModuleInitializer.swift */,
-				44BB36BF1C52E3AF002267CB /* SectionsModuleConfigurator.swift */,
+				443FF4AD1C5633EB00AB267A /* SectionsModuleAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -477,7 +480,7 @@
 		44BB36C11C52E986002267CB /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				44BB36C21C52E9AC002267CB /* ViperBaseModuleConfiguratorProtocol.swift */,
+				44BB36C21C52E9AC002267CB /* ViperModuleConfiguratorProtocol.swift */,
 				44BB36C41C52EC58002267CB /* ViperModuleTransitionHandlerProtocol.swift */,
 				445CBA981C5393D4000453EB /* ViperBaseModuleInput.swift */,
 				445CBA9A1C5393DF000453EB /* ViperBaseModuleOutput.swift */,
@@ -585,8 +588,9 @@
 				449B7A261BFBA3AD004B645E /* SectionCollectionViewCell.swift in Sources */,
 				44F4B1521C55350D002EA954 /* PanProfesor.xcdatamodel in Sources */,
 				44639B1F1C52CA8A004AC539 /* SectionsService.swift in Sources */,
+				443FF4AC1C5630B400AB267A /* ViperAssembly.swift in Sources */,
 				445D7E8E1C5242D200D7D4F3 /* AppDelegate.swift in Sources */,
-				44BB36C31C52E9AC002267CB /* ViperBaseModuleConfiguratorProtocol.swift in Sources */,
+				44BB36C31C52E9AC002267CB /* ViperModuleConfiguratorProtocol.swift in Sources */,
 				44639B3E1C52D631004AC539 /* Word+CoreDataProperties.swift in Sources */,
 				44BB36BB1C52DF6D002267CB /* ContentManager.swift in Sources */,
 				4451592F1C53AA5E0075722B /* ViperBaseTransitionViewController.swift in Sources */,
@@ -601,14 +605,13 @@
 				44BB36C81C52EE57002267CB /* SegueInfo.swift in Sources */,
 				445159411C53AE170075722B /* AlphabetPresenter.swift in Sources */,
 				44BB36BA1C52D6BC002267CB /* WordDto.swift in Sources */,
+				443FF4AE1C5633EB00AB267A /* SectionsModuleAssembly.swift in Sources */,
 				44639B341C52D0EA004AC539 /* SectionDto.swift in Sources */,
 				445159371C53ACDE0075722B /* AlphabetViewController.swift in Sources */,
-				44D29B911C52F18A002351C6 /* SectionsModuleInitializer.swift in Sources */,
 				44639B311C52D016004AC539 /* Section+CoreDataProperties.swift in Sources */,
 				44115CF61BFD25C200371CEE /* AlphabetCollectionViewCell.swift in Sources */,
 				4451594F1C53B8BC0075722B /* AlphabetsService.swift in Sources */,
 				44F07D561C55809D005542BC /* ViperRouterInput.swift in Sources */,
-				44BB36C01C52E3AF002267CB /* SectionsModuleConfigurator.swift in Sources */,
 				4451594B1C53AEED0075722B /* AlphabetInteractorOutput.swift in Sources */,
 				44F4B1601C555195002EA954 /* ViperPresenter.swift in Sources */,
 				4451593D1C53AD9D0075722B /* AlphabetRouter.swift in Sources */,
@@ -621,6 +624,7 @@
 				44639B161C52BE3B004AC539 /* SectionsViewController.swift in Sources */,
 				44639B3D1C52D62E004AC539 /* Word.swift in Sources */,
 				44639B1B1C52BE75004AC539 /* SectionsRouter.swift in Sources */,
+				443FF4AA1C56295F00AB267A /* ViperInteractorOutput.swift in Sources */,
 				445CBA971C539326000453EB /* SectionsModuleOutput.swift in Sources */,
 				44639B111C52BE3B004AC539 /* SectionsInteractor.swift in Sources */,
 				44EE3E8A1BD7D6B000F0E640 /* LetterCollectionViewCell.swift in Sources */,

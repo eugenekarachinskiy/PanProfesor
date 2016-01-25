@@ -8,6 +8,6 @@
 
 import Foundation
 
-class ViperInteractor <InteractorOutput> {
-    var output: InteractorOutput? //TODO: weak reference
+class ViperInteractor <InteractorOutput: AnyObject> {
+    weak var output: InteractorOutput?
 }

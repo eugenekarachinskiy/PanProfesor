@@ -7,28 +7,27 @@
 //
 
 import Foundation
+import UIKit
 
-class AlphabetModuleAssembly: NSObject {
+class AlphabetModuleAssembly: ViperAssembly {
     
-    @IBOutlet weak var viewController: AlphabetViewController!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    override func configure(viewInput: UIViewController) {
+        super.configureModuleForViewInput(viewInput)
         
-        let router = AlphabetRouter()
-        router.transitionHandler = viewController
-        
-        let presenter = AlphabetPresenter()
-        presenter.view = viewController
-        presenter.router = router
-        
-        let interactor = AlphabetInteractor()
-        interactor.output = presenter
-        
-        presenter.interactor = interactor
-        viewController.output = presenter
-        viewController.moduleInput = presenter
-
+        if let viewController = viewInput as? AlphabetViewController {
+            let router = AlphabetRouter()
+            router.transitionHandler = viewController
+            
+            let presenter = AlphabetPresenter()
+            presenter.view = viewController
+            presenter.router = router
+            
+            let interactor = AlphabetInteractor()
+            interactor.output = presenter
+            
+            presenter.interactor = interactor
+            viewController.output = presenter
+            viewController.moduleInput = presenter
+        }
     }
-    
 }

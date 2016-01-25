@@ -8,13 +8,8 @@
 
 import Foundation
 
-class ViperPresenter <InteractorInput, RouterInput> {
-//    weak var view: ViperViewInput?
-    var view: ViperViewInput?
+class ViperPresenter <ViewInput: AnyObject, InteractorInput, RouterInput> {
+    weak var view: ViewInput?
     var router: RouterInput?
     var interactor: InteractorInput?
-}
-
-protocol ViperPresenterProtocol {
-    weak var view: ViperViewInput? {get set}
 }
