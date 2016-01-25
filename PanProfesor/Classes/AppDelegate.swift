@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let contentManager = ContentManager.defaultManager
         contentManager.checkContent()
         
+        
         return true
     }
 

@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol SectionsModuleInput: ViperBaseModuleInput {
+protocol SectionsModuleInput: class {
     
 }

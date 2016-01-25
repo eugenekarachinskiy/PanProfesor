@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-class SectionsModuleConfigurator: ViperBaseModuleConfiguratorProtocol {
+class SectionsModuleConfigurator {
     
-    func configureModuleForViewInput(viewInput: UIViewController) {
+    func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
         if let sectionsViewController = viewInput as? SectionsViewController {
             configure(sectionsViewController)
         }

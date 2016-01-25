@@ -1,0 +1,37 @@
+### Headers settings
+company: Eugeniusz Karaczynski
+
+### Xcode project settings
+project_name: PanProfesor
+xcodeproj_path: PanProfesor.xcodeproj
+
+
+### Code generation settings section
+# The main project target name
+project_target: PanProfesor
+
+# The file path for new modules
+project_file_path: PanProfesor/Classes/Modules/
+
+# The Xcode group path to new modules
+project_group_path: PanProfesor/Classes/Modules/
+
+### Tests generation settings section
+# The tests target name
+test_target: PanProfesorTests
+
+# The file path for new tests
+test_file_path: PanProfesorTests/Classes/Modules/
+
+# The Xcode group path to new tests
+test_group_path: PanProfesorTests/Classes/Modules/
+
+### Catalogs
+catalogs:
+- 'https://github.com/rambler-ios/generamba-catalog'
+
+### Templates
+templates:
+#- {name: local_template_name, local: 'absolute/file/path'}
+#- {name: remote_template_name, git: 'https://github.com/igrekde/remote_template'}
+- {name: swifty_viper}

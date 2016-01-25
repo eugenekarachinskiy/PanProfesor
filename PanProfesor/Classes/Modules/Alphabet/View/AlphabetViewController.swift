@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AlphabetViewController: ViperBaseTransitionViewController {
+class AlphabetViewController: ViperTransitionViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
    

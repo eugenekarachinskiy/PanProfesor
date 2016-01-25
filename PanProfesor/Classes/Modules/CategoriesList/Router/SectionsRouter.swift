@@ -8,22 +8,24 @@
 
 import Foundation
 
-class SectionsRouter {
+class SectionsRouter: ViperTransitionRouter {
     let alphabetSegueIdentifier = "alphabetSegueIdentifier"
     let examSegueIdentififier = "chooseExamSegue"
-    
-    weak var transitionHandler: ViperModuleTransitionHandlerProtocol?
 }
 
 extension SectionsRouter: SectionsRouterInput {
     func presentAlphabetController() {
-        self.transitionHandler?.openModule(alphabetSegueIdentifier, configurationBlock: { (input) -> (ViperBaseModuleOutput?) in
-            return nil
-        })
+        self.transitionHandler?.openModule(alphabetSegueIdentifier, configurationBlock:nil)
     }
     
     func presentExamViewController(section: SectionDto) {
-        self.transitionHandler?.openModule(examSegueIdentififier, configurationBlock: nil)
+        self.transitionHandler?.openModule(examSegueIdentififier, configurationBlock: { (input) -> (AnyObject?) in
+            if let examsInput = input as? ExamsModuleInput {
+                examsInput.configureWithSection(section)
+            }
+            
+            return nil
+        })
     }
     
 }

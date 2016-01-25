@@ -532,7 +532,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sectionCellIdentifier" id="dl7-0S-DCc" customClass="SectionCollectionViewCell" customModule="PanProfesor" customModuleProvider="target">
-                                        <rect key="frame" x="75" y="0.0" width="171" height="148"/>
+                                        <rect key="frame" x="74.5" y="0.0" width="171" height="148"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="171" height="148"/>
@@ -669,10 +669,10 @@
             </objects>
             <point key="canvasLocation" x="-1040" y="531"/>
         </scene>
-        <!--Тренировки-->
+        <!--View Controller-->
         <scene sceneID="chR-PL-WBN">
             <objects>
-                <collectionViewController id="lub-OI-gld" customClass="ChooseExamCollectionViewController" customModule="PanProfesor" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="lub-OI-gld" customClass="ExamsViewController" customModule="PanProfesor" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="oCM-qq-YWi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -729,6 +729,11 @@
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kFx-ym-bXN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="1jz-0F-f2C" customClass="ExamsModuleInitializer" customModule="PanProfesor" customModuleProvider="target">
+                    <connections>
+                        <outlet property="viewController" destination="lub-OI-gld" id="PAP-QX-XbX"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="-477" y="1221"/>
         </scene>

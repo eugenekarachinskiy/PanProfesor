@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol AlphabetModuleOutput: ViperBaseModuleOutput {
+protocol AlphabetModuleOutput: class {
     
 }

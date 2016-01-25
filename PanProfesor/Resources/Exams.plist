@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Выбери перевод аудио</key>
+	<string>audioTranslateSegueIdentifier</string>
+	<key>Выберите перевод</key>
+	<string>translateSegueIdentifier</string>
+	<key>Собери пару</key>
+	<string>makePairSegueIdentifier</string>
+	<key>Верно-Неверно</key>
+	<string>trueOrFalseSegueIdentifier</string>
+	<key>Мемория</key>
+	<string>memorySegueIdentifier</string>
+	<key>Собери слово</key>
+	<string>makeWordSegueIdentifier</string>
+	<key>Тренировачные карточки</key>
+	<string>traningCardsSegueIdentifier</string>
+	<key>Карточки</key>
+	<string>cardsSegueIdentifier</string>
+</dict>
+</plist>

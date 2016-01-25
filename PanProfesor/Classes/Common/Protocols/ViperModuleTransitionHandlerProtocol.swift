@@ -9,11 +9,11 @@
 import Foundation
 import UIKit
 
-typealias ConfigurationBlock = (input: ViperBaseModuleInput?) -> (ViperBaseModuleOutput?)
+typealias ConfigurationBlock = (input: AnyObject?) -> (AnyObject?)
 
 protocol ViperModuleTransitionHandlerProtocol: class {
     
-    weak var moduleInput: ViperBaseModuleInput? { get set }
+    weak var moduleInput: AnyObject? { get set }
     
     func openModule(segueIdentifier: String, configurationBlock: ConfigurationBlock?)
     func closeModule(animated: Bool)
