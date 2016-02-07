@@ -22,6 +22,7 @@ class ExamsViewController: UICollectionViewController, ExamsViewInput, ViperModu
 
     // MARK: ExamsViewInput
     func setupInitialState() {
+        
     }
     
     func showExams(exams: [ExamItem]) {

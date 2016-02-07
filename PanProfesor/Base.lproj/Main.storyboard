@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Выберите перевод-->
+        <!--View Controller-->
         <scene sceneID="Wbk-BP-Yek">
             <objects>
-                <viewController id="odv-8c-JtU" customClass="ChooseTranslateViewController" customModule="PanProfesor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="odv-8c-JtU" customClass="TranslateViewController" customModule="PanProfesor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5U5-BZ-qaH"/>
                         <viewControllerLayoutGuide type="bottom" id="vvZ-cE-2UE"/>
@@ -104,6 +104,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lXA-jd-aag" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="C4P-Qw-7jA" customClass="TranslateModuleInitializer" customModule="PanProfesor" customModuleProvider="target">
+                    <connections>
+                        <outlet property="viewController" destination="odv-8c-JtU" id="ygs-wY-YNh"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="191" y="-408"/>
         </scene>

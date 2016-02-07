@@ -13,6 +13,8 @@ class ExamsRouter: ViperTransitionRouter, ExamsRouterInput {
             if let audioTranslateInput = input as? AudioTranslateModuleInput,
                 let sectionDto = section {
                 audioTranslateInput.setupSection(sectionDto)
+            } else if let translateInput = input as? TranslateModuleInput, let sectionDto = section  {
+                translateInput.configureModulWithSection(sectionDto)
             }
             return nil
         })

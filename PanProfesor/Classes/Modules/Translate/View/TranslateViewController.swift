@@ -1,69 +1,55 @@
 //
-//  ChooseTranslateViewController.swift
+//  TranslateViewController.swift
 //  PanProfesor
 //
-//  Created by Eugene Karachinskiy on 11/18/15.
-//  Copyright © 2015 Eugene Karachinskiy. All rights reserved.
+//  Created by Eugene  on 07/02/2016.
+//  Copyright © 2016 Eugeniusz Karaczynski. All rights reserved.
 //
 
 import UIKit
-import CoreData
 
-class ChooseTranslateViewController: BaseViewController {
+class TranslateViewController: UIViewController, TranslateViewInput, ViperModuleTransitionHandlerProtocol {
+
+    //Presenter
+    var output: TranslateViewOutput!
+    weak var moduleInput: AnyObject?
     
+    //Outlets
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var textLabel: UILabel!
     
+    //Constants
+    let loopsMaxCount = 10
+    let timeinterval = 1.0
+    let speechService = SpeechService()
+    
+    //Vars
+    var words: Array<WordDto> = Array<WordDto>()
     var translateWords: [String] = [String]()
     var incorrectIndexes: [NSIndexPath] = [NSIndexPath]()
     var correctIndex: NSIndexPath?
     
     var currentLoop = 0
-    var currentWord: Word?
+    var currentWord: WordDto?
     
-    let loopsMaxCount = 10
-    let timeinterval = 1.0
-    
-    static let wordsLimit = 6
-    
-    lazy var fetchedResultsController: NSFetchedResultsController? = {
-        guard let context = DataBaseManager.defaultManager.manangedObjectContext,
-            let currentSection = self.section else {
-                return nil
-        }
-        
-        let sortDescriptor = NSSortDescriptor(key: "used", ascending: true)
-        
-        let fetchedRequest = NSFetchRequest(entityName: "Word")
-        fetchedRequest.predicate = NSPredicate(format: "section == %@", currentSection)
-        fetchedRequest.sortDescriptors = [sortDescriptor]
-        fetchedRequest.fetchLimit = wordsLimit
-        
-        let fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchedRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
-        fetchedResultsController.delegate = self
-        return fetchedResultsController
-    }()
-    
+    // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        prepareView()
+        output.viewIsReady()
+    }
+
+    // MARK: TranslateViewInput
+    func setupInitialState() {
+       pageControl.numberOfPages = loopsMaxCount
+    }
+    
+    func setupWordsDataSource(words: [WordDto]) {
+        self.words = words
         setup()
     }
     
-    func setupFetchedResultsController() {
-        do {
-            try fetchedResultsController?.performFetch()
-        } catch let error {
-            print("error setup fetch \(error)")
-        }
-    }
-    
-    func prepareView() {
-        pageControl.numberOfPages = loopsMaxCount
-    }
-    
+    // MARK: Internal methods
     func setup() {
         setupData()
         setupView()
@@ -74,16 +60,10 @@ class ChooseTranslateViewController: BaseViewController {
         translateWords.removeAll()
         incorrectIndexes.removeAll()
         
-        setupFetchedResultsController()
-        currentWord = fetchedResultsController?.fetchedObjects?[0] as? Word
-        
-        if let wordsArray = fetchedResultsController?.fetchedObjects as? [Word] {
-            for word in wordsArray {
-                if let translateText = word.russian {
-                    translateWords.append(translateText)
-                }
-            }
-        }
+        currentWord = words.first
+        translateWords = words.map({ (word) -> String in
+            return word.russian
+        })
         
         translateWords.shuffleInPlace()
     }
@@ -94,9 +74,19 @@ class ChooseTranslateViewController: BaseViewController {
         collectionView.reloadData()
     }
     
-    func didFinish() {
-        let alertView = UIAlertView(title: "Finish", message: "Finish", delegate: nil, cancelButtonTitle: "OK")
-        alertView.show()
+    func spellWord() {
+        speechService.speak((currentWord?.polish)!, languge: "Pl-pl")
+    }
+    
+    func examDidComplete() {
+        let cancelAction = UIAlertAction(title: NSLocalizedString("OK", comment: "OK"), style: .Cancel) { (action) -> Void in
+            self.output.finishedTranslateExam()
+        }
+        
+        let alertController = UIAlertController(title: NSLocalizedString("Finished", comment: "Finished"), message: NSLocalizedString("You successfully completed this exam", comment: "You successfully completed this exam"), preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(cancelAction)
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
     func checkTranslateWord(indexPath: NSIndexPath) {
@@ -112,7 +102,7 @@ class ChooseTranslateViewController: BaseViewController {
     }
     
     func answeredCorrect() {
-        SpeechHelper.defaultHelper.speake(currentWord?.polish)
+        spellWord()
         increaseWordUse()
         collectionView.userInteractionEnabled = false
         
@@ -122,26 +112,20 @@ class ChooseTranslateViewController: BaseViewController {
             
             self.currentLoop++
             if self.currentLoop == self.loopsMaxCount {
-                self.didFinish()
+                self.examDidComplete()
             } else {
-                self.setup()
+                self.output.viewIsReady()
             }
         })
     }
     
     func increaseWordUse() {
-        if let usedCount = currentWord?.used?.integerValue {
-            currentWord?.used = NSNumber(integer: usedCount + 1)
-        } else {
-            currentWord?.used = NSNumber(int: 1)
-        }
-        
-        DataBaseManager.defaultManager.saveContext()
+        // TODO:
     }
 }
 
-extension ChooseTranslateViewController: UICollectionViewDataSource {
-    
+
+extension TranslateViewController: UICollectionViewDataSource {
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -162,8 +146,7 @@ extension ChooseTranslateViewController: UICollectionViewDataSource {
     }
 }
 
-extension ChooseTranslateViewController: UICollectionViewDelegate {
-    
+extension TranslateViewController: UICollectionViewDelegate {
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         if !incorrectIndexes.contains(indexPath) {
             checkTranslateWord(indexPath)
@@ -171,10 +154,8 @@ extension ChooseTranslateViewController: UICollectionViewDelegate {
     }
 }
 
-
-extension ChooseTranslateViewController: UICollectionViewDelegateFlowLayout {
+extension TranslateViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        
         return CGSizeMake(collectionView.frame.size.width / 2 - 10, collectionView.frame.size.height / 3 - 10)
     }
 }
