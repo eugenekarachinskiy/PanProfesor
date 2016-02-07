@@ -17,10 +17,12 @@
 		162FBC6D333D6968F1E2F578 /* TranslateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3B4B61C11A510B0D3B5887 /* TranslateRouter.swift */; };
 		1D011088DDE28DA2037DC9F8 /* TranslateRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482810387F246DB472541163 /* TranslateRouterInput.swift */; };
 		20C462874E588079C68BB611 /* TranslateConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209DB84FFD8677BD2F684202 /* TranslateConfigurator.swift */; };
+		210BD4968244DA0CA3F31042 /* TrainingCardsRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBC4FDEB050DF190E42BD45 /* TrainingCardsRouterTests.swift */; };
 		215A55C608B22643F9EA65F4 /* AudioTranslateInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7B013F9CA872CB6E18F2EF /* AudioTranslateInitializer.swift */; };
 		215FF45717639D91DF5647A3 /* ExamsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8C2279F97AA3135F72AFE6 /* ExamsViewOutput.swift */; };
 		22386F49DFCA57B37BF6DFBA /* ExamsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64D25E2D6A672C0815705AD /* ExamsModuleInput.swift */; };
 		251EF7FFF3CEB4810F92D0FC /* AudioTranslateRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6062EDBE88CF87255A8A6ABE /* AudioTranslateRouterTests.swift */; };
+		365D3375FEDC7E96E9A18882 /* TrainingCardsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5AB08CDC11D3837A7E0C29 /* TrainingCardsRouter.swift */; };
 		37FD40EA140DD59285BD5EC7 /* ExamsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3360710B1E1A685126EE1C0A /* ExamsInteractorOutput.swift */; };
 		3B56732EAC62938097F82F4F /* AudioTranslateInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F1AF3914FD6367ABB1788A /* AudioTranslateInteractorTests.swift */; };
 		3B5789BF0959F6ED41440089 /* TranslateRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB4432F2CCA32E1F01B76FB /* TranslateRouterTests.swift */; };
@@ -93,25 +95,39 @@
 		44FD246D1C56C4BE00C4CD81 /* ViperTransitionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD246C1C56C4BE00C4CD81 /* ViperTransitionRouter.swift */; };
 		506CD4B2857C0FAAD97EE6A6 /* ExamsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B816BB929CDADFEEC0E627 /* ExamsInteractorTests.swift */; };
 		53DEFF22E49CCA22DBE45575 /* ExamsRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C604239D6141BA6A40833232 /* ExamsRouterTests.swift */; };
+		559007809A1740ACD8B9ADF8 /* TrainingCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDEBE1B1A081F3A39FBBCDA /* TrainingCardsViewController.swift */; };
 		592E95C3408DD30DC040692E /* TranslateInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D6D9E2639E3E8D0C952C7C /* TranslateInteractorTests.swift */; };
 		59E2692950B75F952E06EAC9 /* ExamsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19234C2CD33EBF24EFF6C03B /* ExamsInteractor.swift */; };
 		59E30392C2343E589C64F51A /* AudioTranslateModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F943A4EEE669593F79400C /* AudioTranslateModuleInput.swift */; };
+		61BAE07D34113B50DFB0773B /* TrainingCardsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060577883DBBB4A1E80B643F /* TrainingCardsConfigurator.swift */; };
 		690C2022FB73CD90EBC02E3B /* AudioTranslateConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15258E69CA59C40E8305DA1F /* AudioTranslateConfigurator.swift */; };
 		6BE99063CB5C5FEA14A57999 /* TranslateInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EC7D02B564DE0D324FA7EF /* TranslateInitializer.swift */; };
+		72F30455C9432916B1B90CDF /* TrainingCardsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544F675491FA466C56B30AC4 /* TrainingCardsViewOutput.swift */; };
 		7851D28E01D7F47008A17D73 /* TranslateInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F616D156446CC15C6BA305 /* TranslateInteractorOutput.swift */; };
 		787133BBF07B3A56D45A74AB /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10609C1A0EF06E18B67756F6 /* TranslateViewController.swift */; };
+		79FED30E5E85A2C05626F984 /* TrainingCardsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888448663E16012BD28C82BC /* TrainingCardsPresenter.swift */; };
 		7A1519B7A6DA5D2ACC2E7527 /* TranslatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF0ECB2E0904F8490344B05 /* TranslatePresenter.swift */; };
+		7AF02DFB7B51AD9D1028F545 /* TrainingCardsConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5A564B349C5C3C1C35D1A3 /* TrainingCardsConfiguratorTests.swift */; };
+		7B920D03EE27305038740AD1 /* TrainingCardsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE2A3B7AE6D14F7A31956D /* TrainingCardsInteractor.swift */; };
 		80768B30A0AE61D9D5BBC40B /* AudioTranslateRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088A852038B1E7941AFCF173 /* AudioTranslateRouterInput.swift */; };
+		91B1F304AE4E4735566AC443 /* TrainingCardsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB3CB3ECD2E17A4E79755B0 /* TrainingCardsInteractorTests.swift */; };
 		925E08560B7C47464BD561C1 /* TranslateConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF663955A2F753469699B687 /* TranslateConfiguratorTests.swift */; };
 		9659EC12517DC6D8A038D83A /* AudioTranslateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F465E991D6D2B5339AFA860 /* AudioTranslateInteractor.swift */; };
+		9D64F4F7FB9B905B9713C48C /* TrainingCardsInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708FFCE5C3F11D38ACBBE8EE /* TrainingCardsInitializer.swift */; };
+		9DA4C899CE832FA340ED0CE3 /* TrainingCardsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D269900AE6EE0D3E2DF66C47 /* TrainingCardsViewTests.swift */; };
 		A658C8C5795B444AA142C5A0 /* AudioTranslateInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B53A7199F1B1C4C0D30B2D /* AudioTranslateInteractorInput.swift */; };
 		AC2D6AA08682BC106C7542CA /* TranslatePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE82B75C7DBA69F76775EAA /* TranslatePresenterTests.swift */; };
 		AFE92CC0C52A091F3B0BB07C /* ExamsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090D3E126FBB925AE88F96B4 /* ExamsViewInput.swift */; };
+		B2A3B49501D9EBFA852EF9FC /* TrainingCardsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809D5520F4BD48926C1FFC47 /* TrainingCardsInteractorInput.swift */; };
 		B3C86C507217534975A0B76A /* ExamsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9733867F11C836BA5537FBDB /* ExamsRouterInput.swift */; };
 		B4C6640A193A78EF20928B71 /* ExamsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ABE2CBE27B240FB2F474B0 /* ExamsConfigurator.swift */; };
 		B5DE26EA5D48D8D90999B48D /* TranslateViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE156A8141C389A03F9B5EFF /* TranslateViewTests.swift */; };
+		B992C95664CEC1DA483EDAA2 /* TrainingCardsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF1CFC75C5262A0F039684 /* TrainingCardsRouterInput.swift */; };
 		BF408CCCAD6892070ACEEC59 /* TranslateViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E84CB8E1218DB3F0AE5311 /* TranslateViewInput.swift */; };
 		C0AB64FE86A67D8B99384689 /* AudioTranslateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9434726DD204AFDE1DF32A87 /* AudioTranslateRouter.swift */; };
+		CA9A643760DA83A7B35526BC /* TrainingCardsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ED72B0D094D00742040771 /* TrainingCardsModuleInput.swift */; };
+		D2EF5B8DD5E5B60AEF813C19 /* TrainingCardsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BF70E36597C5D7269959B0 /* TrainingCardsPresenterTests.swift */; };
+		D2F3B472C1A6D38F4C18A37E /* TrainingCardsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7839EBCB6C405DD9E5314D97 /* TrainingCardsInteractorOutput.swift */; };
 		D5E6A966EB91E5E30A7DA3B1 /* AudioTranslateInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C7AC6FED257EEE7CAACF56 /* AudioTranslateInteractorOutput.swift */; };
 		DAD779CB213DCBB89F4B5790 /* AudioTranslatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F0EE555966DF604C9B6D64 /* AudioTranslatePresenter.swift */; };
 		DB748B962D5826562818C440 /* AudioTranslateViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09EEE9E721A1C379460852F /* AudioTranslateViewTests.swift */; };
@@ -120,6 +136,7 @@
 		E45329C48E14026E74AB0B80 /* TranslateViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38536C84AFA7B513DF810CF /* TranslateViewOutput.swift */; };
 		EBDE37D6C03B626271FC8E4F /* ExamsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC591E6799CC49018C61610 /* ExamsViewTests.swift */; };
 		F10381CC8BB7614AE2E476CD /* AudioTranslateConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657D2201A0C439FD970EAB39 /* AudioTranslateConfiguratorTests.swift */; };
+		F11AD79EEEA0D42771BC8A7C /* TrainingCardsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A97C74322DFA703E45689FE /* TrainingCardsViewInput.swift */; };
 		F5F74CBB2F13DA2F4446CB49 /* AudioTranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF82709A881CE3AB85EA593 /* AudioTranslateViewController.swift */; };
 		F8BCE0916095EE46BD99AF23 /* ExamsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A44B91550C3CBF1650E9ECE /* ExamsPresenterTests.swift */; };
 		FC22FA6B605B8943CB61E0FE /* AudioTranslateViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319721501E8B932512ECBC6F /* AudioTranslateViewInput.swift */; };
@@ -137,6 +154,7 @@
 
 /* Begin PBXFileReference section */
 		00EC7D02B564DE0D324FA7EF /* TranslateInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateInitializer.swift; sourceTree = "<group>"; };
+		060577883DBBB4A1E80B643F /* TrainingCardsConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TrainingCardsConfigurator.swift; sourceTree = "<group>"; };
 		088A852038B1E7941AFCF173 /* AudioTranslateRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateRouterInput.swift; sourceTree = "<group>"; };
 		090D3E126FBB925AE88F96B4 /* ExamsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsViewInput.swift; sourceTree = "<group>"; };
 		0BC48E93BED40A2873C8E62B /* AudioTranslateViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateViewOutput.swift; sourceTree = "<group>"; };
@@ -202,7 +220,6 @@
 		44A0C4D61BB6ACB10039490E /* Ciało.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Ciało.xcassets"; sourceTree = "<group>"; };
 		44A0C4D91BB6ACB10039490E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44A0C4DB1BB6ACB10039490E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44A0C4E41BB6AF2E0039490E /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		44A0C4E61BB6B0680039490E /* TrueOrFalseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrueOrFalseViewController.swift; sourceTree = "<group>"; };
 		44A0C4E81BB6B07C0039490E /* WordsMakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsMakerViewController.swift; sourceTree = "<group>"; };
 		44A0C4EA1BB6B08C0039490E /* MatchWordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchWordsViewController.swift; sourceTree = "<group>"; };
@@ -234,20 +251,30 @@
 		44FD246C1C56C4BE00C4CD81 /* ViperTransitionRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperTransitionRouter.swift; sourceTree = "<group>"; };
 		482810387F246DB472541163 /* TranslateRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateRouterInput.swift; sourceTree = "<group>"; };
 		4877CEC7FCD0ED8C247BD0AE /* ExamsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsRouter.swift; sourceTree = "<group>"; };
+		544F675491FA466C56B30AC4 /* TrainingCardsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TrainingCardsViewOutput.swift; sourceTree = "<group>"; };
 		57ABE2CBE27B240FB2F474B0 /* ExamsConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsConfigurator.swift; sourceTree = "<group>"; };
+		57ED72B0D094D00742040771 /* TrainingCardsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TrainingCardsModuleInput.swift; sourceTree = "<group>"; };
 		58F943A4EEE669593F79400C /* AudioTranslateModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateModuleInput.swift; sourceTree = "<group>"; };
 		5A44B91550C3CBF1650E9ECE /* ExamsPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsPresenterTests.swift; sourceTree = "<group>"; };
+		5A5AB08CDC11D3837A7E0C29 /* TrainingCardsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TrainingCardsRouter.swift; sourceTree = "<group>"; };
 		5AF0ECB2E0904F8490344B05 /* TranslatePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslatePresenter.swift; sourceTree = "<group>"; };
 		5B7B013F9CA872CB6E18F2EF /* AudioTranslateInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateInitializer.swift; sourceTree = "<group>"; };
 		6062EDBE88CF87255A8A6ABE /* AudioTranslateRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateRouterTests.swift; sourceTree = "<group>"; };
 		657D2201A0C439FD970EAB39 /* AudioTranslateConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateConfiguratorTests.swift; sourceTree = "<group>"; };
 		65F616D156446CC15C6BA305 /* TranslateInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateInteractorOutput.swift; sourceTree = "<group>"; };
+		708FFCE5C3F11D38ACBBE8EE /* TrainingCardsInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TrainingCardsInitializer.swift; sourceTree = "<group>"; };
+		7839EBCB6C405DD9E5314D97 /* TrainingCardsInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TrainingCardsInteractorOutput.swift; sourceTree = "<group>"; };
 		7CE82B75C7DBA69F76775EAA /* TranslatePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslatePresenterTests.swift; sourceTree = "<group>"; };
 		7DC591E6799CC49018C61610 /* ExamsViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsViewTests.swift; sourceTree = "<group>"; };
+		809D5520F4BD48926C1FFC47 /* TrainingCardsInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TrainingCardsInteractorInput.swift; sourceTree = "<group>"; };
 		81E84CB8E1218DB3F0AE5311 /* TranslateViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateViewInput.swift; sourceTree = "<group>"; };
 		87B53A7199F1B1C4C0D30B2D /* AudioTranslateInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateInteractorInput.swift; sourceTree = "<group>"; };
+		888448663E16012BD28C82BC /* TrainingCardsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TrainingCardsPresenter.swift; sourceTree = "<group>"; };
+		8A97C74322DFA703E45689FE /* TrainingCardsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TrainingCardsViewInput.swift; sourceTree = "<group>"; };
 		8C63C2033C95D434D249312E /* ExamsInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsInitializer.swift; sourceTree = "<group>"; };
 		8D231520B8C59A065593A224 /* TranslateInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateInteractor.swift; sourceTree = "<group>"; };
+		8DB3CB3ECD2E17A4E79755B0 /* TrainingCardsInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TrainingCardsInteractorTests.swift; sourceTree = "<group>"; };
+		8FDEBE1B1A081F3A39FBBCDA /* TrainingCardsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TrainingCardsViewController.swift; sourceTree = "<group>"; };
 		901D33DECB180EE51DD82E21 /* ExamsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsViewController.swift; sourceTree = "<group>"; };
 		9434726DD204AFDE1DF32A87 /* AudioTranslateRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateRouter.swift; sourceTree = "<group>"; };
 		95D6D9E2639E3E8D0C952C7C /* TranslateInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateInteractorTests.swift; sourceTree = "<group>"; };
@@ -255,13 +282,19 @@
 		9A59A447C3D5762B013DD920 /* AudioTranslatePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslatePresenterTests.swift; sourceTree = "<group>"; };
 		AB62102C667881874E87C7E0 /* ExamsInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsInteractorInput.swift; sourceTree = "<group>"; };
 		AF957B1DA87BC525627E1F27 /* TranslateInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateInteractorInput.swift; sourceTree = "<group>"; };
+		AFBC4FDEB050DF190E42BD45 /* TrainingCardsRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TrainingCardsRouterTests.swift; sourceTree = "<group>"; };
 		B5F1AF3914FD6367ABB1788A /* AudioTranslateInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateInteractorTests.swift; sourceTree = "<group>"; };
 		BBF4BE7C3556A4F95EC302E5 /* ExamsConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsConfiguratorTests.swift; sourceTree = "<group>"; };
 		C38536C84AFA7B513DF810CF /* TranslateViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateViewOutput.swift; sourceTree = "<group>"; };
 		C604239D6141BA6A40833232 /* ExamsRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsRouterTests.swift; sourceTree = "<group>"; };
 		C64D25E2D6A672C0815705AD /* ExamsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsModuleInput.swift; sourceTree = "<group>"; };
+		C7BF70E36597C5D7269959B0 /* TrainingCardsPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TrainingCardsPresenterTests.swift; sourceTree = "<group>"; };
+		CABE2A3B7AE6D14F7A31956D /* TrainingCardsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TrainingCardsInteractor.swift; sourceTree = "<group>"; };
 		D09EEE9E721A1C379460852F /* AudioTranslateViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateViewTests.swift; sourceTree = "<group>"; };
+		D269900AE6EE0D3E2DF66C47 /* TrainingCardsViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TrainingCardsViewTests.swift; sourceTree = "<group>"; };
 		EE43D7ADAB3B7257AB49F3EC /* TranslateModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateModuleInput.swift; sourceTree = "<group>"; };
+		F8DF1CFC75C5262A0F039684 /* TrainingCardsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TrainingCardsRouterInput.swift; sourceTree = "<group>"; };
+		FD5A564B349C5C3C1C35D1A3 /* TrainingCardsConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TrainingCardsConfiguratorTests.swift; sourceTree = "<group>"; };
 		FE156A8141C389A03F9B5EFF /* TranslateViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateViewTests.swift; sourceTree = "<group>"; };
 		FE3B4B61C11A510B0D3B5887 /* TranslateRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateRouter.swift; sourceTree = "<group>"; };
 		FF663955A2F753469699B687 /* TranslateConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslateConfiguratorTests.swift; sourceTree = "<group>"; };
@@ -299,6 +332,15 @@
 			path = AudioTranslate;
 			sourceTree = "<group>";
 		};
+		0BBDD3C1F74977024068445C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F8DF1CFC75C5262A0F039684 /* TrainingCardsRouterInput.swift */,
+				5A5AB08CDC11D3837A7E0C29 /* TrainingCardsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		129222AB1490AC7DA958681F /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +351,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		1443FED66047387433565DFB /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				FD5A564B349C5C3C1C35D1A3 /* TrainingCardsConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
 		1898A7825BBC00BC24749E50 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +366,25 @@
 				5AF0ECB2E0904F8490344B05 /* TranslatePresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1DAC96A504E454C3C54188A5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				57ED72B0D094D00742040771 /* TrainingCardsModuleInput.swift */,
+				888448663E16012BD28C82BC /* TrainingCardsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1EFA34DD40A31FCFC493C8E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A97C74322DFA703E45689FE /* TrainingCardsViewInput.swift */,
+				544F675491FA466C56B30AC4 /* TrainingCardsViewOutput.swift */,
+				8FDEBE1B1A081F3A39FBBCDA /* TrainingCardsViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		21FE69C54AF2C1726E3EA5F3 /* View */ = {
@@ -339,6 +408,16 @@
 			isa = PBXGroup;
 			children = (
 				B5F1AF3914FD6367ABB1788A /* AudioTranslateInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3D6050DC2ED24334A8CEE441 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				809D5520F4BD48926C1FFC47 /* TrainingCardsInteractorInput.swift */,
+				7839EBCB6C405DD9E5314D97 /* TrainingCardsInteractorOutput.swift */,
+				CABE2A3B7AE6D14F7A31956D /* TrainingCardsInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -491,6 +570,7 @@
 				51C4FCB7F41362C9E49B6BD9 /* Exams */,
 				BE98154E0910BFC8C80EF5D3 /* AudioTranslate */,
 				3E40B60A839D9F73376F8EBD /* Translate */,
+				555F4A917A028F005093D167 /* TrainingCards */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -631,7 +711,6 @@
 			isa = PBXGroup;
 			children = (
 				44EE3E841BD7BCC200F0E640 /* Сells */,
-				44A0C4E41BB6AF2E0039490E /* BaseViewController.swift */,
 				44A0C4E61BB6B0680039490E /* TrueOrFalseViewController.swift */,
 				44A0C4E81BB6B07C0039490E /* WordsMakerViewController.swift */,
 				44A0C4EA1BB6B08C0039490E /* MatchWordsViewController.swift */,
@@ -735,6 +814,18 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		555F4A917A028F005093D167 /* TrainingCards */ = {
+			isa = PBXGroup;
+			children = (
+				1EFA34DD40A31FCFC493C8E4 /* View */,
+				1DAC96A504E454C3C54188A5 /* Presenter */,
+				3D6050DC2ED24334A8CEE441 /* Interactor */,
+				0BBDD3C1F74977024068445C /* Router */,
+				9592EF85A539DD6494ED0DD0 /* Configurator */,
+			);
+			path = TrainingCards;
+			sourceTree = "<group>";
+		};
 		5569C9AEDFDEADA120D19A38 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -767,6 +858,14 @@
 				4877CEC7FCD0ED8C247BD0AE /* ExamsRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		842B7CEE16352D03DC88A771 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D269900AE6EE0D3E2DF66C47 /* TrainingCardsViewTests.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		88A8A1CE7F4CCCE3F34D87C6 /* Presenter */ = {
@@ -804,6 +903,15 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		9592EF85A539DD6494ED0DD0 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				060577883DBBB4A1E80B643F /* TrainingCardsConfigurator.swift */,
+				708FFCE5C3F11D38ACBBE8EE /* TrainingCardsInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
 		9681186C5CE9F7EF2D051525 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
@@ -823,6 +931,14 @@
 				E42D19BD6DF2C69A97C4642E /* Router */,
 			);
 			path = Translate;
+			sourceTree = "<group>";
+		};
+		A92F38B5B5882AEA8D385DE4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C7BF70E36597C5D7269959B0 /* TrainingCardsPresenterTests.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		B01F29415759D8AD8E49D7D6 /* View */ = {
@@ -851,6 +967,14 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		BBE485D0011CC22C7FB2654D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8DB3CB3ECD2E17A4E79755B0 /* TrainingCardsInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		BE98154E0910BFC8C80EF5D3 /* AudioTranslate */ = {
 			isa = PBXGroup;
 			children = (
@@ -872,12 +996,32 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		D2B6CFC595A9CD1BE6C1DE15 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AFBC4FDEB050DF190E42BD45 /* TrainingCardsRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		D437F73567BA686F236249A9 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				7DC591E6799CC49018C61610 /* ExamsViewTests.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D9B1ADE2567E7FA8AFFE8B85 /* TrainingCards */ = {
+			isa = PBXGroup;
+			children = (
+				1443FED66047387433565DFB /* Configurator */,
+				842B7CEE16352D03DC88A771 /* View */,
+				BBE485D0011CC22C7FB2654D /* Interactor */,
+				A92F38B5B5882AEA8D385DE4 /* Presenter */,
+				D2B6CFC595A9CD1BE6C1DE15 /* Router */,
+			);
+			path = TrainingCards;
 			sourceTree = "<group>";
 		};
 		DF2228999249DB5ED73BBC96 /* Presenter */ = {
@@ -962,6 +1106,7 @@
 				47AB3E6077336BBA2C604393 /* Exams */,
 				0B0717CE5D050CAD8A9AE95B /* AudioTranslate */,
 				99B204309959AE6EF739F5BA /* Translate */,
+				D9B1ADE2567E7FA8AFFE8B85 /* TrainingCards */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -1162,6 +1307,18 @@
 				162FBC6D333D6968F1E2F578 /* TranslateRouter.swift in Sources */,
 				20C462874E588079C68BB611 /* TranslateConfigurator.swift in Sources */,
 				6BE99063CB5C5FEA14A57999 /* TranslateInitializer.swift in Sources */,
+				F11AD79EEEA0D42771BC8A7C /* TrainingCardsViewInput.swift in Sources */,
+				72F30455C9432916B1B90CDF /* TrainingCardsViewOutput.swift in Sources */,
+				559007809A1740ACD8B9ADF8 /* TrainingCardsViewController.swift in Sources */,
+				CA9A643760DA83A7B35526BC /* TrainingCardsModuleInput.swift in Sources */,
+				79FED30E5E85A2C05626F984 /* TrainingCardsPresenter.swift in Sources */,
+				B2A3B49501D9EBFA852EF9FC /* TrainingCardsInteractorInput.swift in Sources */,
+				D2F3B472C1A6D38F4C18A37E /* TrainingCardsInteractorOutput.swift in Sources */,
+				7B920D03EE27305038740AD1 /* TrainingCardsInteractor.swift in Sources */,
+				B992C95664CEC1DA483EDAA2 /* TrainingCardsRouterInput.swift in Sources */,
+				365D3375FEDC7E96E9A18882 /* TrainingCardsRouter.swift in Sources */,
+				61BAE07D34113B50DFB0773B /* TrainingCardsConfigurator.swift in Sources */,
+				9D64F4F7FB9B905B9713C48C /* TrainingCardsInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1185,6 +1342,11 @@
 				592E95C3408DD30DC040692E /* TranslateInteractorTests.swift in Sources */,
 				AC2D6AA08682BC106C7542CA /* TranslatePresenterTests.swift in Sources */,
 				3B5789BF0959F6ED41440089 /* TranslateRouterTests.swift in Sources */,
+				7AF02DFB7B51AD9D1028F545 /* TrainingCardsConfiguratorTests.swift in Sources */,
+				9DA4C899CE832FA340ED0CE3 /* TrainingCardsViewTests.swift in Sources */,
+				91B1F304AE4E4735566AC443 /* TrainingCardsInteractorTests.swift in Sources */,
+				D2EF5B8DD5E5B60AEF813C19 /* TrainingCardsPresenterTests.swift in Sources */,
+				210BD4968244DA0CA3F31042 /* TrainingCardsRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

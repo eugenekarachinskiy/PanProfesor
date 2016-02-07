@@ -21,4 +21,7 @@ class WordsService {
         return result
     }
     
+    func fetchAllWordsForSection(section: SectionDto) -> [WordDto] {
+        return section.words
+    }
 }
