@@ -30,6 +30,18 @@ class ExamsViewController: UICollectionViewController, ExamsViewInput, ViperModu
     }
     
     
+    // MARK: Navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        super.prepareForSegue(segue, sender: sender)
+        
+        guard let configurationHolder = segue.destinationViewController as? ViperModuleTransitionHandlerProtocol,
+            let segueInfo = sender as? SegueInfo  else {
+                return
+        }
+        
+        segueInfo.configurationBlock?(input: configurationHolder.moduleInput)
+    }
+    
     // MARK: UICollectionViewDataSource UICollectionViewDelegate
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1

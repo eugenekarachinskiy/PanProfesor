@@ -32,55 +32,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PanProfesor/Helpers/ContentManager.swift"
-            timestampString = "475195382.26357"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "loadContent()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PanProfesor/Classes/Common/Store/CoreDataStorage.swift"
-            timestampString = "475346577.772379"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "addNewSectionWithWords(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PanProfesor/Classes/Common/Store/CoreDataStorage.swift"
-            timestampString = "475346577.772379"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "addNewSectionWithWords(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PanProfesor/Classes/Common/Store/CoreDataStorage.swift"
@@ -139,54 +91,6 @@
             endingLineNumber = "31"
             landmarkName = "managedObjectModel"
             landmarkType = "19">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PanProfesor/Classes/Modules/Exams/Router/ExamsRouter.swift"
-            timestampString = "475448745.786301"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "presentExamController(_:exam:)"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PanProfesor.ExamsRouter.presentExamController (PanProfesor.ExamsRouter)(Swift.Optional&lt;PanProfesor.SectionDto&gt;, exam : PanProfesor.ExamItem) -&gt; ()"
-                  moduleName = "PanProfesor"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/eugene/Developer/iOS/PanProfesor/PanProfesor/Classes/Modules/Exams/Router/ExamsRouter.swift"
-                  timestampString = "475448789.831832"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "131">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PanProfesor.ExamsRouter.(presentExamController (PanProfesor.ExamsRouter) -&gt; (Swift.Optional&lt;PanProfesor.SectionDto&gt;, exam : PanProfesor.ExamItem) -&gt; ()).(closure #1)"
-                  moduleName = "PanProfesor"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/eugene/Developer/iOS/PanProfesor/PanProfesor/Classes/Modules/Exams/Router/ExamsRouter.swift"
-                  timestampString = "475448789.83197"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "12">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

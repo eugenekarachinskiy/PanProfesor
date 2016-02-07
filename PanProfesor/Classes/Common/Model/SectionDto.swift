@@ -10,11 +10,20 @@ import Foundation
 
 struct SectionDto {
     
-    var title: String?
-    var words: NSSet?
+    var title: String!
+    var words: Array<WordDto> = Array<WordDto>()
     
-    init(title: String?, words: NSSet?) {
-        self.title = title
-        self.words = words
+    init(section:Section) {
+        title = section.title
+        
+        if let wordsArray = section.words {
+            for word in wordsArray {
+                if let wordDao = word as? Word {
+                    var wordDto = WordDto(word: wordDao)
+                    wordDto.section = self
+                    words.append(wordDto)
+                }
+            }
+        }
     }
 }

@@ -14,8 +14,8 @@ import CoreData
 
 extension Word {
 
-    @NSManaged var polish: String?
-    @NSManaged var russian: String?
+    @NSManaged var polish: String!
+    @NSManaged var russian: String!
     @NSManaged var used: NSNumber?
     @NSManaged var section: Section?
 

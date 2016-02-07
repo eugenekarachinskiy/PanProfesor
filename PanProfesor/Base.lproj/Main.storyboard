@@ -1063,10 +1063,10 @@
             </objects>
             <point key="canvasLocation" x="199" y="3923"/>
         </scene>
-        <!--Выберите перевод аудио-->
+        <!--View Controller-->
         <scene sceneID="MMc-MJ-PLu">
             <objects>
-                <viewController id="zl2-mI-7Mw" customClass="ChooseAudioTranslateViewController" customModule="PanProfesor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zl2-mI-7Mw" customClass="AudioTranslateViewController" customModule="PanProfesor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="psH-y1-m6p"/>
                         <viewControllerLayoutGuide type="bottom" id="COq-qJ-pcJ"/>
@@ -1136,8 +1136,8 @@
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="zl2-mI-7Mw" id="ynq-G2-XNp"/>
-                                    <outlet property="delegate" destination="zl2-mI-7Mw" id="Qb9-kB-eXz"/>
+                                    <outlet property="dataSource" destination="zl2-mI-7Mw" id="Zml-Mi-2M4"/>
+                                    <outlet property="delegate" destination="zl2-mI-7Mw" id="sUH-cE-rV1"/>
                                 </connections>
                             </collectionView>
                         </subviews>
@@ -1156,11 +1156,16 @@
                     </view>
                     <navigationItem key="navigationItem" title="Выберите перевод аудио" id="RXE-PL-CNK"/>
                     <connections>
-                        <outlet property="collectionView" destination="pMH-n2-BMF" id="0yQ-4x-HZu"/>
-                        <outlet property="pageControl" destination="meI-ZP-MXs" id="unh-Vi-7fe"/>
+                        <outlet property="collectionView" destination="pMH-n2-BMF" id="1zj-9M-ED8"/>
+                        <outlet property="pageControl" destination="meI-ZP-MXs" id="GWk-4a-hSh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2rh-Dt-S4R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="NE8-eP-aNB" customClass="AudioTranslateModuleInitializer" customModule="PanProfesor" customModuleProvider="target">
+                    <connections>
+                        <outlet property="viewController" destination="zl2-mI-7Mw" id="RMK-eG-qgW"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="184" y="-1056"/>
         </scene>

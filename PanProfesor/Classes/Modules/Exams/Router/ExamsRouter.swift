@@ -10,6 +10,10 @@ class ExamsRouter: ViperTransitionRouter, ExamsRouterInput {
     
     func presentExamController(section: SectionDto?, exam: ExamItem) {
         transitionHandler?.openModule(exam.segueIdentifier, configurationBlock: { (input) -> (AnyObject?) in
+            if let audioTranslateInput = input as? AudioTranslateModuleInput,
+                let sectionDto = section {
+                audioTranslateInput.setupSection(sectionDto)
+            }
             return nil
         })
     }

@@ -20,7 +20,7 @@ extension SectionsInteractor: SectionsInteractorInput {
         
         if let sectionsArray = sections {
             for section in sectionsArray {
-                dtoSections.append(SectionDto(title: section.title, words: section.words))
+                dtoSections.append(SectionDto(section: section))
             }
         }
         

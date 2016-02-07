@@ -21,7 +21,7 @@ class ExamsModuleConfigurator {
 
         let router = ExamsRouter()
         router.transitionHandler = viewController
-
+        
         let presenter = ExamsPresenter()
         presenter.view = viewController
         presenter.router = router

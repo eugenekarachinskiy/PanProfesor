@@ -9,8 +9,14 @@
 import Foundation
 
 struct WordDto {
-    var polish: String?
-    var russian: String?
-    var used: NSNumber?
-    var section: Section?
+    var polish: String
+    var russian: String
+    var used: Int?
+    var section: SectionDto?
+    
+    init(word: Word) {
+        self.polish = word.polish
+        self.russian = word.russian
+        self.used = word.used?.integerValue
+    }
 }

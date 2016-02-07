@@ -5,13 +5,13 @@
         <relationship name="words" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Word" inverseName="section" inverseEntity="Word" syncable="YES"/>
     </entity>
     <entity name="Word" representedClassName=".Word" syncable="YES">
-        <attribute name="polish" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="russian" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="polish" attributeType="String" syncable="YES"/>
+        <attribute name="russian" attributeType="String" syncable="YES"/>
         <attribute name="used" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <relationship name="section" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Section" inverseName="words" inverseEntity="Section" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Section" positionX="-1305" positionY="234" width="128" height="73"/>
+        <element name="Section" positionX="-1305" positionY="234" width="128" height="75"/>
         <element name="Word" positionX="-1080" positionY="218" width="128" height="105"/>
     </elements>
 </model>

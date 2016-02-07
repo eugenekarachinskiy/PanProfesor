@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		00D1C84CB0ED55FC6BFDAEB1 /* ExamsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4877CEC7FCD0ED8C247BD0AE /* ExamsRouter.swift */; };
+		0C867154E25AD72BD3D3264E /* AudioTranslateViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC48E93BED40A2873C8E62B /* AudioTranslateViewOutput.swift */; };
+		117C05582FA12CCF1C2339B2 /* AudioTranslatePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A59A447C3D5762B013DD920 /* AudioTranslatePresenterTests.swift */; };
 		15F61A8E4F0E7BAD8F537C2F /* ExamsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB62102C667881874E87C7E0 /* ExamsInteractorInput.swift */; };
+		215A55C608B22643F9EA65F4 /* AudioTranslateInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7B013F9CA872CB6E18F2EF /* AudioTranslateInitializer.swift */; };
 		215FF45717639D91DF5647A3 /* ExamsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8C2279F97AA3135F72AFE6 /* ExamsViewOutput.swift */; };
 		22386F49DFCA57B37BF6DFBA /* ExamsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64D25E2D6A672C0815705AD /* ExamsModuleInput.swift */; };
+		251EF7FFF3CEB4810F92D0FC /* AudioTranslateRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6062EDBE88CF87255A8A6ABE /* AudioTranslateRouterTests.swift */; };
 		37FD40EA140DD59285BD5EC7 /* ExamsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3360710B1E1A685126EE1C0A /* ExamsInteractorOutput.swift */; };
+		3B56732EAC62938097F82F4F /* AudioTranslateInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F1AF3914FD6367ABB1788A /* AudioTranslateInteractorTests.swift */; };
 		3CE53092C9B7CF15D6E02531 /* ExamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901D33DECB180EE51DD82E21 /* ExamsViewController.swift */; };
 		41172798EA1CF2C8D0019872 /* ExamsConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF4BE7C3556A4F95EC302E5 /* ExamsConfiguratorTests.swift */; };
 		44115CF61BFD25C200371CEE /* AlphabetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44115CF51BFD25C200371CEE /* AlphabetCollectionViewCell.swift */; };
@@ -36,7 +41,6 @@
 		445CBA971C539326000453EB /* SectionsModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445CBA961C539326000453EB /* SectionsModuleOutput.swift */; };
 		445D7E8E1C5242D200D7D4F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445D7E8C1C5242D200D7D4F3 /* AppDelegate.swift */; };
 		445D7E8F1C5242D200D7D4F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445D7E8D1C5242D200D7D4F3 /* ViewController.swift */; };
-		44639B101C52BE3B004AC539 /* SectionsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44639B041C52BE3B004AC539 /* SectionsDataManager.swift */; };
 		44639B111C52BE3B004AC539 /* SectionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44639B051C52BE3B004AC539 /* SectionsInteractor.swift */; };
 		44639B121C52BE3B004AC539 /* SectionsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44639B061C52BE3B004AC539 /* SectionsInteractorInput.swift */; };
 		44639B131C52BE3B004AC539 /* SectionsIteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44639B071C52BE3B004AC539 /* SectionsIteractorOutput.swift */; };
@@ -54,6 +58,7 @@
 		44639B341C52D0EA004AC539 /* SectionDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44639B331C52D0EA004AC539 /* SectionDto.swift */; };
 		44639B3D1C52D62E004AC539 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44639B3A1C52D518004AC539 /* Word.swift */; };
 		44639B3E1C52D631004AC539 /* Word+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44639B391C52D518004AC539 /* Word+CoreDataProperties.swift */; };
+		4498E9371C5FF7CB0044C18F /* WordsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498E9361C5FF7CB0044C18F /* WordsService.swift */; };
 		449B7A261BFBA3AD004B645E /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B7A251BFBA3AD004B645E /* SectionCollectionViewCell.swift */; };
 		449B7A2A1BFBAAA8004B645E /* ExamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B7A291BFBAAA8004B645E /* ExamCollectionViewCell.swift */; };
 		44A0C4D51BB6ACB10039490E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A0C4D31BB6ACB10039490E /* Main.storyboard */; };
@@ -64,7 +69,6 @@
 		44BB36BA1C52D6BC002267CB /* WordDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB36B91C52D6BC002267CB /* WordDto.swift */; };
 		44BB36BB1C52DF6D002267CB /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441474A21BE7884A005A4F54 /* ContentManager.swift */; };
 		44BB36C01C52E3AF002267CB /* SectionsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB36BF1C52E3AF002267CB /* SectionsModuleConfigurator.swift */; };
-		44BB36C31C52E9AC002267CB /* ViperModuleConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB36C21C52E9AC002267CB /* ViperModuleConfiguratorProtocol.swift */; };
 		44BB36C51C52EC58002267CB /* ViperModuleTransitionHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB36C41C52EC58002267CB /* ViperModuleTransitionHandlerProtocol.swift */; };
 		44BB36C81C52EE57002267CB /* SegueInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB36C71C52EE56002267CB /* SegueInfo.swift */; };
 		44C931791BFD02C1000AB742 /* SpeechHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C931781BFD02C1000AB742 /* SpeechHelper.swift */; };
@@ -81,24 +85,28 @@
 		44FD24691C56ACB800C4CD81 /* Exams.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44FD24681C56ACB800C4CD81 /* Exams.plist */; };
 		44FD246B1C56AEB700C4CD81 /* ExamsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD246A1C56AEB700C4CD81 /* ExamsService.swift */; };
 		44FD246D1C56C4BE00C4CD81 /* ViperTransitionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD246C1C56C4BE00C4CD81 /* ViperTransitionRouter.swift */; };
-		44FD246F1C56C60800C4CD81 /* TrueOrFalseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A0C4E61BB6B0680039490E /* TrueOrFalseViewController.swift */; };
-		44FD24701C56C60800C4CD81 /* WordsMakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A0C4E81BB6B07C0039490E /* WordsMakerViewController.swift */; };
-		44FD24711C56C60800C4CD81 /* MatchWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A0C4EA1BB6B08C0039490E /* MatchWordsViewController.swift */; };
-		44FD24721C56C60800C4CD81 /* MemoryWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A0C4EC1BB6B0A90039490E /* MemoryWordsViewController.swift */; };
-		44FD24731C56C60800C4CD81 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C931761BFCF8CB000AB742 /* CardsViewController.swift */; };
-		44FD24741C56C60800C4CD81 /* TraningCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C9317C1BFD066A000AB742 /* TraningCardsViewController.swift */; };
-		44FD24751C56C60800C4CD81 /* ChooseTranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C9317E1BFD0BBD000AB742 /* ChooseTranslateViewController.swift */; };
-		44FD24761C56C60800C4CD81 /* ChooseAudioTranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C931821BFD1E53000AB742 /* ChooseAudioTranslateViewController.swift */; };
 		506CD4B2857C0FAAD97EE6A6 /* ExamsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B816BB929CDADFEEC0E627 /* ExamsInteractorTests.swift */; };
 		53DEFF22E49CCA22DBE45575 /* ExamsRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C604239D6141BA6A40833232 /* ExamsRouterTests.swift */; };
 		59E2692950B75F952E06EAC9 /* ExamsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19234C2CD33EBF24EFF6C03B /* ExamsInteractor.swift */; };
+		59E30392C2343E589C64F51A /* AudioTranslateModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F943A4EEE669593F79400C /* AudioTranslateModuleInput.swift */; };
+		690C2022FB73CD90EBC02E3B /* AudioTranslateConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15258E69CA59C40E8305DA1F /* AudioTranslateConfigurator.swift */; };
+		80768B30A0AE61D9D5BBC40B /* AudioTranslateRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088A852038B1E7941AFCF173 /* AudioTranslateRouterInput.swift */; };
+		9659EC12517DC6D8A038D83A /* AudioTranslateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F465E991D6D2B5339AFA860 /* AudioTranslateInteractor.swift */; };
+		A658C8C5795B444AA142C5A0 /* AudioTranslateInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B53A7199F1B1C4C0D30B2D /* AudioTranslateInteractorInput.swift */; };
 		AFE92CC0C52A091F3B0BB07C /* ExamsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090D3E126FBB925AE88F96B4 /* ExamsViewInput.swift */; };
 		B3C86C507217534975A0B76A /* ExamsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9733867F11C836BA5537FBDB /* ExamsRouterInput.swift */; };
 		B4C6640A193A78EF20928B71 /* ExamsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ABE2CBE27B240FB2F474B0 /* ExamsConfigurator.swift */; };
+		C0AB64FE86A67D8B99384689 /* AudioTranslateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9434726DD204AFDE1DF32A87 /* AudioTranslateRouter.swift */; };
+		D5E6A966EB91E5E30A7DA3B1 /* AudioTranslateInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C7AC6FED257EEE7CAACF56 /* AudioTranslateInteractorOutput.swift */; };
+		DAD779CB213DCBB89F4B5790 /* AudioTranslatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F0EE555966DF604C9B6D64 /* AudioTranslatePresenter.swift */; };
+		DB748B962D5826562818C440 /* AudioTranslateViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09EEE9E721A1C379460852F /* AudioTranslateViewTests.swift */; };
 		DECEB3E39017E63893A44A9C /* ExamsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DED379F945DB375CE4F3AB7 /* ExamsPresenter.swift */; };
 		E342E90DB2EEBB0A0DFF659F /* ExamsInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C63C2033C95D434D249312E /* ExamsInitializer.swift */; };
 		EBDE37D6C03B626271FC8E4F /* ExamsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC591E6799CC49018C61610 /* ExamsViewTests.swift */; };
+		F10381CC8BB7614AE2E476CD /* AudioTranslateConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657D2201A0C439FD970EAB39 /* AudioTranslateConfiguratorTests.swift */; };
+		F5F74CBB2F13DA2F4446CB49 /* AudioTranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF82709A881CE3AB85EA593 /* AudioTranslateViewController.swift */; };
 		F8BCE0916095EE46BD99AF23 /* ExamsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A44B91550C3CBF1650E9ECE /* ExamsPresenterTests.swift */; };
+		FC22FA6B605B8943CB61E0FE /* AudioTranslateViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319721501E8B932512ECBC6F /* AudioTranslateViewInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,10 +120,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		088A852038B1E7941AFCF173 /* AudioTranslateRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateRouterInput.swift; sourceTree = "<group>"; };
 		090D3E126FBB925AE88F96B4 /* ExamsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsViewInput.swift; sourceTree = "<group>"; };
+		0BC48E93BED40A2873C8E62B /* AudioTranslateViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateViewOutput.swift; sourceTree = "<group>"; };
 		11B816BB929CDADFEEC0E627 /* ExamsInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsInteractorTests.swift; sourceTree = "<group>"; };
+		15258E69CA59C40E8305DA1F /* AudioTranslateConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateConfigurator.swift; sourceTree = "<group>"; };
 		19234C2CD33EBF24EFF6C03B /* ExamsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsInteractor.swift; sourceTree = "<group>"; };
 		1DED379F945DB375CE4F3AB7 /* ExamsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsPresenter.swift; sourceTree = "<group>"; };
+		29F0EE555966DF604C9B6D64 /* AudioTranslatePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslatePresenter.swift; sourceTree = "<group>"; };
+		2BF82709A881CE3AB85EA593 /* AudioTranslateViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateViewController.swift; sourceTree = "<group>"; };
+		2F465E991D6D2B5339AFA860 /* AudioTranslateInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateInteractor.swift; sourceTree = "<group>"; };
+		319721501E8B932512ECBC6F /* AudioTranslateViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateViewInput.swift; sourceTree = "<group>"; };
+		32C7AC6FED257EEE7CAACF56 /* AudioTranslateInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateInteractorOutput.swift; sourceTree = "<group>"; };
 		3360710B1E1A685126EE1C0A /* ExamsInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsInteractorOutput.swift; sourceTree = "<group>"; };
 		3F8C2279F97AA3135F72AFE6 /* ExamsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsViewOutput.swift; sourceTree = "<group>"; };
 		44115CF51BFD25C200371CEE /* AlphabetCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -141,7 +157,6 @@
 		445CBA961C539326000453EB /* SectionsModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsModuleOutput.swift; sourceTree = "<group>"; };
 		445D7E8C1C5242D200D7D4F3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		445D7E8D1C5242D200D7D4F3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		44639B041C52BE3B004AC539 /* SectionsDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsDataManager.swift; sourceTree = "<group>"; };
 		44639B051C52BE3B004AC539 /* SectionsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsInteractor.swift; sourceTree = "<group>"; };
 		44639B061C52BE3B004AC539 /* SectionsInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsInteractorInput.swift; sourceTree = "<group>"; };
 		44639B071C52BE3B004AC539 /* SectionsIteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsIteractorOutput.swift; sourceTree = "<group>"; };
@@ -160,6 +175,7 @@
 		44639B331C52D0EA004AC539 /* SectionDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionDto.swift; sourceTree = "<group>"; };
 		44639B391C52D518004AC539 /* Word+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		44639B3A1C52D518004AC539 /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		4498E9361C5FF7CB0044C18F /* WordsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsService.swift; sourceTree = "<group>"; };
 		449B7A251BFBA3AD004B645E /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		449B7A291BFBAAA8004B645E /* ExamCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamCollectionViewCell.swift; sourceTree = "<group>"; };
 		44A0C4CC1BB6ACB10039490E /* PanProfesor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanProfesor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,7 +194,6 @@
 		44A50EAE1C56A2FC003F2112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44BB36B91C52D6BC002267CB /* WordDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordDto.swift; sourceTree = "<group>"; };
 		44BB36BF1C52E3AF002267CB /* SectionsModuleConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsModuleConfigurator.swift; sourceTree = "<group>"; };
-		44BB36C21C52E9AC002267CB /* ViperModuleConfiguratorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModuleConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		44BB36C41C52EC58002267CB /* ViperModuleTransitionHandlerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModuleTransitionHandlerProtocol.swift; sourceTree = "<group>"; };
 		44BB36C71C52EE56002267CB /* SegueInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueInfo.swift; sourceTree = "<group>"; };
 		44C931761BFCF8CB000AB742 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
@@ -200,15 +215,24 @@
 		44FD246C1C56C4BE00C4CD81 /* ViperTransitionRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperTransitionRouter.swift; sourceTree = "<group>"; };
 		4877CEC7FCD0ED8C247BD0AE /* ExamsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsRouter.swift; sourceTree = "<group>"; };
 		57ABE2CBE27B240FB2F474B0 /* ExamsConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsConfigurator.swift; sourceTree = "<group>"; };
+		58F943A4EEE669593F79400C /* AudioTranslateModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateModuleInput.swift; sourceTree = "<group>"; };
 		5A44B91550C3CBF1650E9ECE /* ExamsPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsPresenterTests.swift; sourceTree = "<group>"; };
+		5B7B013F9CA872CB6E18F2EF /* AudioTranslateInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateInitializer.swift; sourceTree = "<group>"; };
+		6062EDBE88CF87255A8A6ABE /* AudioTranslateRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateRouterTests.swift; sourceTree = "<group>"; };
+		657D2201A0C439FD970EAB39 /* AudioTranslateConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateConfiguratorTests.swift; sourceTree = "<group>"; };
 		7DC591E6799CC49018C61610 /* ExamsViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsViewTests.swift; sourceTree = "<group>"; };
+		87B53A7199F1B1C4C0D30B2D /* AudioTranslateInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateInteractorInput.swift; sourceTree = "<group>"; };
 		8C63C2033C95D434D249312E /* ExamsInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsInitializer.swift; sourceTree = "<group>"; };
 		901D33DECB180EE51DD82E21 /* ExamsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsViewController.swift; sourceTree = "<group>"; };
+		9434726DD204AFDE1DF32A87 /* AudioTranslateRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateRouter.swift; sourceTree = "<group>"; };
 		9733867F11C836BA5537FBDB /* ExamsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsRouterInput.swift; sourceTree = "<group>"; };
+		9A59A447C3D5762B013DD920 /* AudioTranslatePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslatePresenterTests.swift; sourceTree = "<group>"; };
 		AB62102C667881874E87C7E0 /* ExamsInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsInteractorInput.swift; sourceTree = "<group>"; };
+		B5F1AF3914FD6367ABB1788A /* AudioTranslateInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateInteractorTests.swift; sourceTree = "<group>"; };
 		BBF4BE7C3556A4F95EC302E5 /* ExamsConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsConfiguratorTests.swift; sourceTree = "<group>"; };
 		C604239D6141BA6A40833232 /* ExamsRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsRouterTests.swift; sourceTree = "<group>"; };
 		C64D25E2D6A672C0815705AD /* ExamsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExamsModuleInput.swift; sourceTree = "<group>"; };
+		D09EEE9E721A1C379460852F /* AudioTranslateViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioTranslateViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +255,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B0717CE5D050CAD8A9AE95B /* AudioTranslate */ = {
+			isa = PBXGroup;
+			children = (
+				E6A271CB1A433067FD3F7770 /* Configurator */,
+				F20E5244243006BB53D3288C /* View */,
+				3A226E284BD4656894A9CA60 /* Interactor */,
+				88A8A1CE7F4CCCE3F34D87C6 /* Presenter */,
+				B9B4B2B6207542BC6769A33A /* Router */,
+			);
+			path = AudioTranslate;
+			sourceTree = "<group>";
+		};
 		129222AB1490AC7DA958681F /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +284,24 @@
 				8C63C2033C95D434D249312E /* ExamsInitializer.swift */,
 			);
 			path = Configurator;
+			sourceTree = "<group>";
+		};
+		3A226E284BD4656894A9CA60 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B5F1AF3914FD6367ABB1788A /* AudioTranslateInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3F849F687E24A2F9EF630068 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				87B53A7199F1B1C4C0D30B2D /* AudioTranslateInteractorInput.swift */,
+				32C7AC6FED257EEE7CAACF56 /* AudioTranslateInteractorOutput.swift */,
+				2F465E991D6D2B5339AFA860 /* AudioTranslateInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		445159301C53AC690075722B /* Alphabet */ = {
@@ -375,6 +429,7 @@
 				445159301C53AC690075722B /* Alphabet */,
 				445D7E911C52449100D7D4F3 /* CategoriesList */,
 				51C4FCB7F41362C9E49B6BD9 /* Exams */,
+				BE98154E0910BFC8C80EF5D3 /* AudioTranslate */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -397,7 +452,6 @@
 				44639B051C52BE3B004AC539 /* SectionsInteractor.swift */,
 				44639B061C52BE3B004AC539 /* SectionsInteractorInput.swift */,
 				44639B071C52BE3B004AC539 /* SectionsIteractorOutput.swift */,
-				44639B041C52BE3B004AC539 /* SectionsDataManager.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -439,6 +493,7 @@
 				445159501C53BDFE0075722B /* PolishAlphabetService.swift */,
 				445159521C53C2F60075722B /* SpeechService.swift */,
 				44FD246A1C56AEB700C4CD81 /* ExamsService.swift */,
+				4498E9361C5FF7CB0044C18F /* WordsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -550,7 +605,6 @@
 		44BB36C11C52E986002267CB /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				44BB36C21C52E9AC002267CB /* ViperModuleConfiguratorProtocol.swift */,
 				44BB36C41C52EC58002267CB /* ViperModuleTransitionHandlerProtocol.swift */,
 			);
 			path = Protocols;
@@ -612,6 +666,15 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		5569C9AEDFDEADA120D19A38 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				088A852038B1E7941AFCF173 /* AudioTranslateRouterInput.swift */,
+				9434726DD204AFDE1DF32A87 /* AudioTranslateRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		580E27727FFF1421C4777E1F /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -637,12 +700,50 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		88A8A1CE7F4CCCE3F34D87C6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9A59A447C3D5762B013DD920 /* AudioTranslatePresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8D187DE36E596AB90DC1E693 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				319721501E8B932512ECBC6F /* AudioTranslateViewInput.swift */,
+				0BC48E93BED40A2873C8E62B /* AudioTranslateViewOutput.swift */,
+				2BF82709A881CE3AB85EA593 /* AudioTranslateViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		94E64A5CB2913691CCB5AFF5 /* Router */ = {
 			isa = PBXGroup;
 			children = (
 				C604239D6141BA6A40833232 /* ExamsRouterTests.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		B9B4B2B6207542BC6769A33A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6062EDBE88CF87255A8A6ABE /* AudioTranslateRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BE98154E0910BFC8C80EF5D3 /* AudioTranslate */ = {
+			isa = PBXGroup;
+			children = (
+				8D187DE36E596AB90DC1E693 /* View */,
+				DF2228999249DB5ED73BBC96 /* Presenter */,
+				3F849F687E24A2F9EF630068 /* Interactor */,
+				5569C9AEDFDEADA120D19A38 /* Router */,
+				E33ED19547DD9A90A48F106C /* Configurator */,
+			);
+			path = AudioTranslate;
 			sourceTree = "<group>";
 		};
 		BFB28A9AB85F5A14449E114E /* Presenter */ = {
@@ -662,12 +763,46 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DF2228999249DB5ED73BBC96 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				58F943A4EEE669593F79400C /* AudioTranslateModuleInput.swift */,
+				29F0EE555966DF604C9B6D64 /* AudioTranslatePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E33ED19547DD9A90A48F106C /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				15258E69CA59C40E8305DA1F /* AudioTranslateConfigurator.swift */,
+				5B7B013F9CA872CB6E18F2EF /* AudioTranslateInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		E6A271CB1A433067FD3F7770 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				657D2201A0C439FD970EAB39 /* AudioTranslateConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
 		F0D47472AE462662D96ADFF1 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
 				11B816BB929CDADFEEC0E627 /* ExamsInteractorTests.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F20E5244243006BB53D3288C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D09EEE9E721A1C379460852F /* AudioTranslateViewTests.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F88E9FFFDE79533713663315 /* Classes */ = {
@@ -682,6 +817,7 @@
 			isa = PBXGroup;
 			children = (
 				47AB3E6077336BBA2C604393 /* Exams */,
+				0B0717CE5D050CAD8A9AE95B /* AudioTranslate */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -795,21 +931,17 @@
 				445D7E8F1C5242D200D7D4F3 /* ViewController.swift in Sources */,
 				449B7A261BFBA3AD004B645E /* SectionCollectionViewCell.swift in Sources */,
 				44F4B1521C55350D002EA954 /* PanProfesor.xcdatamodel in Sources */,
-				44FD246F1C56C60800C4CD81 /* TrueOrFalseViewController.swift in Sources */,
-				44FD24731C56C60800C4CD81 /* CardsViewController.swift in Sources */,
 				44639B1F1C52CA8A004AC539 /* SectionsService.swift in Sources */,
 				445D7E8E1C5242D200D7D4F3 /* AppDelegate.swift in Sources */,
-				44BB36C31C52E9AC002267CB /* ViperModuleConfiguratorProtocol.swift in Sources */,
 				44639B3E1C52D631004AC539 /* Word+CoreDataProperties.swift in Sources */,
 				44BB36BB1C52DF6D002267CB /* ContentManager.swift in Sources */,
 				4451592F1C53AA5E0075722B /* ViperTransitionViewController.swift in Sources */,
 				445159451C53AE5C0075722B /* AlphabetModuleOutput.swift in Sources */,
 				441642B11BDA7B16000D011D /* MemoryCollectionViewCell.swift in Sources */,
-				44FD24711C56C60800C4CD81 /* MatchWordsViewController.swift in Sources */,
 				44639B211C52CA99004AC539 /* CoreDataStorage.swift in Sources */,
 				44BB36C51C52EC58002267CB /* ViperModuleTransitionHandlerProtocol.swift in Sources */,
-				44FD24701C56C60800C4CD81 /* WordsMakerViewController.swift in Sources */,
 				44639B1C1C52BE75004AC539 /* SectionsRouterInput.swift in Sources */,
+				4498E9371C5FF7CB0044C18F /* WordsService.swift in Sources */,
 				4451594D1C53AF110075722B /* AlphabetModuleAssembly.swift in Sources */,
 				44BB36C81C52EE57002267CB /* SegueInfo.swift in Sources */,
 				445159411C53AE170075722B /* AlphabetPresenter.swift in Sources */,
@@ -824,14 +956,12 @@
 				4451594B1C53AEED0075722B /* AlphabetInteractorOutput.swift in Sources */,
 				4451593D1C53AD9D0075722B /* AlphabetRouter.swift in Sources */,
 				44C931811BFD15B6000AB742 /* TranslateCollectionViewCell.swift in Sources */,
-				44639B101C52BE3B004AC539 /* SectionsDataManager.swift in Sources */,
 				44639B121C52BE3B004AC539 /* SectionsInteractorInput.swift in Sources */,
 				44639B181C52BE3B004AC539 /* SectionsViewOutput.swift in Sources */,
 				44639B321C52D016004AC539 /* Section.swift in Sources */,
 				44639B161C52BE3B004AC539 /* SectionsViewController.swift in Sources */,
 				44639B3D1C52D62E004AC539 /* Word.swift in Sources */,
 				44639B1B1C52BE75004AC539 /* SectionsRouter.swift in Sources */,
-				44FD24751C56C60800C4CD81 /* ChooseTranslateViewController.swift in Sources */,
 				445CBA971C539326000453EB /* SectionsModuleOutput.swift in Sources */,
 				44639B111C52BE3B004AC539 /* SectionsInteractor.swift in Sources */,
 				44EE3E8A1BD7D6B000F0E640 /* LetterCollectionViewCell.swift in Sources */,
@@ -846,7 +976,6 @@
 				445159431C53AE350075722B /* AlphabetModuleInput.swift in Sources */,
 				445159511C53BDFE0075722B /* PolishAlphabetService.swift in Sources */,
 				445159491C53AED50075722B /* AlphabetInteractorInput.swift in Sources */,
-				44FD24741C56C60800C4CD81 /* TraningCardsViewController.swift in Sources */,
 				4451593B1C53AD700075722B /* AlphabetViewOutput.swift in Sources */,
 				445159391C53AD500075722B /* AlphabetViewInput.swift in Sources */,
 				44639B131C52BE3B004AC539 /* SectionsIteractorOutput.swift in Sources */,
@@ -855,19 +984,29 @@
 				AFE92CC0C52A091F3B0BB07C /* ExamsViewInput.swift in Sources */,
 				215FF45717639D91DF5647A3 /* ExamsViewOutput.swift in Sources */,
 				3CE53092C9B7CF15D6E02531 /* ExamsViewController.swift in Sources */,
-				44FD24761C56C60800C4CD81 /* ChooseAudioTranslateViewController.swift in Sources */,
 				22386F49DFCA57B37BF6DFBA /* ExamsModuleInput.swift in Sources */,
 				DECEB3E39017E63893A44A9C /* ExamsPresenter.swift in Sources */,
 				15F61A8E4F0E7BAD8F537C2F /* ExamsInteractorInput.swift in Sources */,
 				37FD40EA140DD59285BD5EC7 /* ExamsInteractorOutput.swift in Sources */,
 				59E2692950B75F952E06EAC9 /* ExamsInteractor.swift in Sources */,
-				44FD24721C56C60800C4CD81 /* MemoryWordsViewController.swift in Sources */,
 				B3C86C507217534975A0B76A /* ExamsRouterInput.swift in Sources */,
 				00D1C84CB0ED55FC6BFDAEB1 /* ExamsRouter.swift in Sources */,
 				44FD246D1C56C4BE00C4CD81 /* ViperTransitionRouter.swift in Sources */,
 				44FD246B1C56AEB700C4CD81 /* ExamsService.swift in Sources */,
 				B4C6640A193A78EF20928B71 /* ExamsConfigurator.swift in Sources */,
 				E342E90DB2EEBB0A0DFF659F /* ExamsInitializer.swift in Sources */,
+				FC22FA6B605B8943CB61E0FE /* AudioTranslateViewInput.swift in Sources */,
+				0C867154E25AD72BD3D3264E /* AudioTranslateViewOutput.swift in Sources */,
+				F5F74CBB2F13DA2F4446CB49 /* AudioTranslateViewController.swift in Sources */,
+				59E30392C2343E589C64F51A /* AudioTranslateModuleInput.swift in Sources */,
+				DAD779CB213DCBB89F4B5790 /* AudioTranslatePresenter.swift in Sources */,
+				A658C8C5795B444AA142C5A0 /* AudioTranslateInteractorInput.swift in Sources */,
+				D5E6A966EB91E5E30A7DA3B1 /* AudioTranslateInteractorOutput.swift in Sources */,
+				9659EC12517DC6D8A038D83A /* AudioTranslateInteractor.swift in Sources */,
+				80768B30A0AE61D9D5BBC40B /* AudioTranslateRouterInput.swift in Sources */,
+				C0AB64FE86A67D8B99384689 /* AudioTranslateRouter.swift in Sources */,
+				690C2022FB73CD90EBC02E3B /* AudioTranslateConfigurator.swift in Sources */,
+				215A55C608B22643F9EA65F4 /* AudioTranslateInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -881,6 +1020,11 @@
 				506CD4B2857C0FAAD97EE6A6 /* ExamsInteractorTests.swift in Sources */,
 				F8BCE0916095EE46BD99AF23 /* ExamsPresenterTests.swift in Sources */,
 				53DEFF22E49CCA22DBE45575 /* ExamsRouterTests.swift in Sources */,
+				F10381CC8BB7614AE2E476CD /* AudioTranslateConfiguratorTests.swift in Sources */,
+				DB748B962D5826562818C440 /* AudioTranslateViewTests.swift in Sources */,
+				3B56732EAC62938097F82F4F /* AudioTranslateInteractorTests.swift in Sources */,
+				117C05582FA12CCF1C2339B2 /* AudioTranslatePresenterTests.swift in Sources */,
+				251EF7FFF3CEB4810F92D0FC /* AudioTranslateRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1003,7 +1147,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Eugene Karachinskiy (J99F83CPD3)";
 				INFOPLIST_FILE = PanProfesor/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Eugene-Karachinskiy.PanProfesor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1017,7 +1161,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Eugene Karachinskiy (J99F83CPD3)";
 				INFOPLIST_FILE = PanProfesor/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Eugene-Karachinskiy.PanProfesor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
