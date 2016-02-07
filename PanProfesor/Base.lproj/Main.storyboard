@@ -742,7 +742,7 @@
             </objects>
             <point key="canvasLocation" x="-477" y="1221"/>
         </scene>
-        <!--Карточки-->
+        <!--View Controller-->
         <scene sceneID="2lq-wk-75x">
             <objects>
                 <viewController id="jGg-9B-V6C" customClass="CardsViewController" customModule="PanProfesor" customModuleProvider="target" sceneMemberID="viewController">
@@ -874,6 +874,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gwT-EB-5BI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="r1Y-SG-KXC" customClass="CardsModuleInitializer" customModule="PanProfesor" customModuleProvider="target">
+                    <connections>
+                        <outlet property="viewController" destination="jGg-9B-V6C" id="sJ6-aR-cCK"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="219" y="3228"/>
         </scene>

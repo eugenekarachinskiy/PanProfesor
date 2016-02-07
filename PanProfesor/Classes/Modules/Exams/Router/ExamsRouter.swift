@@ -17,6 +17,8 @@ class ExamsRouter: ViperTransitionRouter, ExamsRouterInput {
                     translateInput.configureModulWithSection(sectionDto)
                 } else if let trainingCardsInput = input as? TrainingCardsModuleInput {
                     trainingCardsInput.configureModuleWithSection(sectionDto)
+                } else if let cardsInput = input as? CardsModuleInput {
+                    cardsInput.configureCardsModuleWithSection(sectionDto)
                 }
             }
             

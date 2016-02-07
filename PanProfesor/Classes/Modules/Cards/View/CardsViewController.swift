@@ -1,5 +1,5 @@
 //
-//  TrainingCardsViewController.swift
+//  CardsViewController.swift
 //  PanProfesor
 //
 //  Created by Eugene  on 07/02/2016.
@@ -8,25 +8,22 @@
 
 import UIKit
 
-class TrainingCardsViewController: UIViewController, TrainingCardsViewInput, ViperModuleTransitionHandlerProtocol {
+class CardsViewController: UIViewController, CardsViewInput, ViperModuleTransitionHandlerProtocol {
     
     //presenters
-    weak var moduleInput: AnyObject?
-    var output: TrainingCardsViewOutput!
+    var moduleInput: AnyObject?
+    var output: CardsViewOutput!
     
-    //outlets
+    //outletes
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     
     //constants
-    let timeInterval = 1.0
     let speechService = SpeechService()
     
     //vars
     var words:Array<WordDto> = Array<WordDto>()
-    var showWord = false
     var currentIndex = 0;
-    
     
     // MARK: Life cycle
     override func viewDidLoad() {
@@ -34,20 +31,33 @@ class TrainingCardsViewController: UIViewController, TrainingCardsViewInput, Vip
         output.viewIsReady()
     }
     
-    // MARK: TrainingCardsViewInput
+    // MARK: CardsViewInput
     func setupInitialState() {
         
     }
     
-    func setupViewDataSource(words: [WordDto]) {
+    func setupDataSourceWithWords(words: [WordDto]) {
         self.words = words
         setupView()
     }
     
-    //Internal methods
+    //MARK: Internal Methods
+    @IBAction func showNext() {
+        showNextCard()
+    }
+    
+    @IBAction func showPrevious() {
+        showPrevious()
+    }
+    
     func setupView() {
-        pageControl.numberOfPages = words.count
+        pageControl?.numberOfPages = words.count
         collectionView.reloadData()
+        showCurrentCard()
+    }
+    
+    func updateTitle() {
+        self.navigationItem.title = "Карточки(\(currentIndex + 1)/\(words.count))"
     }
     
     func showPreviousCard() {
@@ -72,35 +82,22 @@ class TrainingCardsViewController: UIViewController, TrainingCardsViewInput, Vip
     
     func showCurrentCard() {
         showCard(index: currentIndex, animated: true)
+        updateTitle()
     }
     
     func showCard(index index: Int, animated: Bool) {
+        let currentWord = words[currentIndex]
+        speechService.speak(currentWord.polish, languge: "PL-pl")
+    
         if index < words.count {
             let indexPath = NSIndexPath(forRow: index, inSection: 0)
             collectionView?.scrollToItemAtIndexPath(indexPath, atScrollPosition: UICollectionViewScrollPosition.CenteredHorizontally, animated: animated)
             pageControl?.currentPage = index
         }
     }
-    
-    func showOriginalWord() {
-        let currentWord = words[currentIndex]
-        speechService.speak(currentWord.polish, languge: "PL-pl")
-        
-        showWord = true
-        collectionView.userInteractionEnabled = false
-        collectionView.reloadData()
-        
-        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(timeInterval * Double(NSEC_PER_SEC)))
-        dispatch_after(delayTime, dispatch_get_main_queue(), { () -> Void in
-            self.collectionView.userInteractionEnabled = true
-            self.showWord = false
-            self.showNextCard()
-        })
-    }
 }
 
-
-extension TrainingCardsViewController: UICollectionViewDataSource {
+extension CardsViewController: UICollectionViewDataSource {
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
@@ -113,20 +110,21 @@ extension TrainingCardsViewController: UICollectionViewDataSource {
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cellIdentifier = "cardIdentifier"
         let collectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath) as! CardCollectionViewCell
+        
         let word = words[indexPath.row]
-        collectionViewCell.updateWithWord(word, showOriginal: showWord)
+        collectionViewCell.updateWithWord(word)
         
         return collectionViewCell
     }
 }
 
-extension TrainingCardsViewController: UICollectionViewDelegate {
+extension CardsViewController: UICollectionViewDelegate {
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        showOriginalWord()
+        showNextCard()
     }
 }
 
-extension TrainingCardsViewController: UICollectionViewDelegateFlowLayout {
+extension CardsViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         return collectionView.frame.size
     }
